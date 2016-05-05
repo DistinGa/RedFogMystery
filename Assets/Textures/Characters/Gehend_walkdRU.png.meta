@@ -1,0 +1,167 @@
+fileFormatVersion: 2
+guid: ad46fa6219c3f3742ad93d4649da0eff
+timeCreated: 1462126522
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Gehend_walkd04_0
+    21300002: Gehend_walkd04_1
+    21300004: Gehend_walkd04_2
+    21300006: Gehend_walkd04_3
+    21300008: Gehend_walkd04_4
+    21300010: Gehend_walkd04_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 256
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Gehend_walkd04_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 48}
+        - {x: -14, y: 0}
+        - {x: 15, y: 0}
+        - {x: 15, y: 48}
+    - name: Gehend_walkd04_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 48}
+        - {x: -16, y: 12}
+        - {x: -14, y: 0}
+        - {x: 15, y: 0}
+        - {x: 15, y: 46}
+        - {x: 13, y: 48}
+    - name: Gehend_walkd04_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 48}
+        - {x: -15, y: 44}
+        - {x: -15, y: 33}
+        - {x: -9, y: 0}
+        - {x: 14, y: 0}
+        - {x: 14, y: 45}
+        - {x: 8, y: 48}
+    - name: Gehend_walkd04_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 48}
+        - {x: -14, y: 45}
+        - {x: -14, y: 13}
+        - {x: -13, y: 0}
+        - {x: 15, y: 0}
+        - {x: 15, y: 48}
+    - name: Gehend_walkd04_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 48}
+        - {x: -16, y: 25}
+        - {x: -11, y: 1}
+        - {x: -11, y: 0}
+        - {x: 14, y: 0}
+        - {x: 15, y: 7}
+        - {x: 15, y: 48}
+    - name: Gehend_walkd04_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 48}
+        - {x: -15, y: 45}
+        - {x: -15, y: 22}
+        - {x: -12, y: 0}
+        - {x: 11, y: 0}
+        - {x: 14, y: 15}
+        - {x: 14, y: 47}
+        - {x: 12, y: 48}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: da475853a73c5ce45903feb8e6294f9c
+timeCreated: 1461862734
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: drytree03_0
+    21300002: drytree03_1
+    21300004: drytree03_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: drytree03_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 96
+        height: 176
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29.199997, y: 43}
+        - {x: 17.199997, y: 54}
+        - {x: 25.199997, y: 48}
+        - {x: 26.199997, y: 48}
+        - {x: 43.199997, y: 53}
+        - {x: 43.199997, y: 84}
+        - {x: 29.199997, y: 90}
+        - {x: 41.199997, y: 98}
+        - {x: 37.199997, y: 111}
+        - {x: 31.199997, y: 122}
+        - {x: 28.199997, y: 125}
+        - {x: 26.199997, y: 126}
+        - {x: 24.199997, y: 141}
+        - {x: 22.199997, y: 144}
+        - {x: 19.199997, y: 145}
+        - {x: 16.199997, y: 144}
+        - {x: 19.199997, y: 156}
+        - {x: 10.199997, y: 171}
+        - {x: 4.199997, y: 173}
+        - {x: -4.800003, y: 173}
+        - {x: -21.800003, y: 165}
+        - {x: -48.800003, y: 146}
+        - {x: -36.800003, y: 109}
+        - {x: -32.800003, y: 106}
+        - {x: -27.800003, y: 106}
+        - {x: -32.800003, y: 105}
+        - {x: -33.800003, y: 102}
+        - {x: -28.800003, y: 97}
+        - {x: -29.800003, y: 83}
+        - {x: -27.800003, y: 80}
+        - {x: -24.800003, y: 79}
+        - {x: -15.800003, y: 74}
+        - {x: -12.800003, y: 75}
+        - {x: -9.800003, y: 80}
+        - {x: -8.800003, y: 74}
+        - {x: -33.800003, y: 74}
+        - {x: -38.800003, y: 85}
+        - {x: -46.800003, y: 87}
+        - {x: -52.800003, y: 84}
+        - {x: -52.800003, y: 64}
+        - {x: -12.800003, y: 0}
+        - {x: 7.199997, y: 0}
+        - {x: 7.199997, y: 26}
+        - {x: 28.199997, y: 37}
+        - {x: 30.199997, y: 39}
+    - name: drytree03_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 96
+        height: 176
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27.199997, y: 49}
+        - {x: 31.199997, y: 51}
+        - {x: 41.199997, y: 59}
+        - {x: 39.199997, y: 63}
+        - {x: 28.199997, y: 69}
+        - {x: 43.199997, y: 67}
+        - {x: 43.199997, y: 116}
+        - {x: 36.199997, y: 129}
+        - {x: 18.199997, y: 134}
+        - {x: 11.199997, y: 130}
+        - {x: 17.199997, y: 136}
+        - {x: 25.199997, y: 147}
+        - {x: 14.199997, y: 173}
+        - {x: -7.800003, y: 173}
+        - {x: -21.800003, y: 167}
+        - {x: -18.800003, y: 158}
+        - {x: -24.800003, y: 147}
+        - {x: -24.800003, y: 144}
+        - {x: -22.800003, y: 142}
+        - {x: -14.800003, y: 144}
+        - {x: -19.800003, y: 143}
+        - {x: -24.800003, y: 139}
+        - {x: -26.800003, y: 132}
+        - {x: -24.800003, y: 126}
+        - {x: -19.800003, y: 122}
+        - {x: -25.800003, y: 123}
+        - {x: -33.800003, y: 122}
+        - {x: -35.800003, y: 109}
+        - {x: -32.800003, y: 106}
+        - {x: -34.800003, y: 104}
+        - {x: -34.800003, y: 100}
+        - {x: -29.800003, y: 95}
+        - {x: -27.800003, y: 81}
+        - {x: -24.800003, y: 80}
+        - {x: -19.800003, y: 76}
+        - {x: -39.800003, y: 87}
+        - {x: -47.800003, y: 89}
+        - {x: -52.800003, y: 84}
+        - {x: -52.800003, y: 76}
+        - {x: -41.800003, y: 62}
+        - {x: -52.800003, y: 32}
+        - {x: -52.800003, y: 11}
+        - {x: -44.800003, y: 0}
+        - {x: 33.199997, y: 0}
+        - {x: 43.199997, y: 9}
+        - {x: 43.199997, y: 41}
+        - {x: 31.199997, y: 44}
+        - {x: 21.199997, y: 53}
+        - {x: 26.199997, y: 49}
+    - name: drytree03_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 16
+        width: 96
+        height: 176
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.199997, y: 51}
+        - {x: 25.199997, y: 50}
+        - {x: 29.199997, y: 48}
+        - {x: 40.199997, y: 60}
+        - {x: 39.199997, y: 64}
+        - {x: 29.199997, y: 66}
+        - {x: 21.199997, y: 66}
+        - {x: 26.199997, y: 67}
+        - {x: 43.199997, y: 65}
+        - {x: 43.199997, y: 111}
+        - {x: 19.199997, y: 154}
+        - {x: 14.199997, y: 152}
+        - {x: 9.199997, y: 147}
+        - {x: 3.199997, y: 151}
+        - {x: 15.199997, y: 152}
+        - {x: 16.199997, y: 155}
+        - {x: 15.199997, y: 173}
+        - {x: -44.800003, y: 173}
+        - {x: -52.800003, y: 157}
+        - {x: -52.800003, y: 32}
+        - {x: -42.800003, y: 13}
+        - {x: -19.800003, y: 0}
+        - {x: 7.199997, y: 0}
+        - {x: 43.199997, y: 39}
+        - {x: 43.199997, y: 41}
+        - {x: 31.199997, y: 44}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: 476c7463f047150469b6d9968f06c988
+timeCreated: 1457973122
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: animal_cow04_0
+    21300002: animal_cow04_1
+    21300004: animal_cow04_2
+    21300006: animal_cow04_3
+    21300008: animal_cow04_4
+    21300010: animal_cow04_5
+    21300012: animal_cow04_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: animal_cow04_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 25}
+        - {x: -24, y: 18}
+        - {x: -28, y: 13}
+        - {x: -28, y: -32}
+        - {x: 15, y: -32}
+        - {x: 32, y: -25}
+        - {x: 32, y: 15}
+        - {x: 27, y: 25}
+    - name: animal_cow04_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 1}
+        - {x: 32, y: 6}
+        - {x: 24, y: 25}
+        - {x: 4, y: 25}
+        - {x: -27, y: 19}
+        - {x: -30, y: 5}
+        - {x: -30, y: -17}
+        - {x: -27, y: -32}
+        - {x: 3, y: -32}
+        - {x: 32, y: -25}
+        - {x: 32, y: -5}
+        - {x: 28, y: -3}
+    - name: animal_cow04_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 25}
+        - {x: -30, y: 24}
+        - {x: -30, y: -32}
+        - {x: 28, y: -32}
+        - {x: 31, y: -31}
+        - {x: 31, y: 25}
+    - name: animal_cow04_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 1}
+        - {x: 32, y: 6}
+        - {x: 24, y: 25}
+        - {x: 4, y: 25}
+        - {x: -27, y: 19}
+        - {x: -30, y: 5}
+        - {x: -30, y: -17}
+        - {x: -27, y: -32}
+        - {x: 3, y: -32}
+        - {x: 32, y: -25}
+        - {x: 32, y: -5}
+        - {x: 28, y: -3}
+    - name: animal_cow04_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: 12}
+        - {x: -30, y: -32}
+        - {x: 11, y: -32}
+        - {x: 31, y: -23}
+        - {x: 31, y: 1}
+        - {x: 29, y: 19}
+        - {x: 24, y: 25}
+        - {x: 0, y: 25}
+        - {x: -25, y: 17}
+    - name: animal_cow04_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 25}
+        - {x: -30, y: 24}
+        - {x: -30, y: -32}
+        - {x: 31, y: -32}
+        - {x: 31, y: 25}
+    - name: animal_cow04_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 25}
+        - {x: -3, y: 23}
+        - {x: -3, y: 21}
+        - {x: -23, y: 14}
+        - {x: -30, y: 6}
+        - {x: -30, y: -32}
+        - {x: 31, y: -32}
+        - {x: 31, y: 24}
+        - {x: 27, y: 25}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

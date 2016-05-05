@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - SavePosition
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Characters
+  - Shadows
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Bottom
+    uniqueID: 4063356159
+    locked: 0
+  - name: Shadows
+    uniqueID: 2451465651
+    locked: 0
+  - name: Characters
+    uniqueID: 103704465
+    locked: 0
+  - name: Top
+    uniqueID: 3778978719
+    locked: 0
+  - name: UI
+    uniqueID: 2846435305
+    locked: 0

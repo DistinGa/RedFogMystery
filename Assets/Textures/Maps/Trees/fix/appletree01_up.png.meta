@@ -1,0 +1,232 @@
+fileFormatVersion: 2
+guid: f1742cccb314e734ca6c2b25af2d9f08
+timeCreated: 1461701063
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: appletree01_up_0
+    21300002: appletree01_up_1
+    21300004: appletree01_up_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: appletree01_up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 22
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60, y: -23}
+        - {x: 55, y: -20}
+        - {x: 58, y: -21}
+        - {x: 61, y: -21}
+        - {x: 64, y: -19}
+        - {x: 64, y: 13}
+        - {x: 50, y: 16}
+        - {x: 42, y: 4}
+        - {x: 42, y: -1}
+        - {x: 39, y: -2}
+        - {x: 42, y: 6}
+        - {x: 43, y: 7}
+        - {x: 46, y: 17}
+        - {x: 64, y: 19}
+        - {x: 64, y: 39}
+        - {x: 59, y: 52}
+        - {x: -6, y: 52}
+        - {x: -8, y: 45}
+        - {x: -8, y: 42}
+        - {x: -8, y: 44}
+        - {x: -12, y: 47}
+        - {x: -16, y: 48}
+        - {x: -23, y: 41}
+        - {x: -44, y: 33}
+        - {x: -52, y: 23}
+        - {x: -64, y: 11}
+        - {x: -64, y: -32}
+        - {x: -53, y: -30}
+        - {x: -48, y: -27}
+        - {x: -42, y: -21}
+        - {x: -42, y: -17}
+        - {x: -41, y: -25}
+        - {x: -37, y: -29}
+        - {x: -45, y: -27}
+        - {x: -47, y: -27}
+        - {x: -52, y: -30}
+        - {x: -57, y: -31}
+        - {x: -55, y: -55}
+        - {x: -42, y: -62}
+        - {x: -22, y: -61}
+        - {x: -1, y: -64}
+        - {x: 51, y: -64}
+        - {x: 56, y: -61}
+        - {x: 64, y: -31}
+        - {x: 64, y: -27}
+    - name: appletree01_up_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 22
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 54, y: -2}
+        - {x: 50, y: -2}
+        - {x: 56, y: -2}
+        - {x: 61, y: 0}
+        - {x: 64, y: 4}
+        - {x: 64, y: 5}
+        - {x: 62, y: 11}
+        - {x: 55, y: 13}
+        - {x: 49, y: 13}
+        - {x: 42, y: 5}
+        - {x: 42, y: 0}
+        - {x: 39, y: -4}
+        - {x: 42, y: 7}
+        - {x: 47, y: 16}
+        - {x: 64, y: 21}
+        - {x: 64, y: 41}
+        - {x: 59, y: 52}
+        - {x: 52, y: 52}
+        - {x: 47, y: 50}
+        - {x: 45, y: 49}
+        - {x: 35, y: 36}
+        - {x: 35, y: 34}
+        - {x: 35, y: 40}
+        - {x: 36, y: 48}
+        - {x: 34, y: 52}
+        - {x: -23, y: 52}
+        - {x: -31, y: 29}
+        - {x: -31, y: 24}
+        - {x: -32, y: 32}
+        - {x: -33, y: 35}
+        - {x: -43, y: 33}
+        - {x: -47, y: 27}
+        - {x: -45, y: 22}
+        - {x: -39, y: 22}
+        - {x: -44, y: 21}
+        - {x: -48, y: 25}
+        - {x: -51, y: 27}
+        - {x: -62, y: 10}
+        - {x: -64, y: 5}
+        - {x: -64, y: -7}
+        - {x: -56, y: -8}
+        - {x: -53, y: -8}
+        - {x: -60, y: -8}
+        - {x: -64, y: -15}
+        - {x: -64, y: -25}
+        - {x: -62, y: -28}
+        - {x: -53, y: -31}
+        - {x: -50, y: -28}
+        - {x: -48, y: -28}
+        - {x: -42, y: -22}
+        - {x: -42, y: -18}
+        - {x: -42, y: -25}
+        - {x: -39, y: -30}
+        - {x: -46, y: -28}
+        - {x: -48, y: -28}
+        - {x: -52, y: -31}
+        - {x: -55, y: -34}
+        - {x: -55, y: -36}
+        - {x: -53, y: -38}
+        - {x: -48, y: -38}
+        - {x: -53, y: -40}
+        - {x: -51, y: -64}
+        - {x: 59, y: -64}
+        - {x: 64, y: -59}
+        - {x: 64, y: 0}
+        - {x: 58, y: -3}
+    - name: appletree01_up_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 22
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48, y: 12}
+        - {x: 43, y: 4}
+        - {x: 43, y: 11}
+        - {x: 44, y: 19}
+        - {x: 44, y: 18}
+        - {x: 54, y: 19}
+        - {x: 60, y: 22}
+        - {x: 62, y: 25}
+        - {x: 63, y: 44}
+        - {x: 53, y: 52}
+        - {x: -28, y: 52}
+        - {x: -64, y: 31}
+        - {x: -64, y: -35}
+        - {x: -56, y: -30}
+        - {x: -53, y: -30}
+        - {x: -48, y: -27}
+        - {x: -42, y: -22}
+        - {x: -42, y: -18}
+        - {x: -40, y: -27}
+        - {x: -38, y: -31}
+        - {x: -32, y: -31}
+        - {x: -38, y: -31}
+        - {x: -44, y: -26}
+        - {x: -57, y: -32}
+        - {x: -54, y: -63}
+        - {x: 64, y: -63}
+        - {x: 64, y: 18}
+        - {x: 51, y: 17}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

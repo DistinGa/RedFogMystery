@@ -1,0 +1,103 @@
+fileFormatVersion: 2
+guid: db4a3d4d04fcd8c4488bea4d5f21ef46
+timeCreated: 1460145131
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: pine01_up_0
+    21300002: pine01_up_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: pine01_up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -79, y: -71}
+        - {x: 73, y: -71}
+        - {x: 73, y: 40}
+        - {x: 49, y: 80}
+        - {x: -49, y: 80}
+        - {x: -79, y: 45}
+    - name: pine01_up_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48, y: 11}
+        - {x: 38, y: 0}
+        - {x: 49, y: 12}
+        - {x: 52, y: 22}
+        - {x: 49, y: 55}
+        - {x: 1, y: 80}
+        - {x: -32, y: 80}
+        - {x: -64, y: 53}
+        - {x: -79, y: 9}
+        - {x: -79, y: -45}
+        - {x: -70, y: -68}
+        - {x: -60, y: -71}
+        - {x: 43, y: -71}
+        - {x: 72, y: -57}
+        - {x: 72, y: 17}
+        - {x: 64, y: 24}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

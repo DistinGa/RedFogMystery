@@ -1,0 +1,217 @@
+fileFormatVersion: 2
+guid: 7f137e725883d4d4db79161756e370df
+timeCreated: 1456839832
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: LGehend_0
+    21300002: LGehend_1
+    21300004: LGehend_2
+    21300006: LGehend_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: LGehend_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 0
+        width: 332
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92, y: -127.5}
+        - {x: 108, y: -81.5}
+        - {x: 125, y: -103.5}
+        - {x: 132, y: -105.5}
+        - {x: 135, y: -102.5}
+        - {x: 124, y: -60.5}
+        - {x: 146, y: -30.5}
+        - {x: 166, y: -6.5}
+        - {x: 166, y: 11.5}
+        - {x: 106, y: 72.5}
+        - {x: 70, y: 86.5}
+        - {x: 66, y: 106.5}
+        - {x: 33, y: 123.5}
+        - {x: 29, y: 157.5}
+        - {x: -57, y: 157.5}
+        - {x: -106, y: 129.5}
+        - {x: -151, y: 56.5}
+        - {x: -155, y: 6.5}
+        - {x: -127, y: -84.5}
+        - {x: -147, y: -127.5}
+        - {x: -166, y: -123.5}
+        - {x: -166, y: -150.5}
+        - {x: -157, y: -157.5}
+        - {x: 59, y: -157.5}
+        - {x: 58, y: -154.5}
+        - {x: 43, y: -140.5}
+        - {x: 72, y: -136.5}
+    - name: LGehend_1
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 0
+        width: 332
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 111, y: -89.5}
+        - {x: 137, y: -115.5}
+        - {x: 128, y: -54.5}
+        - {x: 166, y: -11.5}
+        - {x: 166, y: 5.5}
+        - {x: 128, y: 46.5}
+        - {x: 105, y: 70.5}
+        - {x: 74, y: 83.5}
+        - {x: 73, y: 112.5}
+        - {x: 36, y: 132.5}
+        - {x: 33, y: 157.5}
+        - {x: 18, y: 157.5}
+        - {x: 7, y: 152.5}
+        - {x: -26, y: 157.5}
+        - {x: -58, y: 157.5}
+        - {x: -99, y: 130.5}
+        - {x: -116, y: 114.5}
+        - {x: -148, y: 55.5}
+        - {x: -152, y: 24.5}
+        - {x: -152, y: -2.5}
+        - {x: -140, y: -38.5}
+        - {x: -125, y: -104.5}
+        - {x: -148, y: -126.5}
+        - {x: -166, y: -124.5}
+        - {x: -166, y: -144.5}
+        - {x: -159, y: -157.5}
+        - {x: 59, y: -157.5}
+        - {x: 59, y: -155.5}
+        - {x: 52, y: -149.5}
+        - {x: 90, y: -125.5}
+    - name: LGehend_2
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 0
+        width: 332
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 100, y: -109.5}
+        - {x: 137, y: -104.5}
+        - {x: 130, y: -51.5}
+        - {x: 142, y: -35.5}
+        - {x: 166, y: -6.5}
+        - {x: 166, y: 5.5}
+        - {x: 129, y: 46.5}
+        - {x: 91, y: 75.5}
+        - {x: 58, y: 87.5}
+        - {x: 66, y: 103.5}
+        - {x: 64, y: 109.5}
+        - {x: 49, y: 110.5}
+        - {x: 28, y: 155.5}
+        - {x: 20, y: 152.5}
+        - {x: -26, y: 157.5}
+        - {x: -56, y: 157.5}
+        - {x: -105, y: 129.5}
+        - {x: -123, y: 101.5}
+        - {x: -151, y: 53.5}
+        - {x: -154, y: -0.5}
+        - {x: -148, y: -20.5}
+        - {x: -125, y: -89.5}
+        - {x: -166, y: -120.5}
+        - {x: -166, y: -149.5}
+        - {x: -165, y: -154.5}
+        - {x: -158, y: -157.5}
+        - {x: 59, y: -157.5}
+        - {x: 51, y: -133.5}
+        - {x: 77, y: -135.5}
+    - name: LGehend_3
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 0
+        width: 333
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 73.5, y: -133.5}
+        - {x: 90.5, y: -124.5}
+        - {x: 101.5, y: -99.5}
+        - {x: 131.5, y: -105.5}
+        - {x: 133.5, y: -98.5}
+        - {x: 139.5, y: -32.5}
+        - {x: 166.5, y: -4.5}
+        - {x: 166.5, y: 3.5}
+        - {x: 105.5, y: 70.5}
+        - {x: 66.5, y: 87.5}
+        - {x: 65.5, y: 112.5}
+        - {x: 28.5, y: 157.5}
+        - {x: -50.5, y: 157.5}
+        - {x: -94.5, y: 136.5}
+        - {x: -120.5, y: 108.5}
+        - {x: -149.5, y: 55.5}
+        - {x: -153.5, y: -4.5}
+        - {x: -126.5, y: -77.5}
+        - {x: -154.5, y: -128.5}
+        - {x: -166.5, y: -124.5}
+        - {x: -166.5, y: -146.5}
+        - {x: -156.5, y: -157.5}
+        - {x: 58.5, y: -157.5}
+        - {x: 58.5, y: -156.5}
+        - {x: 55.5, y: -153.5}
+        - {x: 54.5, y: -133.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

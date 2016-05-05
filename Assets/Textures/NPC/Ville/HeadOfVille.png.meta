@@ -1,0 +1,285 @@
+fileFormatVersion: 2
+guid: 12e2e9a5c32a8c744ae25bd512c71236
+timeCreated: 1434289327
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: HeadOfVille_0_0
+    21300002: HeadOfVille_1_0
+    21300004: HeadOfVille_2_0
+    21300006: HeadOfVille_3_0
+    21300008: HeadOfVille_0_1
+    21300010: HeadOfVille_1_1
+    21300012: HeadOfVille_2_1
+    21300014: HeadOfVille_3_1
+    21300016: HeadOfVille_0_2
+    21300018: HeadOfVille_1_2
+    21300020: HeadOfVille_2_2
+    21300022: HeadOfVille_3_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 256
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: HeadOfVille_0_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 24}
+        - {x: -14, y: -24}
+        - {x: 7, y: -24}
+        - {x: 14, y: -22}
+        - {x: 14, y: 9}
+        - {x: 11, y: 24}
+    - name: HeadOfVille_1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 24}
+        - {x: -11, y: -24}
+        - {x: 11, y: -24}
+        - {x: 14, y: -23}
+        - {x: 14, y: 23}
+        - {x: 12, y: 24}
+    - name: HeadOfVille_2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 24}
+        - {x: -13, y: 17}
+        - {x: -13, y: -20}
+        - {x: -8, y: -24}
+        - {x: 12, y: -24}
+        - {x: 12, y: 24}
+    - name: HeadOfVille_3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: -16}
+        - {x: -11, y: -24}
+        - {x: 14, y: -24}
+        - {x: 14, y: 24}
+        - {x: -14, y: 24}
+    - name: HeadOfVille_0_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 24}
+        - {x: -15, y: 22}
+        - {x: -15, y: -13}
+        - {x: -9, y: -23}
+        - {x: 10, y: -23}
+        - {x: 16, y: -22}
+        - {x: 16, y: 24}
+    - name: HeadOfVille_1_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: -14}
+        - {x: -10, y: -19}
+        - {x: -7, y: -23}
+        - {x: 11, y: -23}
+        - {x: 14, y: -22}
+        - {x: 14, y: 11}
+        - {x: 12, y: 21}
+        - {x: 10, y: 24}
+        - {x: -11, y: 24}
+    - name: HeadOfVille_2_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 24}
+        - {x: -14, y: -23}
+        - {x: 4, y: -23}
+        - {x: 11, y: -19}
+        - {x: 11, y: 21}
+        - {x: 8, y: 24}
+    - name: HeadOfVille_3_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 24}
+        - {x: -15, y: 22}
+        - {x: -15, y: -13}
+        - {x: -9, y: -23}
+        - {x: 10, y: -23}
+        - {x: 16, y: -22}
+        - {x: 16, y: 24}
+    - name: HeadOfVille_0_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 24}
+        - {x: -7, y: 24}
+        - {x: -13, y: 20}
+        - {x: -13, y: -23}
+        - {x: -11, y: -24}
+        - {x: 8, y: -24}
+        - {x: 15, y: -23}
+        - {x: 15, y: 4}
+        - {x: 12, y: 18}
+    - name: HeadOfVille_1_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 24}
+        - {x: -12, y: 24}
+        - {x: -12, y: -24}
+        - {x: 6, y: -24}
+        - {x: 10, y: -22}
+        - {x: 13, y: -18}
+        - {x: 13, y: 23}
+    - name: HeadOfVille_2_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 24}
+        - {x: -14, y: 12}
+        - {x: -14, y: -21}
+        - {x: -12, y: -24}
+        - {x: 7, y: -24}
+        - {x: 11, y: -21}
+        - {x: 11, y: 20}
+        - {x: 6, y: 24}
+    - name: HeadOfVille_3_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 24}
+        - {x: -13, y: 18}
+        - {x: -13, y: -23}
+        - {x: -11, y: -24}
+        - {x: 12, y: -24}
+        - {x: 15, y: -16}
+        - {x: 15, y: 11}
+        - {x: 10, y: 24}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,484 @@
+fileFormatVersion: 2
+guid: a8df750aaf19638438b8ba83c288a39a
+timeCreated: 1453790797
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: XCgMund_0
+    21300002: XCgMund_1
+    21300004: XCgMund_2
+    21300006: XCgMund_3
+    21300008: XCgMund_4
+    21300010: XCgMund_5
+    21300012: XCgMund_6
+    21300014: XCgMund_7
+    21300016: XCgMund_32
+    21300018: XCgMund_33
+    21300020: XCgMund_34
+    21300022: XCgMund_35
+    21300024: XCgMund_36
+    21300026: XCgMund_37
+    21300028: XCgMund_38
+    21300030: XCgMund_39
+    21300032: XCgMund_48
+    21300034: XCgMund_49
+    21300036: XCgMund_50
+    21300038: XCgMund_51
+    21300040: XCgMund_16
+    21300042: XCgMund_17
+    21300044: XCgMund_18
+    21300046: XCgMund_19
+    21300048: XCgMund_20
+    21300050: XCgMund_21
+    21300052: XCgMund_22
+    21300054: XCgMund_23
+    21300056: XCgMund_47
+    21300058: XCgMund_56
+    21300060: XCgMund_57
+    21300062: XCgMund_58
+    21300064: XCgMund_59
+    21300066: XCgMund_60
+    21300068: XCgMund_61
+    21300070: XCgMund_62
+    21300072: XCgMund_63
+    21300074: XCgMund_64
+    21300076: XCgMund_65
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 25
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: XCgMund_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 568
+        width: 68
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 568
+        width: 67
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_2
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 567
+        width: 66
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_3
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 567
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_4
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 567
+        width: 68
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_5
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 567
+        width: 69
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_6
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 568
+        width: 71
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_7
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 568
+        width: 71
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_32
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 208
+        width: 68
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_33
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 208
+        width: 47
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_34
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 210
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_35
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 206
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_36
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 209
+        width: 89
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_37
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 209
+        width: 74
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_38
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 200
+        width: 46
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_39
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 208
+        width: 52
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_48
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 29
+        width: 63
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_49
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 30
+        width: 61
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_50
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 39
+        width: 55
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_51
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 38
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_16
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 388
+        width: 70
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_17
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 388
+        width: 69
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_18
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 387
+        width: 69
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_19
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 387
+        width: 68
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_20
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 387
+        width: 67
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_21
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 388
+        width: 67
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_22
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 388
+        width: 68
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_23
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 388
+        width: 69
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_47
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 118
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_56
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 6
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_57
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 6
+        width: 27
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_58
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 4
+        width: 37
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_59
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 4
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_60
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 4
+        width: 38
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_61
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 4
+        width: 120
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_62
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 4
+        width: 41
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_63
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 4
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_64
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 4
+        width: 52
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: XCgMund_65
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 6
+        width: 25
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

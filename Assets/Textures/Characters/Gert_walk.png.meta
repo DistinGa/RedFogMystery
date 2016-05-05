@@ -1,0 +1,345 @@
+fileFormatVersion: 2
+guid: a3b4e8315fd8d15468e81b285f7a1f9b
+timeCreated: 1456869300
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Gert_walk_0
+    21300002: Gert_walk_1
+    21300004: Gert_walk_2
+    21300006: Gert_walk_3
+    21300008: Gert_walk_4
+    21300010: Gert_walk_5
+    21300012: Gert_walk_6
+    21300014: Gert_walk_7
+    21300016: Gert_walk_8
+    21300018: Gert_walk_9
+    21300020: Gert_walk_10
+    21300022: Gert_walk_11
+    21300024: Gert_walk_12
+    21300026: Gert_walk_13
+    21300028: Gert_walk_14
+    21300030: Gert_walk_15
+    21300032: Gert_walk_16
+    21300034: Gert_walk_17
+    21300036: Gert_walk_18
+    21300038: Gert_walk_19
+    21300040: Gert_walk_20
+    21300042: Gert_walk_21
+    21300044: Gert_walk_22
+    21300046: Gert_walk_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 256
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Gert_walk_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 147
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 146
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 145
+        width: 25
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 147
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 146
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_5
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 145
+        width: 25
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 97
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_7
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 97
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_8
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 97
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_9
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 97
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_10
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 97
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_11
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 97
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 49
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_13
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 49
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_14
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 49
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_15
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 49
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_16
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 49
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_17
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 49
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_18
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_19
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 3
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_20
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 2
+        width: 25
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_21
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 3
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_22
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 3
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Gert_walk_23
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 2
+        width: 25
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

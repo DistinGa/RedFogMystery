@@ -1,0 +1,253 @@
+fileFormatVersion: 2
+guid: d8670c8631bb98d42b1c439c9b27887f
+timeCreated: 1453366688
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 7TPu8KU_0
+    21300002: 7TPu8KU_1
+    21300004: 7TPu8KU_2
+    21300006: 7TPu8KU_3
+    21300008: 7TPu8KU_4
+    21300010: 7TPu8KU_5
+    21300012: 7TPu8KU_6
+    21300014: 7TPu8KU_7
+    21300016: 7TPu8KU_38
+    21300018: 7TPu8KU_39
+    21300020: 7TPu8KU_40
+    21300022: 7TPu8KU_41
+    21300024: 7TPu8KU_42
+    21300026: 7TPu8KU_48
+    21300028: 7TPu8KU_49
+    21300030: 7TPu8KU_50
+    21300032: 7TPu8KU_51
+    21300034: 7TPu8KU_56
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: 7TPu8KU_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 776
+        width: 87
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 7TPu8KU_1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 776
+        width: 88
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 7TPu8KU_2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 776
+        width: 88
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 7TPu8KU_3
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 776
+        width: 88
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 7TPu8KU_4
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 776
+        width: 88
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 7TPu8KU_5
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 776
+        width: 88
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 7TPu8KU_6
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 776
+        width: 88
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 7TPu8KU_7
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 776
+        width: 88
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 7TPu8KU_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 389
+        width: 89
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 7TPu8KU_39
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 389
+        width: 89
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 7TPu8KU_40
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 390
+        width: 89
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 7TPu8KU_41
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 390
+        width: 89
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 7TPu8KU_42
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 390
+        width: 89
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 7TPu8KU_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 290
+        width: 69
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 7TPu8KU_49
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 290
+        width: 69
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 7TPu8KU_50
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 290
+        width: 74
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 7TPu8KU_51
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 290
+        width: 75
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 7TPu8KU_56
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 291
+        width: 80
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

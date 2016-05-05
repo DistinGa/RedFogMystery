@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &158376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 485184}
+  - 114: {fileID: 11405690}
+  m_Layer: 0
+  m_Name: BaseOfInventar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &485184
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158376}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1601.9598, y: 1401.7566, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11405690
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334d20eb3fe18574db37791648deaecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Items:
+  - Name: Medicine
+    Portrait: {fileID: 21300002, guid: 50e9d2a29e8d540408322cdec33f3d2b, type: 3}
+    Type: 0
+    Description: add 2 hp
+    Count: 0
+    Hp: 2
+    Mhp: 0
+    Mp: 0
+    Mmp: 0
+    Cr: 0
+    Mcr: 0
+    Atk: 0
+    Def: 0
+    Mat: 0
+    Mdf: 0
+    Agi: 0
+  - Name: Mushroom
+    Portrait: {fileID: 21300000, guid: d8670c8631bb98d42b1c439c9b27887f, type: 3}
+    Type: 0
+    Description: Add 1 mp
+    Count: 0
+    Hp: 0
+    Mhp: 0
+    Mp: 2
+    Mmp: 0
+    Cr: 0
+    Mcr: 0
+    Atk: 0
+    Def: 0
+    Mat: 0
+    Mdf: 0
+    Agi: 0
+  - Name: Cow
+    Portrait: {fileID: 21300000, guid: f43a81d205acf8343abfc9aebf4b0a39, type: 3}
+    Type: 0
+    Description: Add 5 hp
+    Count: 0
+    Hp: 5
+    Mhp: 0
+    Mp: 0
+    Mmp: 0
+    Cr: 0
+    Mcr: 0
+    Atk: 0
+    Def: 0
+    Mat: 0
+    Mdf: 0
+    Agi: 0
+  - Name: GoldenKey
+    Portrait: {fileID: 21300000, guid: 45e5afbd6a67aad4fae440385a09113c, type: 3}
+    Type: 3
+    Description: Open doors
+    Count: 0
+    Hp: 0
+    Mhp: 0
+    Mp: 0
+    Mmp: 0
+    Cr: 0
+    Mcr: 0
+    Atk: 0
+    Def: 0
+    Mat: 0
+    Mdf: 0
+    Agi: 0
+  - Name: SilverAxe
+    Portrait: {fileID: 21300000, guid: 9cb877ba59c833143a6916ced4bdec6d, type: 3}
+    Type: 1
+    Description: Add 20 Atk
+    Count: 0
+    Hp: 0
+    Mhp: 0
+    Mp: 0
+    Mmp: 0
+    Cr: 0
+    Mcr: 0
+    Atk: 20
+    Def: 0
+    Mat: 0
+    Mdf: 0
+    Agi: 0
+  - Name: GoldenRing
+    Portrait: {fileID: 21300000, guid: 21bf694d3760f364282de08e41ec5aa1, type: 3}
+    Type: 1
+    Description: Add 20 Mp
+    Count: 0
+    Hp: 0
+    Mhp: 0
+    Mp: 20
+    Mmp: 0
+    Cr: 0
+    Mcr: 0
+    Atk: 0
+    Def: 0
+    Mat: 0
+    Mdf: 0
+    Agi: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 158376}
+  m_IsPrefabParent: 1

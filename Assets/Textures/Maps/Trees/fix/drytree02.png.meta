@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: 691f75af2a4dc89459592218e70c5ad6
+timeCreated: 1461699931
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: drytree02_0
+    21300002: drytree02_1
+    21300004: drytree02_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: drytree02_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 44, y: 57}
+        - {x: 52, y: 63}
+        - {x: 52, y: 66}
+        - {x: 50, y: 68}
+        - {x: 56, y: 75}
+        - {x: 41, y: 117}
+        - {x: 30, y: 120}
+        - {x: -10, y: 120}
+        - {x: -21, y: 116}
+        - {x: -42, y: 90}
+        - {x: -41, y: 80}
+        - {x: -39, y: 73}
+        - {x: -42, y: 77}
+        - {x: -56, y: 81}
+        - {x: -56, y: 0}
+        - {x: 58, y: 0}
+        - {x: 58, y: 40}
+        - {x: 51, y: 61}
+    - name: drytree02_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38, y: 99}
+        - {x: 32, y: 96}
+        - {x: 35, y: 98}
+        - {x: 37, y: 99}
+        - {x: 49, y: 113}
+        - {x: 31, y: 120}
+        - {x: 5, y: 120}
+        - {x: 7, y: 114}
+        - {x: 10, y: 103}
+        - {x: 5, y: 98}
+        - {x: 9, y: 102}
+        - {x: 10, y: 104}
+        - {x: 2, y: 120}
+        - {x: -3, y: 120}
+        - {x: -10, y: 118}
+        - {x: -20, y: 115}
+        - {x: -27, y: 100}
+        - {x: -21, y: 94}
+        - {x: -11, y: 91}
+        - {x: -15, y: 85}
+        - {x: -17, y: 90}
+        - {x: -22, y: 95}
+        - {x: -24, y: 95}
+        - {x: -26, y: 93}
+        - {x: -26, y: 91}
+        - {x: -30, y: 93}
+        - {x: -33, y: 92}
+        - {x: -33, y: 89}
+        - {x: -37, y: 104}
+        - {x: -57, y: 75}
+        - {x: -57, y: 5}
+        - {x: -23, y: 0}
+        - {x: 58, y: 0}
+        - {x: 58, y: 84}
+        - {x: 42, y: 104}
+    - name: drytree02_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 43, y: 75}
+        - {x: 41, y: 74}
+        - {x: 42, y: 75}
+        - {x: 47, y: 76}
+        - {x: 54, y: 79}
+        - {x: 48, y: 93}
+        - {x: 44, y: 91}
+        - {x: 38, y: 85}
+        - {x: 35, y: 88}
+        - {x: 33, y: 88}
+        - {x: 30, y: 87}
+        - {x: 24, y: 86}
+        - {x: 22, y: 86}
+        - {x: 20, y: 84}
+        - {x: 20, y: 82}
+        - {x: 10, y: 75}
+        - {x: 21, y: 86}
+        - {x: 23, y: 86}
+        - {x: 27, y: 88}
+        - {x: 34, y: 88}
+        - {x: 39, y: 87}
+        - {x: 41, y: 90}
+        - {x: 43, y: 98}
+        - {x: 37, y: 100}
+        - {x: 25, y: 100}
+        - {x: 22, y: 98}
+        - {x: 25, y: 101}
+        - {x: 29, y: 100}
+        - {x: 33, y: 100}
+        - {x: 37, y: 103}
+        - {x: 36, y: 115}
+        - {x: 33, y: 116}
+        - {x: 28, y: 112}
+        - {x: 26, y: 120}
+        - {x: -41, y: 120}
+        - {x: -57, y: 62}
+        - {x: -57, y: 4}
+        - {x: -24, y: 0}
+        - {x: 57, y: 0}
+        - {x: 57, y: 49}
+        - {x: 51, y: 67}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
