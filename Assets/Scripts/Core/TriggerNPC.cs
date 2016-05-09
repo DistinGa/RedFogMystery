@@ -13,8 +13,10 @@ public class TriggerNPC : TriggerBase
     base.Start();
     previousPosition = transform.position;
     thisAnimator = GetComponent<Animator>();
-    if (thisAnimator != null)
-      thisAnimator.speed = Random.value * 0.5f + 0.5f;
+    //DV
+    //if (thisAnimator != null)
+    //  thisAnimator.speed = Random.value * 0.5f + 0.5f;
+    //DV
   }
 
   protected override void SetDialog(int line)
@@ -51,18 +53,30 @@ public class TriggerNPC : TriggerBase
   protected override void Update()
   {
     base.Update();
-  }
 
-  private void FixedUpdate()
-  {
     if (!isRotateToCharacter)
     {
-      bodyAnimator.SetFloat("SpeedX", transform.position.x - previousPosition.x);
-      bodyAnimator.SetFloat("SpeedY", transform.position.y - previousPosition.y);
+        bodyAnimator.SetFloat("SpeedX", transform.position.x - previousPosition.x);
+        bodyAnimator.SetFloat("SpeedY", transform.position.y - previousPosition.y);
     }
     bodyAnimator.SetBool("Running", previousPosition != transform.position);
-    previousPosition = transform.position;
-  }
+        bodyAnimator.SetFloat("Speed", Mathf.Abs((previousPosition - transform.position).magnitude)/Time.deltaTime);
+        previousPosition = transform.position;
+    }
+
+  //DV
+  //  private void FixedUpdate()
+  //{
+  //  if (!isRotateToCharacter)
+  //  {
+  //    bodyAnimator.SetFloat("SpeedX", transform.position.x - previousPosition.x);
+  //    bodyAnimator.SetFloat("SpeedY", transform.position.y - previousPosition.y);
+  //  }
+  //  bodyAnimator.SetBool("Running", previousPosition != transform.position);
+  //  bodyAnimator.SetFloat("Speed", Mathf.Abs((previousPosition - transform.position).magnitude)/Time.fixedDeltaTime);
+  //  previousPosition = transform.position;
+  //}
+  //DV
 
   protected override void OnCharacterTriggerEnter()
   {

@@ -425,11 +425,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 429642, guid: f64748629cc6d034ba35c9d86b3aa4a8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 930.3
+      value: 930
       objectReference: {fileID: 0}
     - target: {fileID: 429642, guid: f64748629cc6d034ba35c9d86b3aa4a8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -824.4
+      value: -824
       objectReference: {fileID: 0}
     - target: {fileID: 429642, guid: f64748629cc6d034ba35c9d86b3aa4a8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1397,7 +1397,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 350644916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 752, y: -879.5, z: 0}
+  m_LocalPosition: {x: 752, y: -879, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1627548399}
@@ -1838,7 +1838,6 @@ GameObject:
   - 4: {fileID: 499622260}
   - 212: {fileID: 499622262}
   - 95: {fileID: 499622261}
-  - 114: {fileID: 499622263}
   - 58: {fileID: 499622264}
   - 114: {fileID: 499622265}
   m_Layer: 0
@@ -1909,23 +1908,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!114 &499622263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 499622259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 367292982c02e274caebd4b3f1b91b71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Type: 1
-  currentStep: 1
-  textAssetName: Path
-  changeTriggers: []
-  Portrait: {fileID: 0}
-  bodyAnimator: {fileID: 499622261}
 --- !u!58 &499622264
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2022,7 +2004,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 527933618}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1005.9, y: -919.4, z: 0}
+  m_LocalPosition: {x: 1006, y: -919, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1627548399}
@@ -2983,7 +2965,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &824087332
 GameObject:
   m_ObjectHideFlags: 0
@@ -4241,7 +4223,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1118877171}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 729.4, y: -895.4, z: 0}
+  m_LocalPosition: {x: 729, y: -895, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1256250534}
@@ -4356,7 +4338,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1161975662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1001.1, y: -799, z: 0}
+  m_LocalPosition: {x: 1001, y: -799, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1627548399}
@@ -4777,6 +4759,10 @@ Prefab:
       propertyPath: Map
       value: 
       objectReference: {fileID: 817458478}
+    - target: {fileID: 11443720, guid: 26425cd0ba5875345b009b64a01c08fc, type: 2}
+      propertyPath: SlideFactor
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 26425cd0ba5875345b009b64a01c08fc, type: 2}
   m_IsPrefabParent: 0
@@ -4861,7 +4847,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1256250533}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.8, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1118877172}
@@ -5797,7 +5783,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1487903097}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1045.5, y: -883.3, z: 0}
+  m_LocalPosition: {x: 1046, y: -883, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1627548399}
@@ -6707,7 +6693,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1645440974}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 973.5, y: -888, z: 0}
+  m_LocalPosition: {x: 973, y: -888, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1627548399}
@@ -6847,7 +6833,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1658200650}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1004.6, y: -856.8, z: 0}
+  m_LocalPosition: {x: 1005, y: -857, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1627548399}
@@ -8299,7 +8285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2023510106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8648,7 +8634,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2096908823}
   - 95: {fileID: 2096908825}
-  - 114: {fileID: 2096908824}
+  - 114: {fileID: 2096908826}
   m_Layer: 0
   m_Name: Klaus
   m_TagString: SavePosition
@@ -8663,28 +8649,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2096908822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1003, y: -534.3, z: 0}
+  m_LocalPosition: {x: 1003, y: -534, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 499622260}
   m_Father: {fileID: 1627548399}
   m_RootOrder: 7
---- !u!114 &2096908824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11494834, guid: 81649ee94d610c84da0b1a2a1b7d9a5d,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2096908822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc453f204cb3c7a40840800e1d832e72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Type: 0
-  currentStep: 1
-  textAssetName: Klaus
-  changeTriggers: []
 --- !u!95 &2096908825
 Animator:
   serializedVersion: 3
@@ -8703,6 +8673,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &2096908826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096908822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 367292982c02e274caebd4b3f1b91b71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 0
+  currentStep: 1
+  textAssetName: Klaus
+  changeTriggers: []
+  Portrait: {fileID: 21300000, guid: 7c12c2433e1a5be4c9d44575b1ef52c2, type: 3}
+  bodyAnimator: {fileID: 499622261}
 --- !u!1 &2107255238
 GameObject:
   m_ObjectHideFlags: 0
