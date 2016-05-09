@@ -8,10 +8,6 @@ public class TriggerNPC : TriggerBase
   private Vector3 previousPosition = Vector3.zero;
   private bool isRotateToCharacter = false;
 
-  //DV{
-  public SpriteRenderer CharSpriteRenderer;
-  //DV}
-
     protected override void Start()
   {
     base.Start();
@@ -55,9 +51,6 @@ public class TriggerNPC : TriggerBase
   protected override void Update()
   {
     base.Update();
-    //DV{
-    CharSpriteRenderer.sortingOrder = (int)(-transform.position.y*2);
-    //DV}    
   }
 
   private void FixedUpdate()

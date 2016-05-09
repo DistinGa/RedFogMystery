@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class SortingLayer : MonoBehaviour {
+    public bool Dyn;
     SpriteRenderer SprRenderer;
 
     void Start () {
@@ -10,6 +11,7 @@ public class SortingLayer : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        SprRenderer.sortingOrder = (int)(-transform.position.y * 2);
+        if(Dyn)
+            SprRenderer.sortingOrder = (int)(-transform.position.y * 2);
     }
 }

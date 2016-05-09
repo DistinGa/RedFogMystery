@@ -10,9 +10,10 @@ GameObject:
   - 4: {fileID: 410448}
   - 212: {fileID: 21206186}
   - 95: {fileID: 9529828}
+  - 114: {fileID: 11435468}
   - 114: {fileID: 11468618}
   m_Layer: 0
-  m_Name: grass10
+  m_Name: raregrass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164214}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1088.8197, y: -456.1527, z: 0}
+  m_LocalPosition: {x: 1202.9, y: -438.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -39,7 +40,7 @@ Animator:
   m_GameObject: {fileID: 164214}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: 67c3969232fcd1b47931a19a4f2008b5, type: 2}
+  m_Controller: {fileID: 22100000, guid: f194067adca2bbb46b1a1c6d0d9baf5b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -47,6 +48,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11435468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d869dfd283cb144da1dff91f0549845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11468618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -82,9 +94,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -231611137
+  m_SortingLayerID: 103704465
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: cea2b914855b5da4c91bd13779091d99, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4bd0f504361595f4c90ad9912bc06290, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

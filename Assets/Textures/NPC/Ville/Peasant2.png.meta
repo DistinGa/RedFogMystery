@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a91e822c540672543a62185abb48876f
-timeCreated: 1434289351
+timeCreated: 1462780449
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -70,15 +70,15 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -13, y: 23}
-        - {x: -14, y: 21}
-        - {x: -14, y: -24}
-        - {x: 8, y: -24}
-        - {x: 14, y: -20}
-        - {x: 14, y: 23}
+      - - {x: -13, y: 44.600006}
+        - {x: -14, y: 42.600006}
+        - {x: -14, y: -2.399994}
+        - {x: 8, y: -2.399994}
+        - {x: 14, y: 1.6000061}
+        - {x: 14, y: 44.600006}
     - name: Peasant2_1_0
       rect:
         serializedVersion: 2
@@ -87,15 +87,15 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -13, y: 23}
-        - {x: -13, y: -24}
-        - {x: 11, y: -24}
-        - {x: 13, y: -22}
-        - {x: 13, y: 21}
-        - {x: 7, y: 23}
+      - - {x: -13, y: 44.6}
+        - {x: -13, y: -2.4000015}
+        - {x: 11, y: -2.4000015}
+        - {x: 13, y: -0.40000153}
+        - {x: 13, y: 42.6}
+        - {x: 7, y: 44.6}
     - name: Peasant2_2_0
       rect:
         serializedVersion: 2
@@ -104,17 +104,17 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -7, y: 23}
-        - {x: -14, y: 20}
-        - {x: -14, y: -20}
-        - {x: -5, y: -24}
-        - {x: 9, y: -24}
-        - {x: 12, y: -17}
-        - {x: 12, y: 20}
-        - {x: 10, y: 23}
+      - - {x: -7, y: 44.6}
+        - {x: -14, y: 41.6}
+        - {x: -14, y: 1.5999985}
+        - {x: -5, y: -2.4000015}
+        - {x: 9, y: -2.4000015}
+        - {x: 12, y: 4.5999985}
+        - {x: 12, y: 41.6}
+        - {x: 10, y: 44.6}
     - name: Peasant2_3_0
       rect:
         serializedVersion: 2
@@ -123,15 +123,15 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -13, y: 23}
-        - {x: -14, y: 17}
-        - {x: -14, y: -23}
-        - {x: -11, y: -24}
-        - {x: 14, y: -24}
-        - {x: 14, y: 23}
+      - - {x: -13, y: 44.6}
+        - {x: -14, y: 38.6}
+        - {x: -14, y: -1.3999996}
+        - {x: -11, y: -2.3999996}
+        - {x: 14, y: -2.3999996}
+        - {x: 14, y: 44.6}
     - name: Peasant2_0_1
       rect:
         serializedVersion: 2
@@ -140,16 +140,16 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -10, y: 24}
-        - {x: -13, y: 16}
-        - {x: -14, y: 6}
-        - {x: -14, y: -22}
-        - {x: -10, y: -23}
-        - {x: 15, y: -23}
-        - {x: 15, y: 24}
+      - - {x: -10, y: 45.600006}
+        - {x: -13, y: 37.600006}
+        - {x: -14, y: 27.600006}
+        - {x: -14, y: -0.3999939}
+        - {x: -10, y: -1.3999939}
+        - {x: 15, y: -1.3999939}
+        - {x: 15, y: 45.600006}
     - name: Peasant2_1_1
       rect:
         serializedVersion: 2
@@ -158,17 +158,17 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -11, y: 24}
-        - {x: -13, y: 22}
-        - {x: -13, y: -19}
-        - {x: -9, y: -23}
-        - {x: 10, y: -23}
-        - {x: 13, y: -22}
-        - {x: 13, y: 23}
-        - {x: 8, y: 24}
+      - - {x: -11, y: 45.6}
+        - {x: -13, y: 43.6}
+        - {x: -13, y: 2.5999985}
+        - {x: -9, y: -1.4000015}
+        - {x: 10, y: -1.4000015}
+        - {x: 13, y: -0.40000153}
+        - {x: 13, y: 44.6}
+        - {x: 8, y: 45.6}
     - name: Peasant2_2_1
       rect:
         serializedVersion: 2
@@ -177,18 +177,18 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -8, y: 24}
-        - {x: -13, y: 18}
-        - {x: -14, y: -1}
-        - {x: -14, y: -20}
-        - {x: -12, y: -23}
-        - {x: 7, y: -23}
-        - {x: 12, y: -21}
-        - {x: 12, y: 22}
-        - {x: 7, y: 24}
+      - - {x: -8, y: 45.6}
+        - {x: -13, y: 39.6}
+        - {x: -14, y: 20.599998}
+        - {x: -14, y: 1.5999985}
+        - {x: -12, y: -1.4000015}
+        - {x: 7, y: -1.4000015}
+        - {x: 12, y: 0.5999985}
+        - {x: 12, y: 43.6}
+        - {x: 7, y: 45.6}
     - name: Peasant2_3_1
       rect:
         serializedVersion: 2
@@ -197,16 +197,16 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -10, y: 24}
-        - {x: -13, y: 16}
-        - {x: -14, y: 6}
-        - {x: -14, y: -22}
-        - {x: -10, y: -23}
-        - {x: 15, y: -23}
-        - {x: 15, y: 24}
+      - - {x: -10, y: 45.6}
+        - {x: -13, y: 37.6}
+        - {x: -14, y: 27.6}
+        - {x: -14, y: -0.39999962}
+        - {x: -10, y: -1.3999996}
+        - {x: 15, y: -1.3999996}
+        - {x: 15, y: 45.6}
     - name: Peasant2_0_2
       rect:
         serializedVersion: 2
@@ -215,17 +215,17 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -6, y: 23}
-        - {x: -13, y: 20}
-        - {x: -13, y: -20}
-        - {x: -12, y: -24}
-        - {x: 10, y: -24}
-        - {x: 15, y: -18}
-        - {x: 15, y: 20}
-        - {x: 11, y: 23}
+      - - {x: -6, y: 44.600006}
+        - {x: -13, y: 41.600006}
+        - {x: -13, y: 1.6000061}
+        - {x: -12, y: -2.399994}
+        - {x: 10, y: -2.399994}
+        - {x: 15, y: 3.600006}
+        - {x: 15, y: 41.600006}
+        - {x: 11, y: 44.600006}
     - name: Peasant2_1_2
       rect:
         serializedVersion: 2
@@ -234,16 +234,16 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -11, y: 23}
-        - {x: -13, y: 21}
-        - {x: -13, y: -21}
-        - {x: -10, y: -24}
-        - {x: 13, y: -24}
-        - {x: 13, y: 22}
-        - {x: 8, y: 23}
+      - - {x: -11, y: 44.6}
+        - {x: -13, y: 42.6}
+        - {x: -13, y: 0.5999985}
+        - {x: -10, y: -2.4000015}
+        - {x: 13, y: -2.4000015}
+        - {x: 13, y: 43.6}
+        - {x: 8, y: 44.6}
     - name: Peasant2_2_2
       rect:
         serializedVersion: 2
@@ -252,20 +252,20 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 12, y: 19}
-        - {x: 6, y: 23}
-        - {x: -4, y: 23}
-        - {x: -8, y: 22}
-        - {x: -14, y: 21}
-        - {x: -14, y: -24}
-        - {x: 3, y: -24}
-        - {x: 6, y: -22}
-        - {x: 12, y: -19}
-        - {x: 11, y: -10}
-        - {x: 12, y: 1}
+      - - {x: 12, y: 40.6}
+        - {x: 6, y: 44.6}
+        - {x: -4, y: 44.6}
+        - {x: -8, y: 43.6}
+        - {x: -14, y: 42.6}
+        - {x: -14, y: -2.4000015}
+        - {x: 3, y: -2.4000015}
+        - {x: 6, y: -0.40000153}
+        - {x: 12, y: 2.5999985}
+        - {x: 11, y: 11.599998}
+        - {x: 12, y: 22.599998}
     - name: Peasant2_3_2
       rect:
         serializedVersion: 2
@@ -274,17 +274,17 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -3, y: 23}
-        - {x: -8, y: 22}
-        - {x: -13, y: 18}
-        - {x: -13, y: -21}
-        - {x: -9, y: -24}
-        - {x: 15, y: -24}
-        - {x: 15, y: 20}
-        - {x: 8, y: 23}
+      - - {x: -3, y: 44.6}
+        - {x: -8, y: 43.6}
+        - {x: -13, y: 39.6}
+        - {x: -13, y: 0.6000004}
+        - {x: -9, y: -2.3999996}
+        - {x: 15, y: -2.3999996}
+        - {x: 15, y: 41.6}
+        - {x: 8, y: 44.6}
     outline: []
   spritePackingTag: 
   userData: 

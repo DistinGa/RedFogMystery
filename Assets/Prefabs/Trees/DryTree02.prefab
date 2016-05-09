@@ -1,45 +1,45 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &164214
+--- !u!1 &116746
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 410448}
-  - 212: {fileID: 21206186}
-  - 95: {fileID: 9529828}
-  - 114: {fileID: 11468618}
+  - 4: {fileID: 456604}
+  - 212: {fileID: 21235124}
+  - 95: {fileID: 9506216}
+  - 114: {fileID: 11454162}
   m_Layer: 0
-  m_Name: grass10
+  m_Name: DryTree02_up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &410448
+--- !u!4 &456604
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 164214}
+  m_GameObject: {fileID: 116746}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1088.8197, y: -456.1527, z: 0}
+  m_LocalPosition: {x: 2105.8315, y: -715.39746, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!95 &9529828
+--- !u!95 &9506216
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 164214}
+  m_GameObject: {fileID: 116746}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: 67c3969232fcd1b47931a19a4f2008b5, type: 2}
+  m_Controller: {fileID: 22100000, guid: eea9a26914526454a9f4f0d000a7dc7b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -47,23 +47,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11468618
+--- !u!114 &11454162
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 164214}
+  m_GameObject: {fileID: 116746}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09c22919ee7d2c2448cb2425ee6d3c0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!212 &21206186
+--- !u!212 &21235124
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 164214}
+  m_GameObject: {fileID: 116746}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -82,10 +82,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -231611137
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: cea2b914855b5da4c91bd13779091d99, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_SortingLayerID: -515988577
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 691f75af2a4dc89459592218e70c5ad6, type: 3}
+  m_Color: {r: 0.78431374, g: 0.88235295, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!1001 &100100000
@@ -97,5 +97,5 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 164214}
+  m_RootGameObject: {fileID: 116746}
   m_IsPrefabParent: 1

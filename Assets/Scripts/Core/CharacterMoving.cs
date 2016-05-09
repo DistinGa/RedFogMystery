@@ -20,7 +20,6 @@ public class CharacterMoving : MonoBehaviour
   private bool down = false;
 
   //DV{
-  public SpriteRenderer CharSpriteRenderer;
   private CircleCollider2D selfCollider;
   //DV}
 
@@ -29,7 +28,6 @@ public class CharacterMoving : MonoBehaviour
         thisAnimator = GetComponent<Animator>();
         GetComponent<Hero>().ConnectToPartyGui();    
         //DV{
-        CharSpriteRenderer = GetComponent<SpriteRenderer>();
         selfCollider = GetComponent<CircleCollider2D>();
         //DV}
     }
@@ -37,7 +35,6 @@ public class CharacterMoving : MonoBehaviour
     
     void Update()
     {
-        CharSpriteRenderer.sortingOrder = (int)(-transform.position.y * 2);
 
         if (KeyboardControl && Block)
         {

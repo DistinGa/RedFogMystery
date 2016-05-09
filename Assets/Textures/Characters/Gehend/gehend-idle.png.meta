@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 24f125be9bec9bf48be7e87f56343e70
-timeCreated: 1462126295
+timeCreated: 1462781175
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -64,18 +64,18 @@ TextureImporter:
         y: 144
         width: 32
         height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -9, y: 48}
-        - {x: -15, y: 47}
-        - {x: -15, y: 0}
-        - {x: 8, y: 0}
-        - {x: 15, y: 2}
-        - {x: 16, y: 5}
-        - {x: 16, y: 36}
-        - {x: 13, y: 48}
+      - - {x: -9, y: 45.600006}
+        - {x: -15, y: 44.600006}
+        - {x: -15, y: -2.399994}
+        - {x: 8, y: -2.399994}
+        - {x: 15, y: -0.3999939}
+        - {x: 16, y: 2.600006}
+        - {x: 16, y: 33.600006}
+        - {x: 13, y: 45.600006}
     - name: gehend-idle_1
       rect:
         serializedVersion: 2
@@ -83,18 +83,18 @@ TextureImporter:
         y: 144
         width: 32
         height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -9, y: 48}
-        - {x: -15, y: 47}
-        - {x: -15, y: 0}
-        - {x: 8, y: 0}
-        - {x: 15, y: 2}
-        - {x: 16, y: 5}
-        - {x: 16, y: 36}
-        - {x: 13, y: 48}
+      - - {x: -9, y: 45.600006}
+        - {x: -15, y: 44.600006}
+        - {x: -15, y: -2.399994}
+        - {x: 8, y: -2.399994}
+        - {x: 15, y: -0.3999939}
+        - {x: 16, y: 2.600006}
+        - {x: 16, y: 33.600006}
+        - {x: 13, y: 45.600006}
     - name: gehend-idle_2
       rect:
         serializedVersion: 2
@@ -102,19 +102,19 @@ TextureImporter:
         y: 96
         width: 32
         height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -16, y: 48}
-        - {x: -16, y: 23}
-        - {x: -13, y: 4}
-        - {x: -8, y: 1}
-        - {x: -5, y: 0}
-        - {x: 7, y: 0}
-        - {x: 14, y: 3}
-        - {x: 16, y: 16}
-        - {x: 16, y: 48}
+      - - {x: -16, y: 45.6}
+        - {x: -16, y: 20.599998}
+        - {x: -13, y: 1.5999985}
+        - {x: -8, y: -1.4000015}
+        - {x: -5, y: -2.4000015}
+        - {x: 7, y: -2.4000015}
+        - {x: 14, y: 0.5999985}
+        - {x: 16, y: 13.599998}
+        - {x: 16, y: 45.6}
     - name: gehend-idle_3
       rect:
         serializedVersion: 2
@@ -122,19 +122,19 @@ TextureImporter:
         y: 96
         width: 32
         height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -16, y: 48}
-        - {x: -16, y: 23}
-        - {x: -13, y: 4}
-        - {x: -8, y: 1}
-        - {x: -5, y: 0}
-        - {x: 7, y: 0}
-        - {x: 14, y: 3}
-        - {x: 16, y: 16}
-        - {x: 16, y: 48}
+      - - {x: -16, y: 45.6}
+        - {x: -16, y: 20.599998}
+        - {x: -13, y: 1.5999985}
+        - {x: -8, y: -1.4000015}
+        - {x: -5, y: -2.4000015}
+        - {x: 7, y: -2.4000015}
+        - {x: 14, y: 0.5999985}
+        - {x: 16, y: 13.599998}
+        - {x: 16, y: 45.6}
     - name: gehend-idle_4
       rect:
         serializedVersion: 2
@@ -142,16 +142,16 @@ TextureImporter:
         y: 48
         width: 32
         height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -16, y: 48}
-        - {x: -16, y: 1}
-        - {x: -13, y: 0}
-        - {x: 13, y: 0}
-        - {x: 16, y: 6}
-        - {x: 16, y: 48}
+      - - {x: -16, y: 45.6}
+        - {x: -16, y: -1.4000015}
+        - {x: -13, y: -2.4000015}
+        - {x: 13, y: -2.4000015}
+        - {x: 16, y: 3.5999985}
+        - {x: 16, y: 45.6}
     - name: gehend-idle_5
       rect:
         serializedVersion: 2
@@ -159,16 +159,16 @@ TextureImporter:
         y: 48
         width: 32
         height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -16, y: 48}
-        - {x: -16, y: 1}
-        - {x: -13, y: 0}
-        - {x: 13, y: 0}
-        - {x: 16, y: 6}
-        - {x: 16, y: 48}
+      - - {x: -16, y: 45.6}
+        - {x: -16, y: -1.4000015}
+        - {x: -13, y: -2.4000015}
+        - {x: 13, y: -2.4000015}
+        - {x: 16, y: 3.5999985}
+        - {x: 16, y: 45.6}
     - name: gehend-idle_6
       rect:
         serializedVersion: 2
@@ -176,20 +176,20 @@ TextureImporter:
         y: 0
         width: 32
         height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 15, y: 44}
-        - {x: 13, y: 48}
-        - {x: -13, y: 48}
-        - {x: -15, y: 39}
-        - {x: -15, y: 7}
-        - {x: -9, y: 1}
-        - {x: 7, y: 1}
-        - {x: 12, y: 5}
-        - {x: 16, y: 17}
-        - {x: 16, y: 33}
+      - - {x: 15, y: 41.6}
+        - {x: 13, y: 45.6}
+        - {x: -13, y: 45.6}
+        - {x: -15, y: 36.6}
+        - {x: -15, y: 4.6000004}
+        - {x: -9, y: -1.3999996}
+        - {x: 7, y: -1.3999996}
+        - {x: 12, y: 2.6000004}
+        - {x: 16, y: 14.6}
+        - {x: 16, y: 30.6}
     outline: []
   spritePackingTag: 
   userData: 

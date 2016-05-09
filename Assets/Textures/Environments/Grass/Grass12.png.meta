@@ -1,12 +1,11 @@
 fileFormatVersion: 2
-guid: 43a5c86550b69d94e9a14a6fb7741c5d
-timeCreated: 1457982718
+guid: 2fb8098f0149b2f4aaf8d93fe8948b35
+timeCreated: 1462720840
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: tree12_0
-    21300002: tree12_1
-    21300004: tree12_Down
+    21300000: Grass12_0
+    21300002: Grass12_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -29,8 +28,8 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -3
-  maxTextureSize: 512
+  textureFormat: -2
+  maxTextureSize: 64
   textureSettings:
     filterMode: 0
     aniso: 16
@@ -53,65 +52,45 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: tree12_0
+    - name: Grass12_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 24
-        width: 160
-        height: 168
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 76, y: 9}
-        - {x: 40, y: 74}
-        - {x: 10, y: 84}
-        - {x: -24, y: 84}
-        - {x: -76, y: 24}
-        - {x: -76, y: -61}
-        - {x: -67, y: -69}
-        - {x: -34, y: -60}
-        - {x: -13, y: -84}
-        - {x: 6, y: -84}
-        - {x: 48, y: -69}
-        - {x: 68, y: -55}
-        - {x: 76, y: -47}
-    - name: tree12_1
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 24
-        width: 160
-        height: 168
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 44, y: 45}
-        - {x: 40, y: 44}
-        - {x: 40, y: 48}
-        - {x: 34, y: 73}
-        - {x: 8, y: 84}
-        - {x: -25, y: 84}
-        - {x: -76, y: 20}
-        - {x: -76, y: -76}
-        - {x: -65, y: -84}
-        - {x: 31, y: -84}
-        - {x: 76, y: -53}
-        - {x: 76, y: 22}
-        - {x: 50, y: 51}
-    - name: tree12_Down
-      rect:
-        serializedVersion: 2
-        x: 65
         y: 0
-        width: 22
-        height: 24
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 4, y: 14}
+        - {x: -8, y: 14}
+        - {x: -14, y: 9}
+        - {x: -14, y: -6}
+        - {x: -11, y: -14}
+        - {x: 9, y: -14}
+        - {x: 15, y: -8}
+        - {x: 15, y: 6}
+        - {x: 13, y: 11}
+    - name: Grass12_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 14}
+        - {x: -13, y: 8}
+        - {x: -13, y: -11}
+        - {x: -8, y: -14}
+        - {x: 4, y: -14}
+        - {x: 14, y: -9}
+        - {x: 14, y: 8}
+        - {x: 5, y: 14}
     outline: []
   spritePackingTag: 
   userData: 

@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 473906}
   - 212: {fileID: 21237074}
   - 95: {fileID: 9544964}
-  - 114: {fileID: 11485628}
   - 114: {fileID: 11489514}
   m_Layer: 0
   m_Name: grass09
@@ -26,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153558}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 226, y: -39, z: 0}
+  m_LocalPosition: {x: 1056.2135, y: -472.45578, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -48,17 +47,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11485628
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 153558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d869dfd283cb144da1dff91f0549845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11489514
 MonoBehaviour:
   m_ObjectHideFlags: 1

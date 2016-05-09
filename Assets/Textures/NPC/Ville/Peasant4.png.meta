@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d955b6988db8f7947a784213bbf9eaea
-timeCreated: 1434289362
+timeCreated: 1462780576
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -70,14 +70,14 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -14, y: 23}
-        - {x: -14, y: -24}
-        - {x: 12, y: -24}
-        - {x: 13, y: -20}
-        - {x: 13, y: 23}
+      - - {x: -14, y: 44.600006}
+        - {x: -14, y: -2.399994}
+        - {x: 12, y: -2.399994}
+        - {x: 13, y: 1.6000061}
+        - {x: 13, y: 44.600006}
     - name: Peasant4_1_0
       rect:
         serializedVersion: 2
@@ -86,18 +86,18 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -4, y: 23}
-        - {x: -10, y: 22}
-        - {x: -13, y: 17}
-        - {x: -13, y: -20}
-        - {x: -9, y: -24}
-        - {x: 8, y: -24}
-        - {x: 13, y: -22}
-        - {x: 13, y: 18}
-        - {x: 8, y: 23}
+      - - {x: -4, y: 44.6}
+        - {x: -10, y: 43.6}
+        - {x: -13, y: 38.6}
+        - {x: -13, y: 1.5999985}
+        - {x: -9, y: -2.4000015}
+        - {x: 8, y: -2.4000015}
+        - {x: 13, y: -0.40000153}
+        - {x: 13, y: 39.6}
+        - {x: 8, y: 44.6}
     - name: Peasant4_2_0
       rect:
         serializedVersion: 2
@@ -106,17 +106,17 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -11, y: 23}
-        - {x: -13, y: 22}
-        - {x: -13, y: -21}
-        - {x: -7, y: -24}
-        - {x: 10, y: -24}
-        - {x: 13, y: -17}
-        - {x: 13, y: 20}
-        - {x: 11, y: 23}
+      - - {x: -11, y: 44.6}
+        - {x: -13, y: 43.6}
+        - {x: -13, y: 0.5999985}
+        - {x: -7, y: -2.4000015}
+        - {x: 10, y: -2.4000015}
+        - {x: 13, y: 4.5999985}
+        - {x: 13, y: 41.6}
+        - {x: 11, y: 44.6}
     - name: Peasant4_3_0
       rect:
         serializedVersion: 2
@@ -125,17 +125,17 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 12, y: 23}
-        - {x: -10, y: 23}
-        - {x: -14, y: 18}
-        - {x: -14, y: -18}
-        - {x: -10, y: -24}
-        - {x: 5, y: -24}
-        - {x: 14, y: -20}
-        - {x: 14, y: 15}
+      - - {x: 12, y: 44.6}
+        - {x: -10, y: 44.6}
+        - {x: -14, y: 39.6}
+        - {x: -14, y: 3.6000004}
+        - {x: -10, y: -2.3999996}
+        - {x: 5, y: -2.3999996}
+        - {x: 14, y: 1.6000004}
+        - {x: 14, y: 36.6}
     - name: Peasant4_0_1
       rect:
         serializedVersion: 2
@@ -144,17 +144,17 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 14, y: 17}
-        - {x: 11, y: 24}
-        - {x: -10, y: 24}
-        - {x: -14, y: 21}
-        - {x: -14, y: -23}
-        - {x: 10, y: -23}
-        - {x: 15, y: -20}
-        - {x: 15, y: 6}
+      - - {x: 14, y: 38.600006}
+        - {x: 11, y: 45.600006}
+        - {x: -10, y: 45.600006}
+        - {x: -14, y: 42.600006}
+        - {x: -14, y: -1.3999939}
+        - {x: 10, y: -1.3999939}
+        - {x: 15, y: 1.6000061}
+        - {x: 15, y: 27.600006}
     - name: Peasant4_1_1
       rect:
         serializedVersion: 2
@@ -163,15 +163,15 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -13, y: 24}
-        - {x: -13, y: -23}
-        - {x: 8, y: -23}
-        - {x: 13, y: -21}
-        - {x: 13, y: 19}
-        - {x: 8, y: 24}
+      - - {x: -13, y: 45.6}
+        - {x: -13, y: -1.4000015}
+        - {x: 8, y: -1.4000015}
+        - {x: 13, y: 0.5999985}
+        - {x: 13, y: 40.6}
+        - {x: 8, y: 45.6}
     - name: Peasant4_2_1
       rect:
         serializedVersion: 2
@@ -180,17 +180,17 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 12, y: 24}
-        - {x: -9, y: 24}
-        - {x: -13, y: 22}
-        - {x: -13, y: -22}
-        - {x: -9, y: -23}
-        - {x: 11, y: -23}
-        - {x: 13, y: -16}
-        - {x: 13, y: 22}
+      - - {x: 12, y: 45.6}
+        - {x: -9, y: 45.6}
+        - {x: -13, y: 43.6}
+        - {x: -13, y: -0.40000153}
+        - {x: -9, y: -1.4000015}
+        - {x: 11, y: -1.4000015}
+        - {x: 13, y: 5.5999985}
+        - {x: 13, y: 43.6}
     - name: Peasant4_3_1
       rect:
         serializedVersion: 2
@@ -199,17 +199,17 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 14, y: 17}
-        - {x: 11, y: 24}
-        - {x: -10, y: 24}
-        - {x: -14, y: 21}
-        - {x: -14, y: -23}
-        - {x: 10, y: -23}
-        - {x: 15, y: -20}
-        - {x: 15, y: 6}
+      - - {x: 14, y: 38.6}
+        - {x: 11, y: 45.6}
+        - {x: -10, y: 45.6}
+        - {x: -14, y: 42.6}
+        - {x: -14, y: -1.3999996}
+        - {x: 10, y: -1.3999996}
+        - {x: 15, y: 1.6000004}
+        - {x: 15, y: 27.6}
     - name: Peasant4_0_2
       rect:
         serializedVersion: 2
@@ -218,14 +218,14 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -12, y: 23}
-        - {x: -12, y: -24}
-        - {x: 15, y: -24}
-        - {x: 15, y: 22}
-        - {x: 13, y: 23}
+      - - {x: -12, y: 44.600006}
+        - {x: -12, y: -2.399994}
+        - {x: 15, y: -2.399994}
+        - {x: 15, y: 43.600006}
+        - {x: 13, y: 44.600006}
     - name: Peasant4_1_2
       rect:
         serializedVersion: 2
@@ -234,17 +234,17 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -3, y: 23}
-        - {x: -10, y: 22}
-        - {x: -13, y: 20}
-        - {x: -13, y: -19}
-        - {x: -12, y: -24}
-        - {x: 13, y: -24}
-        - {x: 13, y: 21}
-        - {x: 9, y: 23}
+      - - {x: -3, y: 44.6}
+        - {x: -10, y: 43.6}
+        - {x: -13, y: 41.6}
+        - {x: -13, y: 2.5999985}
+        - {x: -12, y: -2.4000015}
+        - {x: 13, y: -2.4000015}
+        - {x: 13, y: 42.6}
+        - {x: 9, y: 44.6}
     - name: Peasant4_2_2
       rect:
         serializedVersion: 2
@@ -253,17 +253,17 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -10, y: 23}
-        - {x: -13, y: 19}
-        - {x: -13, y: -23}
-        - {x: -11, y: -24}
-        - {x: 10, y: -24}
-        - {x: 13, y: -20}
-        - {x: 13, y: 20}
-        - {x: 4, y: 23}
+      - - {x: -10, y: 44.6}
+        - {x: -13, y: 40.6}
+        - {x: -13, y: -1.4000015}
+        - {x: -11, y: -2.4000015}
+        - {x: 10, y: -2.4000015}
+        - {x: 13, y: 1.5999985}
+        - {x: 13, y: 41.6}
+        - {x: 4, y: 44.6}
     - name: Peasant4_3_2
       rect:
         serializedVersion: 2
@@ -272,17 +272,17 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -9, y: 23}
-        - {x: -13, y: 16}
-        - {x: -13, y: -23}
-        - {x: -11, y: -24}
-        - {x: 13, y: -24}
-        - {x: 15, y: -12}
-        - {x: 15, y: 19}
-        - {x: 11, y: 23}
+      - - {x: -9, y: 44.6}
+        - {x: -13, y: 37.6}
+        - {x: -13, y: -1.3999996}
+        - {x: -11, y: -2.3999996}
+        - {x: 13, y: -2.3999996}
+        - {x: 15, y: 9.6}
+        - {x: 15, y: 40.6}
+        - {x: 11, y: 44.6}
     outline: []
   spritePackingTag: 
   userData: 

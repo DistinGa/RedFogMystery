@@ -17,6 +17,7 @@ GameObject:
   - 114: {fileID: 11486684}
   - 81: {fileID: 8150672}
   - 114: {fileID: 11411318}
+  - 114: {fileID: 11490826}
   m_Layer: 8
   m_Name: Gehend
   m_TagString: SavePosition
@@ -31,7 +32,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151194}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1737, y: 1263, z: 0}
+  m_LocalPosition: {x: 930.3, y: -824.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -64,7 +65,7 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.5, y: 15}
+  m_Offset: {x: 0.5, y: 13}
   serializedVersion: 2
   m_Radius: 15
 --- !u!81 &8150672
@@ -147,6 +148,18 @@ MonoBehaviour:
     Agi: 2
     Armors: []
   HeroUi: {fileID: 0}
+--- !u!114 &11490826
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d869dfd283cb144da1dff91f0549845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dyn: 1
 --- !u!114 &11499816
 MonoBehaviour:
   m_ObjectHideFlags: 1
