@@ -52,15 +52,16 @@ public class TriggerNPC : TriggerBase
 
   protected override void Update()
   {
-    base.Update();
+        base.Update();
 
-    if (!isRotateToCharacter)
-    {
-        bodyAnimator.SetFloat("SpeedX", transform.position.x - previousPosition.x);
-        bodyAnimator.SetFloat("SpeedY", transform.position.y - previousPosition.y);
-    }
-    bodyAnimator.SetBool("Running", previousPosition != transform.position);
-        bodyAnimator.SetFloat("Speed", Mathf.Abs((previousPosition - transform.position).magnitude)/Time.deltaTime);
+        Vector3 deltaPosition = transform.position - previousPosition;
+        if (!isRotateToCharacter && deltaPosition != Vector3.zero)
+        {
+            bodyAnimator.SetFloat("SpeedX", deltaPosition.x);
+            bodyAnimator.SetFloat("SpeedY", deltaPosition.y);
+        }
+        bodyAnimator.SetBool("Running", previousPosition != transform.position);
+        bodyAnimator.SetFloat("Speed", Mathf.Abs(deltaPosition.magnitude)/Time.deltaTime);
         previousPosition = transform.position;
     }
 
