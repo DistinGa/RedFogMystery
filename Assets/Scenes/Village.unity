@@ -4721,7 +4721,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 424040, guid: 26425cd0ba5875345b009b64a01c08fc, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 33.93
+      value: -522.9
       objectReference: {fileID: 0}
     - target: {fileID: 424040, guid: 26425cd0ba5875345b009b64a01c08fc, type: 2}
       propertyPath: m_LocalPosition.y
@@ -8613,7 +8613,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1

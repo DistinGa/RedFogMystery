@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 
 public class ShowDialog : TriggerBase
 {
@@ -16,5 +17,17 @@ public class ShowDialog : TriggerBase
     {
         base.EndDialog();
         dialogPanel.Hide();
+    }
+
+    protected override void SetDialog(int line)
+    {
+        base.SetDialog(line);
+        if (allBoxes[0, line] != "")
+        {
+            dialogPanel.PortraitImage.enabled = true;
+            dialogPanel.PortraitBackground.enabled = true;
+            int portraitId = Int32.Parse(allBoxes[0, line]);
+            dialogPanel.PortraitImage.sprite = Portrait[portraitId];
+        }
     }
 }
