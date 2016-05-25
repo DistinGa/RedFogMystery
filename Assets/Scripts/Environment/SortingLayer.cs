@@ -7,6 +7,7 @@ public class SortingLayer : MonoBehaviour {
 
     void Start () {
         SprRenderer = GetComponent<SpriteRenderer>();
+        SprRenderer.sortingOrder = (int)(-transform.position.y * 2);
     }
 
     // Update is called once per frame
