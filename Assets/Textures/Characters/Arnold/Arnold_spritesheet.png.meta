@@ -1,0 +1,1004 @@
+fileFormatVersion: 2
+guid: 5e2bd17138de70d45a1de28a6658da1b
+timeCreated: 1464368921
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Arnold_walk_down_0
+    21300002: Arnold_walk_down_1
+    21300004: Arnold_walk_down_2
+    21300006: Arnold_walk_down_3
+    21300008: Arnold_walk_down_4
+    21300010: Arnold_walk_down_5
+    21300012: Arnold_walk_left_0
+    21300014: Arnold_walk_left_1
+    21300016: Arnold_walk_left_2
+    21300018: Arnold_walk_left_3
+    21300020: Arnold_walk_left_4
+    21300022: Arnold_walk_left_5
+    21300024: Arnold_walk_right_0
+    21300026: Arnold_walk_right_1
+    21300028: Arnold_walk_right_2
+    21300030: Arnold_walk_right_3
+    21300032: Arnold_walk_right_4
+    21300034: Arnold_walk_right_5
+    21300036: Arnold_walk_up_0
+    21300038: Arnold_walk_up_1
+    21300040: Arnold_walk_up_2
+    21300042: Arnold_walk_up_3
+    21300044: Arnold_walk_up_4
+    21300046: Arnold_walk_up_5
+    21300048: Arnold_walk_RD_0
+    21300050: Arnold_walk_RD_1
+    21300052: Arnold_walk_RD_2
+    21300054: Arnold_walk_RD_3
+    21300056: Arnold_walk_RD_4
+    21300058: Arnold_walk_RD_5
+    21300060: Arnold_walk_LU_0
+    21300062: Arnold_walk_LU_1
+    21300064: Arnold_walk_LU_2
+    21300066: Arnold_walk_LU_3
+    21300068: Arnold_walk_LU_4
+    21300070: Arnold_walk_LU_5
+    21300072: Arnold_walk_LD(rev)_0
+    21300074: Arnold_walk_LD(rev)_1
+    21300076: Arnold_walk_LD(rev)_2
+    21300078: Arnold_walk_LD(rev)_3
+    21300080: Arnold_walk_LD(rev)_4
+    21300082: Arnold_walk_LD(rev)_5
+    21300084: Arnold_walk_RU(rev)_0
+    21300086: Arnold_walk_RU(rev)_1
+    21300088: Arnold_walk_RU(rev)_2
+    21300090: Arnold_walk_RU(rev)_3
+    21300092: Arnold_walk_RU(rev)_4
+    21300094: Arnold_walk_RU(rev)_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Arnold_walk_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 45.600006}
+        - {x: -15, y: 38.600006}
+        - {x: -15, y: -0.3999939}
+        - {x: -12, y: -1.3999939}
+        - {x: 14, y: -1.3999939}
+        - {x: 16, y: 7.600006}
+        - {x: 16, y: 32.600006}
+        - {x: 11, y: 45.600006}
+    - name: Arnold_walk_down_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 336
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 45.600006}
+        - {x: -15, y: 32.600006}
+        - {x: -15, y: 7.600006}
+        - {x: -13, y: 2.600006}
+        - {x: -5, y: -2.399994}
+        - {x: 7, y: -2.399994}
+        - {x: 15, y: 1.6000061}
+        - {x: 16, y: 11.600006}
+        - {x: 16, y: 45.600006}
+    - name: Arnold_walk_down_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 336
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 29.600006}
+        - {x: 13, y: 45.600006}
+        - {x: -15, y: 45.600006}
+        - {x: -15, y: -1.3999939}
+        - {x: -10, y: -2.399994}
+        - {x: -2, y: -2.399994}
+        - {x: 6, y: -1.3999939}
+        - {x: 9, y: -0.3999939}
+        - {x: 14, y: 1.6000061}
+        - {x: 16, y: 5.600006}
+    - name: Arnold_walk_down_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 336
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 45.600006}
+        - {x: -12, y: 44.600006}
+        - {x: -15, y: 37.600006}
+        - {x: -15, y: 3.600006}
+        - {x: -14, y: -1.3999939}
+        - {x: 14, y: -1.3999939}
+        - {x: 16, y: 1.6000061}
+        - {x: 16, y: 39.600006}
+        - {x: 12, y: 45.600006}
+    - name: Arnold_walk_down_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 336
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 45.600006}
+        - {x: -15, y: 31.600006}
+        - {x: -15, y: -0.3999939}
+        - {x: -12, y: -2.399994}
+        - {x: 16, y: -2.399994}
+        - {x: 16, y: 40.600006}
+        - {x: 12, y: 45.600006}
+    - name: Arnold_walk_down_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 336
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 45.600006}
+        - {x: -8, y: 45.600006}
+        - {x: -13, y: 44.600006}
+        - {x: -15, y: 28.600006}
+        - {x: -15, y: -2.399994}
+        - {x: 11, y: -2.399994}
+        - {x: 14, y: 1.6000061}
+        - {x: 16, y: 18.600006}
+        - {x: 16, y: 27.600006}
+    - name: Arnold_walk_left_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 45.600006}
+        - {x: -12, y: 41.600006}
+        - {x: -12, y: 0.6000061}
+        - {x: -8, y: -1.3999939}
+        - {x: 16, y: -1.3999939}
+        - {x: 16, y: 44.600006}
+        - {x: 11, y: 45.600006}
+    - name: Arnold_walk_left_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 45.600006}
+        - {x: -11, y: 45.600006}
+        - {x: -11, y: 2.600006}
+        - {x: -4, y: -1.3999939}
+        - {x: 12, y: -1.3999939}
+        - {x: 15, y: 3.600006}
+        - {x: 15, y: 40.600006}
+    - name: Arnold_walk_left_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 45.600006}
+        - {x: -12, y: 43.600006}
+        - {x: -12, y: 2.600006}
+        - {x: -8, y: -1.3999939}
+        - {x: 11, y: -1.3999939}
+        - {x: 14, y: -0.3999939}
+        - {x: 14, y: 40.600006}
+        - {x: 10, y: 45.600006}
+    - name: Arnold_walk_left_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 45.600006}
+        - {x: -11, y: 6.600006}
+        - {x: -10, y: -1.3999939}
+        - {x: 15, y: -1.3999939}
+        - {x: 15, y: 34.600006}
+        - {x: 12, y: 45.600006}
+    - name: Arnold_walk_left_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 45.600006}
+        - {x: -11, y: 9.600006}
+        - {x: -9, y: -1.3999939}
+        - {x: 11, y: -1.3999939}
+        - {x: 16, y: 0.6000061}
+        - {x: 16, y: 42.600006}
+        - {x: 14, y: 45.600006}
+    - name: Arnold_walk_left_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 45.600006}
+        - {x: -14, y: 29.600006}
+        - {x: -14, y: 0.6000061}
+        - {x: -9, y: -1.3999939}
+        - {x: 13, y: -1.3999939}
+        - {x: 16, y: 3.600006}
+        - {x: 16, y: 38.600006}
+        - {x: 12, y: 45.600006}
+    - name: Arnold_walk_right_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 42.600006}
+        - {x: -10, y: 42.600006}
+        - {x: -14, y: 32.600006}
+        - {x: -14, y: -2.399994}
+        - {x: 13, y: -2.399994}
+        - {x: 14, y: -1.3999939}
+        - {x: 14, y: 39.600006}
+    - name: Arnold_walk_right_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 43.600006}
+        - {x: -13, y: 36.600006}
+        - {x: -13, y: -2.399994}
+        - {x: 13, y: -2.399994}
+        - {x: 13, y: 43.600006}
+    - name: Arnold_walk_right_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 42.600006}
+        - {x: -12, y: 36.600006}
+        - {x: -12, y: -1.3999939}
+        - {x: -11, y: -2.399994}
+        - {x: 12, y: -2.399994}
+        - {x: 14, y: -1.3999939}
+        - {x: 14, y: 31.600006}
+        - {x: 12, y: 42.600006}
+    - name: Arnold_walk_right_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 44.600006}
+        - {x: -12, y: 38.600006}
+        - {x: -13, y: 32.600006}
+        - {x: -13, y: -2.399994}
+        - {x: 12, y: -2.399994}
+        - {x: 13, y: -1.3999939}
+        - {x: 13, y: 41.600006}
+        - {x: 11, y: 44.600006}
+    - name: Arnold_walk_right_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 240
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 44.600006}
+        - {x: -9, y: 44.600006}
+        - {x: -12, y: 36.600006}
+        - {x: -12, y: -2.399994}
+        - {x: 15, y: -2.399994}
+        - {x: 15, y: 42.600006}
+    - name: Arnold_walk_right_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 240
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 42.600006}
+        - {x: -14, y: 29.600006}
+        - {x: -14, y: -2.399994}
+        - {x: 14, y: -2.399994}
+        - {x: 16, y: 1.6000061}
+        - {x: 16, y: 27.600006}
+        - {x: 12, y: 42.600006}
+    - name: Arnold_walk_up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 45.600006}
+        - {x: -12, y: 44.600006}
+        - {x: -14, y: 33.600006}
+        - {x: -14, y: 1.6000061}
+        - {x: -7, y: -1.3999939}
+        - {x: 13, y: -1.3999939}
+        - {x: 16, y: 1.6000061}
+        - {x: 16, y: 32.600006}
+        - {x: 11, y: 45.600006}
+    - name: Arnold_walk_up_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 45.600006}
+        - {x: -16, y: 34.600006}
+        - {x: -16, y: 7.600006}
+        - {x: -11, y: -2.399994}
+        - {x: 14, y: -2.399994}
+        - {x: 15, y: 0.6000061}
+        - {x: 15, y: 41.600006}
+        - {x: 12, y: 45.600006}
+    - name: Arnold_walk_up_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 45.600006}
+        - {x: -5, y: 45.600006}
+        - {x: -12, y: 44.600006}
+        - {x: -14, y: 31.600006}
+        - {x: -14, y: 3.600006}
+        - {x: -13, y: 0.6000061}
+        - {x: -5, y: -2.399994}
+        - {x: 12, y: -2.399994}
+        - {x: 15, y: 0.6000061}
+        - {x: 15, y: 40.600006}
+    - name: Arnold_walk_up_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 45.600006}
+        - {x: -5, y: 45.600006}
+        - {x: -12, y: 44.600006}
+        - {x: -16, y: 26.600006}
+        - {x: -16, y: 7.600006}
+        - {x: -9, y: -1.3999939}
+        - {x: 7, y: -1.3999939}
+        - {x: 15, y: 1.6000061}
+        - {x: 15, y: 40.600006}
+    - name: Arnold_walk_up_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 45.600006}
+        - {x: -13, y: 37.600006}
+        - {x: -13, y: 1.6000061}
+        - {x: -7, y: -2.399994}
+        - {x: 11, y: -2.399994}
+        - {x: 16, y: -0.3999939}
+        - {x: 16, y: 31.600006}
+        - {x: 12, y: 45.600006}
+    - name: Arnold_walk_up_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 45.600006}
+        - {x: -12, y: 44.600006}
+        - {x: -14, y: 28.600006}
+        - {x: -14, y: -2.399994}
+        - {x: 14, y: -2.399994}
+        - {x: 15, y: 2.600006}
+        - {x: 15, y: 37.600006}
+        - {x: 11, y: 45.600006}
+    - name: Arnold_walk_RD_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 45.600006}
+        - {x: -15, y: 32.600006}
+        - {x: -15, y: -0.3999939}
+        - {x: -14, y: -2.399994}
+        - {x: 8, y: -2.399994}
+        - {x: 15, y: 5.600006}
+        - {x: 15, y: 32.600006}
+        - {x: 10, y: 45.600006}
+    - name: Arnold_walk_RD_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 45.600006}
+        - {x: -15, y: 41.600006}
+        - {x: -15, y: -2.399994}
+        - {x: 8, y: -2.399994}
+        - {x: 12, y: -0.3999939}
+        - {x: 12, y: 42.600006}
+        - {x: 9, y: 45.600006}
+    - name: Arnold_walk_RD_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 45.600006}
+        - {x: -15, y: 36.600006}
+        - {x: -15, y: -2.399994}
+        - {x: 12, y: -2.399994}
+        - {x: 12, y: 44.600006}
+        - {x: 11, y: 45.600006}
+    - name: Arnold_walk_RD_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 45.600006}
+        - {x: -15, y: 41.600006}
+        - {x: -15, y: -2.399994}
+        - {x: 8, y: -2.399994}
+        - {x: 12, y: -0.3999939}
+        - {x: 12, y: 42.600006}
+        - {x: 9, y: 45.600006}
+    - name: Arnold_walk_RD_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 45.600006}
+        - {x: -14, y: 35.600006}
+        - {x: -14, y: -2.399994}
+        - {x: 9, y: -2.399994}
+        - {x: 16, y: 1.6000061}
+        - {x: 16, y: 30.600006}
+        - {x: 11, y: 45.600006}
+    - name: Arnold_walk_RD_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 144
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 45.600006}
+        - {x: -16, y: 31.600006}
+        - {x: -16, y: -2.399994}
+        - {x: 16, y: -2.399994}
+        - {x: 16, y: 45.600006}
+    - name: Arnold_walk_LU_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 44.6}
+        - {x: -15, y: 18.599998}
+        - {x: -15, y: -2.4000015}
+        - {x: 14, y: -2.4000015}
+        - {x: 14, y: 41.6}
+        - {x: 10, y: 44.6}
+    - name: Arnold_walk_LU_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 45.6}
+        - {x: -12, y: 44.6}
+        - {x: -12, y: -0.40000153}
+        - {x: -11, y: -2.4000015}
+        - {x: 13, y: -2.4000015}
+        - {x: 13, y: 41.6}
+        - {x: 9, y: 45.6}
+    - name: Arnold_walk_LU_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 44.6}
+        - {x: -12, y: 43.6}
+        - {x: -12, y: -0.40000153}
+        - {x: -10, y: -2.4000015}
+        - {x: 14, y: -2.4000015}
+        - {x: 14, y: 36.6}
+        - {x: 9, y: 44.6}
+    - name: Arnold_walk_LU_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 45.6}
+        - {x: -12, y: -2.4000015}
+        - {x: 12, y: -2.4000015}
+        - {x: 13, y: 0.5999985}
+        - {x: 13, y: 40.6}
+        - {x: 9, y: 45.6}
+    - name: Arnold_walk_LU_4
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 97
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 44.6}
+        - {x: -13, y: 24.599998}
+        - {x: -13, y: 5.5999985}
+        - {x: -9, y: -2.4000015}
+        - {x: 13, y: -2.4000015}
+        - {x: 16, y: 1.5999985}
+        - {x: 16, y: 42.6}
+        - {x: 10, y: 44.6}
+    - name: Arnold_walk_LU_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 44.6}
+        - {x: -16, y: -2.4000015}
+        - {x: 14, y: -2.4000015}
+        - {x: 14, y: 42.6}
+        - {x: 11, y: 44.6}
+    - name: Arnold_walk_LD(rev)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 45.6}
+        - {x: -15, y: 44.6}
+        - {x: -15, y: 6.5999985}
+        - {x: -14, y: -0.40000153}
+        - {x: -12, y: -2.4000015}
+        - {x: 13, y: -2.4000015}
+        - {x: 16, y: -1.4000015}
+        - {x: 16, y: 40.6}
+        - {x: 11, y: 45.6}
+    - name: Arnold_walk_LD(rev)_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 45.6}
+        - {x: -15, y: 45.6}
+        - {x: -15, y: 6.5999985}
+        - {x: -14, y: -2.4000015}
+        - {x: 13, y: -2.4000015}
+        - {x: 15, y: 0.5999985}
+        - {x: 15, y: 33.6}
+        - {x: 14, y: 40.6}
+    - name: Arnold_walk_LD(rev)_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 0.5999985}
+        - {x: -7, y: -2.4000015}
+        - {x: 16, y: -2.4000015}
+        - {x: 16, y: 30.599998}
+        - {x: 15, y: 40.6}
+        - {x: 10, y: 45.6}
+        - {x: -9, y: 45.6}
+        - {x: -11, y: 44.6}
+    - name: Arnold_walk_LD(rev)_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 45.6}
+        - {x: -11, y: -2.4000015}
+        - {x: 14, y: -2.4000015}
+        - {x: 16, y: 0.5999985}
+        - {x: 16, y: 34.6}
+        - {x: 11, y: 45.6}
+    - name: Arnold_walk_LD(rev)_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 0.5999985}
+        - {x: -7, y: -2.4000015}
+        - {x: 16, y: -2.4000015}
+        - {x: 16, y: 30.599998}
+        - {x: 15, y: 40.6}
+        - {x: 10, y: 45.6}
+        - {x: -9, y: 45.6}
+        - {x: -11, y: 44.6}
+    - name: Arnold_walk_LD(rev)_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 7.5999985}
+        - {x: -13, y: 0.5999985}
+        - {x: -10, y: -2.4000015}
+        - {x: 13, y: -2.4000015}
+        - {x: 16, y: -1.4000015}
+        - {x: 16, y: 36.6}
+        - {x: 15, y: 39.6}
+        - {x: 11, y: 45.6}
+        - {x: -9, y: 45.6}
+        - {x: -14, y: 43.6}
+    - name: Arnold_walk_RU(rev)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 42.6}
+        - {x: 6, y: 44.6}
+        - {x: -7, y: 44.6}
+        - {x: -13, y: 38.6}
+        - {x: -13, y: 2.6000004}
+        - {x: -10, y: -2.3999996}
+        - {x: 11, y: -2.3999996}
+        - {x: 13, y: 0.6000004}
+        - {x: 16, y: 9.6}
+        - {x: 16, y: 28.6}
+    - name: Arnold_walk_RU(rev)_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 22.6}
+        - {x: 11, y: 43.6}
+        - {x: 5, y: 45.6}
+        - {x: -8, y: 45.6}
+        - {x: -14, y: 40.6}
+        - {x: -14, y: -2.3999996}
+        - {x: 11, y: -2.3999996}
+        - {x: 12, y: 0.6000004}
+        - {x: 12, y: 4.6000004}
+        - {x: 15, y: 10.6}
+    - name: Arnold_walk_RU(rev)_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: -0.39999962}
+        - {x: -11, y: -2.3999996}
+        - {x: 13, y: -2.3999996}
+        - {x: 13, y: 38.6}
+        - {x: 12, y: 44.6}
+        - {x: 10, y: 45.6}
+        - {x: -7, y: 45.6}
+        - {x: -12, y: 40.6}
+    - name: Arnold_walk_RU(rev)_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 44.6}
+        - {x: -4, y: 44.6}
+        - {x: -12, y: 38.6}
+        - {x: -13, y: 23.6}
+        - {x: -13, y: 2.6000004}
+        - {x: -10, y: -2.3999996}
+        - {x: 11, y: -2.3999996}
+        - {x: 13, y: -1.3999996}
+        - {x: 13, y: 19.6}
+        - {x: 12, y: 38.6}
+    - name: Arnold_walk_RU(rev)_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 45.6}
+        - {x: -7, y: 45.6}
+        - {x: -12, y: 40.6}
+        - {x: -12, y: 0.6000004}
+        - {x: -8, y: -2.3999996}
+        - {x: 11, y: -2.3999996}
+        - {x: 13, y: 0.6000004}
+        - {x: 13, y: 36.6}
+        - {x: 12, y: 43.6}
+    - name: Arnold_walk_RU(rev)_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 44.6}
+        - {x: -7, y: 44.6}
+        - {x: -13, y: 38.6}
+        - {x: -13, y: -0.39999962}
+        - {x: -12, y: -2.3999996}
+        - {x: 16, y: -2.3999996}
+        - {x: 16, y: 30.6}
+        - {x: 12, y: 42.6}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
