@@ -93,7 +93,7 @@ public class SaveController : MonoBehaviour
       rootNode = doc.DocumentElement;
     }
     rootNode.RemoveAll();
-    Hero[] heroes = FindObjectsOfType<Hero>();
+    Hero[] heroes = GameManager.GM.Heroes;
     foreach (var hero in heroes)
     {
       AddAtribute("Hp", (hero.HeroPropetries.Hp).ToString());//!!!!!!!!!!!!!!!!!!!!
@@ -103,21 +103,21 @@ public class SaveController : MonoBehaviour
       AddAtribute("Co", (hero.HeroPropetries.Cr).ToString());
       AddAtribute("Mco", (hero.HeroPropetries.Mcr).ToString());
       AddAtribute("Agi", (hero.HeroPropetries.Agi).ToString());
-      AddXmlElements(doc, rootNode, "Hero" + hero.name);
+      AddXmlElements(doc, rootNode, "Hero" + hero.HeroPropetries.Name);
     }
-    // Save vagons
-    Party party = FindObjectOfType<Party>();
-    foreach (var vagon in party.Vagons)
-    {
-      AddAtribute("vagon", vagon.gameObject.name);
-      AddXmlElements(doc, rootNode, "Vagon");
-    }
-    AddAtribute("gold", party.Gold.ToString());
-    AddXmlElements(doc, rootNode, "Gold");
-    AddAtribute("timeGame", party.TimeGame.ToString());
-    AddXmlElements(doc, rootNode, "TimeGame");
-    // 
-    doc.Save(filePath);
+    //// Save vagons
+    //Party party = FindObjectOfType<Party>();
+    //foreach (var vagon in party.Vagons)
+    //{
+    //  AddAtribute("vagon", vagon.gameObject.name);
+    //  AddXmlElements(doc, rootNode, "Vagon");
+    //}
+    //AddAtribute("gold", party.Gold.ToString());
+    //AddXmlElements(doc, rootNode, "Gold");
+    //AddAtribute("timeGame", party.TimeGame.ToString());
+    //AddXmlElements(doc, rootNode, "TimeGame");
+    //// 
+    //doc.Save(filePath);
     //Save Inventar    
     doc = new XmlDocument();
     rootNode = null;
@@ -241,10 +241,10 @@ public class SaveController : MonoBehaviour
     {      
       XmlNodeList elemList = null;
       doc.Load(filePath);
-      Hero[] heroes = FindObjectsOfType<Hero>();
+      Hero[] heroes = GameManager.GM.Heroes;
       foreach (var hero in heroes)
       {
-        elemList = doc.GetElementsByTagName("Hero" + hero.name);
+        elemList = doc.GetElementsByTagName("Hero" + hero.HeroPropetries.Name);
         for (int i = 0; i < elemList.Count; i++)
         {
           hero.HeroPropetries.Hp = Convert.ToSingle(elemList[i].Attributes["Hp"].Value, new CultureInfo("en-US"));
@@ -254,26 +254,25 @@ public class SaveController : MonoBehaviour
           hero.HeroPropetries.Cr = Convert.ToSingle(elemList[i].Attributes["Co"].Value, new CultureInfo("en-US"));
           hero.HeroPropetries.Mcr = Convert.ToSingle(elemList[i].Attributes["Mco"].Value, new CultureInfo("en-US"));
           hero.HeroPropetries.Agi = Convert.ToSingle(elemList[i].Attributes["Agi"].Value, new CultureInfo("en-US"));
-          hero.HeroUi.UpdateUI();          
         }
       }
-      //Load vagons
-      Party party = FindObjectOfType<Party>();      
-      elemList = doc.GetElementsByTagName("Vagon");
-      for (int i = 0; i < elemList.Count; i++)
-      {
-        party.Connect(elemList[i].Attributes["vagon"].Value);         
-      }
-      elemList = doc.GetElementsByTagName("Gold");
-      for (int i = 0; i < elemList.Count; i++)
-      {
-        party.Gold = Int32.Parse(elemList[i].Attributes["gold"].Value);
-      }
-      elemList = doc.GetElementsByTagName("TimeGame");
-      for (int i = 0; i < elemList.Count; i++)
-      {
-        party.TimeGame = Convert.ToSingle(elemList[i].Attributes["timeGame"].Value, new CultureInfo("en-US"));
-      }
+      ////Load vagons
+      //Party party = FindObjectOfType<Party>();      
+      //elemList = doc.GetElementsByTagName("Vagon");
+      //for (int i = 0; i < elemList.Count; i++)
+      //{
+      //  party.Connect(elemList[i].Attributes["vagon"].Value);         
+      //}
+      //elemList = doc.GetElementsByTagName("Gold");
+      //for (int i = 0; i < elemList.Count; i++)
+      //{
+      //  party.Gold = Int32.Parse(elemList[i].Attributes["gold"].Value);
+      //}
+      //elemList = doc.GetElementsByTagName("TimeGame");
+      //for (int i = 0; i < elemList.Count; i++)
+      //{
+      //  party.TimeGame = Convert.ToSingle(elemList[i].Attributes["timeGame"].Value, new CultureInfo("en-US"));
+      //}
       //
     }
     ///////////////////////Save current Scene
