@@ -2,17 +2,11 @@
 using System.Collections;
 
 public class SortingLayer : MonoBehaviour {
-    public bool Dyn;
+    //Скрипт управляет сортировкой спрайтов внутри одного слоя
+    //Скрипт для стационарных объектов на карте
     SpriteRenderer SprRenderer;
 
     void Start () {
-        SprRenderer = GetComponent<SpriteRenderer>();
-        SprRenderer.sortingOrder = (int)(-transform.position.y * 2);
-    }
-
-    // Update is called once per frame
-    void Update () {
-        if(Dyn)
-            SprRenderer.sortingOrder = (int)(-transform.position.y * 2);
+        GetComponent<SpriteRenderer>().sortingOrder = (int)(-transform.position.y * 2);
     }
 }
