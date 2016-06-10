@@ -11,18 +11,21 @@ public class Party : MonoBehaviour
     private Vector3[] trace = new Vector3[0];
     public GameObject FollowTo = null;   //За кем идти в режиме партии
 
-  private void Start ()
-  {
-    Array.Resize(ref trace, distance + 1);
-    for (var i = 0; i < trace.Length - 1; i++)
+    private void Start()
     {
-      trace[i] = FollowTo.transform.position;
+        if (FollowTo == null)
+            return;
+
+        Array.Resize(ref trace, distance + 1);
+        for (var i = 0; i < trace.Length - 1; i++)
+        {
+            trace[i] = FollowTo.transform.position;
+        }
     }
-	}
 
     private void Update()
     {
-        if (FollowTo.transform.position != trace[0])
+        if (FollowTo != null && FollowTo.transform.position != trace[0])
         {
             for (var i = trace.Length - 1; i > 0; i--)
             {
