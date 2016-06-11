@@ -14,7 +14,6 @@ GameObject:
   - 50: {fileID: 5038674}
   - 58: {fileID: 5852274}
   - 114: {fileID: 11489734}
-  - 114: {fileID: 11412892}
   - 81: {fileID: 8176016}
   - 114: {fileID: 11477458}
   - 114: {fileID: 11442076}
@@ -93,33 +92,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11412892
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 147908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 873c0791559e2c84590fb78f865a3eff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  heroPropetries:
-    Name: 
-    Portrait: {fileID: 21300000, guid: 7f137e725883d4d4db79161756e370df, type: 3}
-    Hp: 50
-    Mhp: 100
-    Mp: 40
-    Mmp: 60
-    Cr: 10
-    Mcr: 100
-    Atk: 0
-    Def: 0
-    Mat: 0
-    Mdf: 0
-    Agi: 2
-    Armors: []
-  HeroUi: {fileID: 0}
 --- !u!114 &11433478
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -149,7 +121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d869dfd283cb144da1dff91f0549845, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dyn: 1
 --- !u!114 &11477458
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -172,13 +143,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22888db6e9a580649bfe235f706f1353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLevelMap: 0
-  Vagons: []
-  HeroPrefabs:
-  - {fileID: 154926, guid: 8e3cfd7ceae3939408eae916a2580a55, type: 2}
   distance: 40
-  goldIndicator: {fileID: 0}
-  timeIndicator: {fileID: 0}
+  trace: []
+  FollowTo: {fileID: 0}
 --- !u!212 &21271144
 SpriteRenderer:
   m_ObjectHideFlags: 1
