@@ -8,6 +8,6 @@ public class AddGold : MonoBehaviour
   {
     Party party = FindObjectOfType<Party>();
     if (party != null)
-      party.Gold += addValue;
+      GameManager.GM.Gold += addValue;
   }  
 }

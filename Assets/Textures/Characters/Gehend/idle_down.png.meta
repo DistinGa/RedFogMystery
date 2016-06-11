@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 09f461537613e924c9d79ad304202c5b
-timeCreated: 1462126342
+timeCreated: 1465582698
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -59,18 +59,18 @@ TextureImporter:
         y: 0
         width: 32
         height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -9, y: 48}
-        - {x: -15, y: 47}
-        - {x: -15, y: 0}
-        - {x: 8, y: 0}
-        - {x: 15, y: 2}
-        - {x: 16, y: 5}
-        - {x: 16, y: 36}
-        - {x: 13, y: 48}
+      - - {x: -9, y: 45.6}
+        - {x: -15, y: 44.6}
+        - {x: -15, y: -2.3999996}
+        - {x: 8, y: -2.3999996}
+        - {x: 15, y: -0.39999962}
+        - {x: 16, y: 2.6000004}
+        - {x: 16, y: 33.6}
+        - {x: 13, y: 45.6}
     - name: idle1_1
       rect:
         serializedVersion: 2
@@ -78,18 +78,18 @@ TextureImporter:
         y: 0
         width: 32
         height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -13, y: 48}
-        - {x: -15, y: 43}
-        - {x: -15, y: 2}
-        - {x: -12, y: 0}
-        - {x: 9, y: 0}
-        - {x: 15, y: 1}
-        - {x: 16, y: 8}
-        - {x: 16, y: 48}
+      - - {x: -13, y: 45.6}
+        - {x: -15, y: 40.6}
+        - {x: -15, y: -0.39999962}
+        - {x: -12, y: -2.3999996}
+        - {x: 9, y: -2.3999996}
+        - {x: 15, y: -1.3999996}
+        - {x: 16, y: 5.6000004}
+        - {x: 16, y: 45.6}
     outline: []
   spritePackingTag: 
   userData: 

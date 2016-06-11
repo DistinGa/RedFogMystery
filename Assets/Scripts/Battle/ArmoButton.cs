@@ -41,7 +41,7 @@ public class ArmoButton : MonoBehaviour
       status.Hero.HeroPropetries.Def -= ThingPropetries.Def;
       status.Hero.HeroPropetries.Mdf -= ThingPropetries.Mdf;
       status.Hero.HeroPropetries.Agi -= ThingPropetries.Agi;
-      status.Hero.HeroUi.UpdateUI();
+      status.UpdateUI();
       status.UpdateUI();
       ThingPropetries = null;
     }

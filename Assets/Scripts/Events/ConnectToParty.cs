@@ -2,16 +2,16 @@
 
 public class ConnectToParty : MonoBehaviour
 {
-  [SerializeField] private TriggerBase hero = null;
+  [SerializeField] private string heroName;
 
   public void OnEventAction()
   {
-    if (hero != null)
+    if (heroName != "")
     {
-      FindObjectOfType<Party>().Connect(hero.gameObject.name);
-      Destroy(hero.gameObject);
+      GameManager.GM.ConnectToParty(heroName);
+      //Destroy(hero.gameObject);
     }
     else
-      Debug.LogWarning("Дмитрий! Объект " + gameObject.name + " hero не назначен!");
+      Debug.LogWarning("Объект " + gameObject.name + " не указано имя героя!");
   }
 }

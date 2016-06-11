@@ -7,7 +7,7 @@ public class CharacterInPartyCondition : MonoBehaviour
     [SerializeField]
     private Party party = null; // необходимость под вопросом
     [SerializeField]
-    private Hero hero = null;
+    private string heroName;
     [SerializeField]
     private bool isPresent = false;
 
@@ -22,12 +22,12 @@ public class CharacterInPartyCondition : MonoBehaviour
 
     public void OnEventAction()
     {
-        if (party != null && hero != null && ifTrueQuest != null && ifElseQuest != null)
+        if (party != null && heroName != "" && ifTrueQuest != null && ifElseQuest != null)
         {
             bool tmp = false;
-            foreach (var item in party.Vagons)
+            foreach (var item in GameManager.GM.PartyContent())
             {
-                if (item.name == hero.name)
+                if (item.HeroPropetries.Name == heroName)
                     tmp = true;
             }
             if (isPresent == tmp)
