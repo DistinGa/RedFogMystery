@@ -16,13 +16,14 @@ public class MainMenuCharactersInfo : MonoBehaviour
     public void UpdateMenu(List<Hero> party = null)
     {
         if (party == null)
-            party = GamaManager.GM.PartyContent();
+            party = GameManager.GM.PartyContent();
 
         for (int i = 0; i < UI_Characters.Length; i++)
         {
             if (party[i] != null)
             {
-                UI_Characters[i].GetComponentInChildren<CharacterInfo>().hero = party.Characters[i];
+                UI_Characters[i].transform.GetChild(0).gameObject.SetActive(true);
+                UI_Characters[i].GetComponentInChildren<CharacterInfo>().UpdateCharacter(party[i]);
             }
             else
                 UI_Characters[i].transform.GetChild(0).gameObject.SetActive(false);
