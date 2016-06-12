@@ -20,7 +20,10 @@ public class MainMenuCharactersInfo : MonoBehaviour
 
         for (int i = 0; i < UI_Characters.Length; i++)
         {
-            if (party[i] != null)
+            //{DV
+            //if (party[i] != null)
+            if (i < party.Count)
+            //DV}
             {
                 UI_Characters[i].transform.GetChild(0).gameObject.SetActive(true);
                 UI_Characters[i].GetComponentInChildren<CharacterInfo>().UpdateCharacter(party[i]);
