@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
     public GameObject MainCharacter;    //ГГ
     public List<GameObject> Vagons;     //список GO для отображения "паровозика"
     public GameObject VagonPrefab;      //префаб "вагона"
-    public List<PartyMember> Party;
     public Hero[] Heroes = new Hero[4];
     public Hero _Leader = null;
 
@@ -35,16 +34,20 @@ public class GameManager : MonoBehaviour
         set
         {
             _Leader = value;
-            
-            for (int i = 0; i < Party.Count; i++)
+
+            int i = 0;
+            foreach (Hero curHero in PartyContent())
             {
-                PartyMember curHero = Party[i];
-                if (curHero.Hero == value)
-                    //Лидер
-                    MainCharacter.GetComponent<Animator>().runtimeAnimatorController = curHero.Hero.AnimatorController;
+                if (curHero == value)
+                //Лидер
+                {
+                    //RuntimeAnimatorController tmp = MainCharacter.GetComponent<Animator>().runtimeAnimatorController;
+                    MainCharacter.GetComponent<Animator>().runtimeAnimatorController = curHero.AnimatorController;
+                    //curHero.GO.GetComponent<Animator>().runtimeAnimatorController = tmp;
+                }
                 else
                     //все остальные
-                    curHero.GO.GetComponent<Animator>().runtimeAnimatorController = curHero.Hero.AnimatorController;
+                    Vagons[i++].GetComponent<Animator>().runtimeAnimatorController = curHero.AnimatorController;
             }
         }
     }
@@ -72,20 +75,31 @@ public class GameManager : MonoBehaviour
 
     public void ConnectToParty(string heroName)
     {
-        //Добавление в интерфейс
-        //....
-
         Hero newHero = FindHeroByName(heroName);
         if (newHero == null)
         {
             Debug.LogWarning("Не найден герой по имени " + heroName);
             return;
         }
+        ConnectToParty(newHero);
+    }
 
-        GameObject tempGO = (GameObject)Instantiate(VagonPrefab, Vagons[Vagons.Count - 1].transform.position, Quaternion.identity);
-        tempGO.GetComponent<Animator>().runtimeAnimatorController = newHero.AnimatorController;
-        Vagons.Add(tempGO);
-        Party.Add(new PartyMember(newHero, tempGO));
+    public void ConnectToParty(Hero newHero)
+    {
+        GameObject target;
+        if (Vagons.Count > 0)
+            target = Vagons[Vagons.Count - 1];
+        else
+            target = MainCharacter;
+
+        if (!newHero.isActive)
+        {
+            newHero.isActive = true;
+            GameObject tempGO = (GameObject)Instantiate(VagonPrefab, target.transform.position, Quaternion.identity);
+            tempGO.GetComponent<Animator>().runtimeAnimatorController = newHero.AnimatorController;
+            tempGO.GetComponent<Party>().FollowTo = target;
+            Vagons.Add(tempGO);
+        }
     }
 
     public Hero FindHeroByName(string heroName)
@@ -109,26 +123,13 @@ public class GameManager : MonoBehaviour
     {
         List<Hero> pc = new List<Hero>();
 
-        foreach (var item in Party)
+        foreach (var Hero in Heroes)
         {
-            pc.Add(item.Hero);
+            if(Hero.isActive)
+            pc.Add(Hero);
         }
-        pc.Add(_Leader);
 
         return pc;
     }
 
-    [System.Serializable]
-    public struct PartyMember
-        //public - для тестовых нужд, потом убрать
-    {
-        public Hero Hero;
-        public GameObject GO;
-
-        public PartyMember(Hero h, GameObject go)
-        {
-            Hero = h;
-            GO = go;
-        }
-    }
 }
