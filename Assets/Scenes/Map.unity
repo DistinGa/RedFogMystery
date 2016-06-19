@@ -1260,7 +1260,7 @@ GameObject:
   - 212: {fileID: 1401416382}
   m_Layer: 0
   m_Name: bottom
-  m_TagString: Untagged
+  m_TagString: Wind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

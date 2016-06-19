@@ -146,7 +146,8 @@ public class GameManager : MonoBehaviour
         MainCharacter.GetComponent<CharacterMoving>().SetWind(sw);
         foreach (var item in Vagons)
         {
-            item.SendMessage("SetWind", sw);
+            if(item != null)
+                item.SendMessage("SetWind", sw);
         }
     }
 

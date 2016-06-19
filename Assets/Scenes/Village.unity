@@ -3526,12 +3526,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 163496, guid: 586c6608a3bfed742a656e0fa4fbb81b, type: 2}
-      propertyPath: m_IsActive
-      value: 0
+    - target: {fileID: 186596, guid: 586c6608a3bfed742a656e0fa4fbb81b, type: 2}
+      propertyPath: m_TagString
+      value: Wind
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 9565724, guid: 586c6608a3bfed742a656e0fa4fbb81b, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 586c6608a3bfed742a656e0fa4fbb81b, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &306069937
@@ -8780,20 +8779,6 @@ Prefab:
       propertyPath: MainCharacter
       value: 
       objectReference: {fileID: 1963446545}
-    - target: {fileID: 11477730, guid: b440f8b176695b846bf707d487d4df9e, type: 2}
-      propertyPath: _Leader.heroPropetries.Portrait
-      value: 
-      objectReference: {fileID: 21300000, guid: 7f137e725883d4d4db79161756e370df,
-        type: 3}
-    - target: {fileID: 11477730, guid: b440f8b176695b846bf707d487d4df9e, type: 2}
-      propertyPath: _Leader.heroPropetries.Name
-      value: Gehend
-      objectReference: {fileID: 0}
-    - target: {fileID: 11477730, guid: b440f8b176695b846bf707d487d4df9e, type: 2}
-      propertyPath: _Leader.AnimatorController
-      value: 
-      objectReference: {fileID: 22100000, guid: 0003ae2741fe06345b9b648de85c4854,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b440f8b176695b846bf707d487d4df9e, type: 2}
   m_IsPrefabParent: 0

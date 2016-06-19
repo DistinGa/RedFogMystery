@@ -42,9 +42,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gold: 0
   MainCharacter: {fileID: 0}
-  Vagons:
-  - {fileID: 0}
-  VagonPrefab: {fileID: 0}
+  Vagons: []
+  VagonPrefab: {fileID: 154218, guid: 38a27ff34382fe744adb04ac37917511, type: 2}
   Heroes:
   - isActive: 1
     heroPropetries:
