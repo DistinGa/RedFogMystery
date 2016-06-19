@@ -28,6 +28,15 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void Start()
+    {
+        if (MainCharacter == null)
+            MainCharacter = FindObjectOfType<CharacterMoving>().gameObject;
+
+        if (Leader.HeroPropetries.Name == "")
+            Leader = FindHeroByName("Gehend");
+    }
+
     public Hero Leader
     {
         get { return _Leader; }
@@ -41,9 +50,7 @@ public class GameManager : MonoBehaviour
                 if (curHero == value)
                 //Лидер
                 {
-                    //RuntimeAnimatorController tmp = MainCharacter.GetComponent<Animator>().runtimeAnimatorController;
                     MainCharacter.GetComponent<Animator>().runtimeAnimatorController = curHero.AnimatorController;
-                    //curHero.GO.GetComponent<Animator>().runtimeAnimatorController = tmp;
                 }
                 else
                     //все остальные
@@ -54,7 +61,7 @@ public class GameManager : MonoBehaviour
 
     public float GameTime
     {
-        get {return gameTime;}
+        get { return gameTime; }
     }
 
     public void AddGameTime(float dt)
@@ -92,6 +99,7 @@ public class GameManager : MonoBehaviour
         else
             target = MainCharacter;
 
+        //Присоединяем, если героя ещё нет в партии
         if (!newHero.isActive)
         {
             newHero.isActive = true;
@@ -125,8 +133,8 @@ public class GameManager : MonoBehaviour
 
         foreach (var Hero in Heroes)
         {
-            if(Hero.isActive)
-            pc.Add(Hero);
+            if (Hero.isActive)
+                pc.Add(Hero);
         }
 
         return pc;
