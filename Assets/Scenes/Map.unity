@@ -567,56 +567,6 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
---- !u!1001 &860674956
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 464994, guid: c9e9b1e61b2fc7c4889eb61d6e40d026, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 581
-      objectReference: {fileID: 0}
-    - target: {fileID: 464994, guid: c9e9b1e61b2fc7c4889eb61d6e40d026, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -301
-      objectReference: {fileID: 0}
-    - target: {fileID: 464994, guid: c9e9b1e61b2fc7c4889eb61d6e40d026, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 464994, guid: c9e9b1e61b2fc7c4889eb61d6e40d026, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 464994, guid: c9e9b1e61b2fc7c4889eb61d6e40d026, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 464994, guid: c9e9b1e61b2fc7c4889eb61d6e40d026, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 464994, guid: c9e9b1e61b2fc7c4889eb61d6e40d026, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 464994, guid: c9e9b1e61b2fc7c4889eb61d6e40d026, type: 2}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: Script
-      value: 
-      objectReference: {fileID: 1425000175}
-    - target: {fileID: 11473232, guid: c9e9b1e61b2fc7c4889eb61d6e40d026, type: 2}
-      propertyPath: Script
-      value: 
-      objectReference: {fileID: 1425000175}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: c9e9b1e61b2fc7c4889eb61d6e40d026, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &884168817
 GameObject:
   m_ObjectHideFlags: 0
@@ -1359,22 +1309,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1 &1425000170 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 142832, guid: c9e9b1e61b2fc7c4889eb61d6e40d026, type: 2}
-  m_PrefabInternal: {fileID: 860674956}
---- !u!114 &1425000175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1425000170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3d137f354738504c9e5c8af9541608f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  heroName: Gehend
 --- !u!1 &1451747738
 GameObject:
   m_ObjectHideFlags: 0

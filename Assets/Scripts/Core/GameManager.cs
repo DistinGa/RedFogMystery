@@ -140,4 +140,14 @@ public class GameManager : MonoBehaviour
         return pc;
     }
 
+    //Вкл/выкл "ветренных" анимаций у партии
+    public void SetPartyWind(bool sw)
+    {
+        MainCharacter.GetComponent<CharacterMoving>().SetWind(sw);
+        foreach (var item in Vagons)
+        {
+            item.SendMessage("SetWind", sw);
+        }
+    }
+
 }
