@@ -9,7 +9,7 @@ public class MenuManager : MonoBehaviour
     void Start()
     {
         _controller = FindObjectOfType<CharacterMoving>();
-        ShowMenu(CurrentMenu);
+        //ShowMenu(CurrentMenu);
     }
 
     public void Update()
@@ -62,6 +62,7 @@ public class MenuManager : MonoBehaviour
 
     private void BlockMoving(bool block)
     {
+
         _controller.KeyboardControl = !block;
     }
 }
