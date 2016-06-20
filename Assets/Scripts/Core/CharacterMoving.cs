@@ -22,7 +22,7 @@ public class CharacterMoving : MonoBehaviour
   private CircleCollider2D selfCollider;
   //DV}
 
-    private void Start ()
+    private void Awake ()
     {
         thisAnimator = GetComponent<Animator>();
         //DV{

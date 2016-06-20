@@ -116,5 +116,7 @@ public class CameraController : MonoBehaviour
             NewCamPosition.y = map.transform.position.y - fieldHeight * 0.5f;
 
         transform.position = NewCamPosition;
+
+        GameManager.GM.SetPartyWind(map.tag == "Wind");
     }
 }

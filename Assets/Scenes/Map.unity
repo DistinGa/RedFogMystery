@@ -720,7 +720,7 @@ Prefab:
     - target: {fileID: 11442928, guid: 38a27ff34382fe744adb04ac37917511, type: 2}
       propertyPath: FollowTo
       value: 
-      objectReference: {fileID: 1780729977}
+      objectReference: {fileID: 0}
     - target: {fileID: 9562176, guid: 38a27ff34382fe744adb04ac37917511, type: 2}
       propertyPath: m_Controller
       value: 
@@ -1118,11 +1118,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 471880, guid: bfe4b69d410aec14b8d830d5eff61878, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 186.83923
+      value: 115
       objectReference: {fileID: 0}
     - target: {fileID: 471880, guid: bfe4b69d410aec14b8d830d5eff61878, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 212.37903
+      value: 154
       objectReference: {fileID: 0}
     - target: {fileID: 471880, guid: bfe4b69d410aec14b8d830d5eff61878, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1260,7 +1260,7 @@ GameObject:
   - 212: {fileID: 1401416382}
   m_Layer: 0
   m_Name: bottom
-  m_TagString: Untagged
+  m_TagString: Wind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1430,6 +1430,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11477730, guid: b440f8b176695b846bf707d487d4df9e, type: 2}
+      propertyPath: Vagons.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 438614, guid: b440f8b176695b846bf707d487d4df9e, type: 2}
       propertyPath: m_LocalPosition.x
       value: 1012.5292
@@ -1462,6 +1466,27 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 11477730, guid: b440f8b176695b846bf707d487d4df9e, type: 2}
+      propertyPath: Heroes.Array.data[0].isActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11477730, guid: b440f8b176695b846bf707d487d4df9e, type: 2}
+      propertyPath: Heroes.Array.data[0].AnimatorController
+      value: 
+      objectReference: {fileID: 22100000, guid: 0003ae2741fe06345b9b648de85c4854,
+        type: 2}
+    - target: {fileID: 11477730, guid: b440f8b176695b846bf707d487d4df9e, type: 2}
+      propertyPath: Heroes.Array.data[0].heroPropetries.Name
+      value: Gehend
+      objectReference: {fileID: 0}
+    - target: {fileID: 11477730, guid: b440f8b176695b846bf707d487d4df9e, type: 2}
+      propertyPath: MainCharacter
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11477730, guid: b440f8b176695b846bf707d487d4df9e, type: 2}
+      propertyPath: VagonPrefab
+      value: 
+      objectReference: {fileID: 154218, guid: 38a27ff34382fe744adb04ac37917511, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b440f8b176695b846bf707d487d4df9e, type: 2}
   m_IsPrefabParent: 0
@@ -1591,10 +1616,6 @@ Transform:
   - {fileID: 590571325}
   m_Father: {fileID: 1380893692}
   m_RootOrder: 0
---- !u!1 &1780729977 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 113310, guid: bfe4b69d410aec14b8d830d5eff61878, type: 2}
-  m_PrefabInternal: {fileID: 1299853675}
 --- !u!1 &1983770347
 GameObject:
   m_ObjectHideFlags: 0

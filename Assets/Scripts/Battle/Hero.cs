@@ -51,6 +51,7 @@ public enum ThingType
 [System.Serializable]
 public class Hero //: MonoBehaviour
 {
+    public bool isActive;
     [SerializeField]
     private HeroPropetries heroPropetries = null;
     public RuntimeAnimatorController AnimatorController = null;

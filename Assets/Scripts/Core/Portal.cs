@@ -11,7 +11,6 @@ public class Portal : MonoBehaviour
   private CameraController cameraController = null;
     //DV{
     public GameObject TargetMap;
-    public bool Wind = false;   //После перехода нужно включить анимацию ветра на персонаже.
     public Direction InplaceDirection = Direction.None;    //Куда будет повёрнут персонаж после перемещения
     //DV}
 
@@ -22,7 +21,10 @@ public class Portal : MonoBehaviour
   }
 	
 	private void OnTriggerEnter2D(Collider2D other)
-  {    
+  {
+    if (other.GetComponent<CharacterMoving>() == null)
+        return;
+
     characterMoving.KeyboardControl = false;      
     cameraController.StartEffect();
     Invoke("ChangePosition", 0.5f * cameraController.EffectTime);
@@ -46,7 +48,6 @@ public class Portal : MonoBehaviour
     //  doorAnimator.SetTrigger("Open");
 
     //DV{
-    characterMoving.SetWind(Wind);
     characterMoving.TurnTo(InplaceDirection);
     cameraController.TuneMap(TargetMap);
     //DV}

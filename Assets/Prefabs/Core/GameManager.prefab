@@ -42,13 +42,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gold: 0
   MainCharacter: {fileID: 0}
-  Vagons:
-  - {fileID: 0}
-  VagonPrefab: {fileID: 0}
-  Party: []
+  Vagons: []
+  VagonPrefab: {fileID: 154218, guid: 38a27ff34382fe744adb04ac37917511, type: 2}
   Heroes:
-  - heroPropetries:
-      Name: 
+  - isActive: 1
+    heroPropetries:
+      Name: Gehend
+      Portrait: {fileID: 21300000, guid: 7f137e725883d4d4db79161756e370df, type: 3}
+      Hp: 0
+      Mhp: 0
+      Mp: 0
+      Mmp: 0
+      Cr: 0
+      Mcr: 0
+      Atk: 0
+      Def: 0
+      Mat: 0
+      Mdf: 0
+      Agi: 0
+      Armors: []
+    AnimatorController: {fileID: 22100000, guid: 0003ae2741fe06345b9b648de85c4854,
+      type: 2}
+  - isActive: 0
+    heroPropetries:
+      Name: Hertruda
       Portrait: {fileID: 0}
       Hp: 0
       Mhp: 0
@@ -62,9 +79,11 @@ MonoBehaviour:
       Mdf: 0
       Agi: 0
       Armors: []
-    AnimatorController: {fileID: 0}
-  - heroPropetries:
-      Name: 
+    AnimatorController: {fileID: 22100000, guid: 6e646a948157abf439cd450f5446bb2c,
+      type: 2}
+  - isActive: 0
+    heroPropetries:
+      Name: Arnold
       Portrait: {fileID: 0}
       Hp: 0
       Mhp: 0
@@ -78,24 +97,10 @@ MonoBehaviour:
       Mdf: 0
       Agi: 0
       Armors: []
-    AnimatorController: {fileID: 0}
-  - heroPropetries:
-      Name: 
-      Portrait: {fileID: 0}
-      Hp: 0
-      Mhp: 0
-      Mp: 0
-      Mmp: 0
-      Cr: 0
-      Mcr: 0
-      Atk: 0
-      Def: 0
-      Mat: 0
-      Mdf: 0
-      Agi: 0
-      Armors: []
-    AnimatorController: {fileID: 0}
-  - heroPropetries:
+    AnimatorController: {fileID: 22100000, guid: 0f079355296682d43a7ec99c227c72d9,
+      type: 2}
+  - isActive: 0
+    heroPropetries:
       Name: 
       Portrait: {fileID: 0}
       Hp: 0
@@ -112,6 +117,7 @@ MonoBehaviour:
       Armors: []
     AnimatorController: {fileID: 0}
   _Leader:
+    isActive: 0
     heroPropetries:
       Name: 
       Portrait: {fileID: 0}

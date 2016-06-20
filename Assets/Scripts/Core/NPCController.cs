@@ -7,7 +7,13 @@ public class NPCController : MonoBehaviour {
     private Vector3 previousPosition = Vector3.zero;
 
     void Start () {
+        if (localAnimator == null)
+            localAnimator = GetComponent<Animator>();
+        if (localAnimator == null)
+            Debug.LogWarning("На объекте " + gameObject.name + " не найден Animator", gameObject);
+
         previousPosition = transform.position;
+        SetWind(Camera.main.GetComponent<CameraController>().Map.tag == "Wind");
     }
 
     void Update () {
@@ -20,5 +26,10 @@ public class NPCController : MonoBehaviour {
         localAnimator.SetBool("Running", previousPosition != transform.position);
         localAnimator.SetFloat("Speed", Mathf.Abs(deltaPosition.magnitude) / Time.deltaTime);
         previousPosition = transform.position;
+    }
+
+    public void SetWind(bool sw)
+    {
+        localAnimator.SetBool("Wind", sw);
     }
 }
