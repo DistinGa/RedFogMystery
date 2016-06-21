@@ -151,4 +151,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void Load()
+    {
+
+    }
+
+    public void Save()
+    {
+
+    }
 }

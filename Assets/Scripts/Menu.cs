@@ -29,5 +29,4 @@ public class Menu : MonoBehaviour
         else
             _canvasGroup.blocksRaycasts = _canvasGroup.interactable = true;
     }
-
 }

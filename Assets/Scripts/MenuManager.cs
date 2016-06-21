@@ -30,7 +30,7 @@ public class MenuManager : MonoBehaviour
             }
         }
         #endregion
-        #region Escape Key
+        //#region Escape Key
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (CurrentMenu.IsOpen)
@@ -44,25 +44,41 @@ public class MenuManager : MonoBehaviour
                 {
                     CurrentMenu.IsOpen = false;
                     CurrentMenu = gameObject.transform.FindChild("MainMenu").GetComponent<Menu>();
-                    CurrentMenu.IsOpen = true;
+                    StartCoroutine(Pause());
+                    //CurrentMenu.IsOpen = true;
+
                 }
             }
         }
-        #endregion
+        //#endregion
     }
 
     public void ShowMenu(Menu menu)
     {
+
         if (CurrentMenu != null)
             CurrentMenu.IsOpen = false;
 
-        CurrentMenu = menu;
-        CurrentMenu.IsOpen = true;
+        if (CurrentMenu.name == "MainMenu")
+        {
+            CurrentMenu = menu;
+            StartCoroutine(Pause());
+        }
+        else
+        {
+            CurrentMenu = menu;
+            CurrentMenu.IsOpen = true;
+        }
     }
 
     private void BlockMoving(bool block)
     {
-
         _controller.KeyboardControl = !block;
+    }
+
+    IEnumerator Pause()
+    {
+        yield return new WaitForSeconds(1);
+        CurrentMenu.IsOpen = true;
     }
 }
