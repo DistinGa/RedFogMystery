@@ -22,12 +22,12 @@ public class CharacterInfo : MonoBehaviour
             characterName.text = hero.HeroPropetries.Name;
             //level.text = Hero.Level.ToString();
             level.text = "NoN";
-            corruption.text = hero.HeroPropetries.Cr + "/" + hero.HeroPropetries.Mcr;
-            health.text = hero.HeroPropetries.Hp + "/" + hero.HeroPropetries.Mhp;
-            mana.text = hero.HeroPropetries.Mp + "/" + hero.HeroPropetries.Mmp;
-            corruptionBar.size = (float)hero.HeroPropetries.Cr / (float)hero.HeroPropetries.Mcr;
-            healthBar.size = (float)hero.HeroPropetries.Hp / (float)hero.HeroPropetries.Mhp;
-            manaBar.size = (float)hero.HeroPropetries.Mp / (float)hero.HeroPropetries.Mmp;
+            corruption.text = hero.HeroPropetries.curCr + "/" + hero.HeroPropetries.Cr;
+            health.text = hero.HeroPropetries.curHp + "/" + hero.HeroPropetries.Hp;
+            mana.text = hero.HeroPropetries.curMp + "/" + hero.HeroPropetries.Mp;
+            corruptionBar.size = (float)hero.HeroPropetries.curCr / (float)hero.HeroPropetries.Cr;
+            healthBar.size = (float)hero.HeroPropetries.curHp / (float)hero.HeroPropetries.Hp;
+            manaBar.size = (float)hero.HeroPropetries.curMp / (float)hero.HeroPropetries.Mp;
         }
     }
 
