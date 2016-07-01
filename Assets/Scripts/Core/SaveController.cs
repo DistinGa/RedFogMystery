@@ -99,13 +99,9 @@ public class SaveController : MonoBehaviour
         Hero[] heroes = GameManager.GM.Heroes;
         foreach (var hero in heroes)
         {
-            AddAtribute("Hp", (hero.HeroPropetries.Hp).ToString());//!!!!!!!!!!!!!!!!!!!!
-            AddAtribute("Mhp", (hero.HeroPropetries.Mhp).ToString());
-            AddAtribute("Mp", (hero.HeroPropetries.Mp).ToString());
-            AddAtribute("Mmp", (hero.HeroPropetries.Mmp).ToString());
-            AddAtribute("Co", (hero.HeroPropetries.Cr).ToString());
-            AddAtribute("Mco", (hero.HeroPropetries.Mcr).ToString());
-            AddAtribute("Agi", (hero.HeroPropetries.Agi).ToString());
+            AddAtribute("Hp", (hero.HeroPropetries.curHp).ToString());//!!!!!!!!!!!!!!!!!!!!
+            AddAtribute("Mp", (hero.HeroPropetries.curMp).ToString());
+            AddAtribute("Co", (hero.HeroPropetries.curCr).ToString());
             AddXmlElements(doc, rootNode, "Hero" + hero.HeroPropetries.Name);
         }
         //// Save vagons
@@ -136,20 +132,20 @@ public class SaveController : MonoBehaviour
             rootNode = doc.DocumentElement;
         }
         rootNode.RemoveAll();
-        Inventar inventar = FindObjectOfType<Inventar>();
-        foreach (var itemGroup in inventar.ItemGroups)
-        {
-            foreach (var itemButton in itemGroup.itemButtons)
-            {
-                if (itemButton.ThingPropetries.Name != "" && itemButton.ThingPropetries.Name != "Name")
-                {
-                    AddAtribute("Name", (itemButton.ThingPropetries.Name).ToString());
-                    AddAtribute("Count", (itemButton.ThingPropetries.Count).ToString());
-                    AddXmlElements(doc, rootNode, "Item");
-                }
-            }
-        }
-        doc.Save(filePath);
+        //Inventar inventar = FindObjectOfType<Inventar>();
+        //foreach (var itemGroup in inventar.ItemGroups)
+        //{
+        //    foreach (var itemButton in itemGroup.itemButtons)
+        //    {
+        //        if (itemButton.ThingPropetries.Name != "" && itemButton.ThingPropetries.Name != "Name")
+        //        {
+        //            AddAtribute("Name", (itemButton.ThingPropetries.Name).ToString());
+        //            AddAtribute("Count", (itemButton.ThingPropetries.Count).ToString());
+        //            AddXmlElements(doc, rootNode, "Item");
+        //        }
+        //    }
+        //}
+        //doc.Save(filePath);
         //
     }
 
@@ -250,13 +246,9 @@ public class SaveController : MonoBehaviour
                 elemList = doc.GetElementsByTagName("Hero" + hero.HeroPropetries.Name);
                 for (int i = 0; i < elemList.Count; i++)
                 {
-                    hero.HeroPropetries.Hp = Convert.ToSingle(elemList[i].Attributes["Hp"].Value, new CultureInfo("en-US"));
-                    hero.HeroPropetries.Mhp = Convert.ToSingle(elemList[i].Attributes["Mhp"].Value, new CultureInfo("en-US"));
-                    hero.HeroPropetries.Mp = Convert.ToSingle(elemList[i].Attributes["Mp"].Value, new CultureInfo("en-US"));
-                    hero.HeroPropetries.Mmp = Convert.ToSingle(elemList[i].Attributes["Mmp"].Value, new CultureInfo("en-US"));
-                    hero.HeroPropetries.Cr = Convert.ToSingle(elemList[i].Attributes["Co"].Value, new CultureInfo("en-US"));
-                    hero.HeroPropetries.Mcr = Convert.ToSingle(elemList[i].Attributes["Mco"].Value, new CultureInfo("en-US"));
-                    hero.HeroPropetries.Agi = Convert.ToSingle(elemList[i].Attributes["Agi"].Value, new CultureInfo("en-US"));
+                    hero.HeroPropetries.curHp = Convert.ToSingle(elemList[i].Attributes["Hp"].Value, new CultureInfo("en-US"));
+                    hero.HeroPropetries.curMp = Convert.ToSingle(elemList[i].Attributes["Mp"].Value, new CultureInfo("en-US"));
+                    hero.HeroPropetries.curCr = Convert.ToSingle(elemList[i].Attributes["Co"].Value, new CultureInfo("en-US"));
                 }
             }
             ////Load vagons
@@ -302,27 +294,27 @@ public class SaveController : MonoBehaviour
 
     private void LoadInventar()
     {
-        Inventar inventar = FindObjectOfType<Inventar>();
-        BaseOfInventar baseOfInventar = FindObjectOfType<BaseOfInventar>();
-        string filePath = Application.dataPath + "/StreamingAssets/Saves/InventarData.xml";
-        if (File.Exists(filePath))
-        {
-            XmlDocument doc = new XmlDocument();
-            XmlNodeList elemList = null;
-            doc.Load(filePath);
-            elemList = doc.GetElementsByTagName("Item");
-            for (int i = 0; i < elemList.Count; i++)
-            {
-                foreach (var item in baseOfInventar.Items)
-                {
-                    if (elemList[i].Attributes["Name"].Value == item.Name)
-                    {
-                        item.Count = Int32.Parse(elemList[i].Attributes["Count"].Value);
-                        inventar.AddItem(item);
-                    }
-                }
-            }
-        }
+        //Inventar inventar = FindObjectOfType<Inventar>();
+        //BaseOfInventar baseOfInventar = FindObjectOfType<BaseOfInventar>();
+        //string filePath = Application.dataPath + "/StreamingAssets/Saves/InventarData.xml";
+        //if (File.Exists(filePath))
+        //{
+        //    XmlDocument doc = new XmlDocument();
+        //    XmlNodeList elemList = null;
+        //    doc.Load(filePath);
+        //    elemList = doc.GetElementsByTagName("Item");
+        //    for (int i = 0; i < elemList.Count; i++)
+        //    {
+        //        foreach (var item in baseOfInventar.Items)
+        //        {
+        //            if (elemList[i].Attributes["Name"].Value == item.Name)
+        //            {
+        //                item.Count = Int32.Parse(elemList[i].Attributes["Count"].Value);
+        //                inventar.AddItem(item);
+        //            }
+        //        }
+        //    }
+        //}
     }
 
     public void PressButtonNewGame()

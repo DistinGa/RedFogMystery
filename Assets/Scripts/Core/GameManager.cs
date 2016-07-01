@@ -50,11 +50,11 @@ public class GameManager : MonoBehaviour
                 if (curHero == value)
                 //Лидер
                 {
-                    MainCharacter.GetComponent<Animator>().runtimeAnimatorController = curHero.AnimatorController;
+                    MainCharacter.GetComponent<Animator>().runtimeAnimatorController = curHero.HeroPropetries.AnimatorController;
                 }
                 else
                     //все остальные
-                    Vagons[i++].GetComponent<Animator>().runtimeAnimatorController = curHero.AnimatorController;
+                    Vagons[i++].GetComponent<Animator>().runtimeAnimatorController = curHero.HeroPropetries.AnimatorController;
             }
         }
     }
@@ -104,7 +104,7 @@ public class GameManager : MonoBehaviour
         {
             newHero.isActive = true;
             GameObject tempGO = (GameObject)Instantiate(VagonPrefab, target.transform.position, Quaternion.identity);
-            tempGO.GetComponent<Animator>().runtimeAnimatorController = newHero.AnimatorController;
+            tempGO.GetComponent<Animator>().runtimeAnimatorController = newHero.HeroPropetries.AnimatorController;
             tempGO.GetComponent<Party>().FollowTo = target;
             Vagons.Add(tempGO);
         }

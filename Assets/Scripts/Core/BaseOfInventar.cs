@@ -1,12 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-public class BaseOfInventar : MonoBehaviour
+public class BaseOfInventar : ScriptableObject
 {
-  public List<ThingPropetries> Items = null;
+  public List<ItemPropetries> Items = null;
 
-  private void Start()
-  {
-    DontDestroyOnLoad(this);
-  }
 }
