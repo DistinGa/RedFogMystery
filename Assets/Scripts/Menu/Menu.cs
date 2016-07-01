@@ -3,9 +3,9 @@ using System.Collections;
 
 public class Menu : MonoBehaviour
 {
-
     private Animator _animator;
     private CanvasGroup _canvasGroup;
+    public MonoBehaviour _updateMenuDataScript;
 
     public bool IsOpen
     {
@@ -28,5 +28,12 @@ public class Menu : MonoBehaviour
             _canvasGroup.blocksRaycasts = _canvasGroup.interactable = false;
         else
             _canvasGroup.blocksRaycasts = _canvasGroup.interactable = true;
+    }
+
+    public void UpdateMenuData()
+    {
+        Debug.Log("Menu-->UpdateMenuData");
+        if (_updateMenuDataScript != null)
+            _updateMenuDataScript.SendMessage("UpdateMenu");
     }
 }

@@ -9,10 +9,9 @@ public class MenuManager : MonoBehaviour
     void Start()
     {
         _controller = FindObjectOfType<CharacterMoving>();
-        //ShowMenu(CurrentMenu);
     }
 
-    public void Update()
+    void Update()
     {
         #region Tab Key
         if (Input.GetKeyDown(KeyCode.Tab))
@@ -26,11 +25,12 @@ public class MenuManager : MonoBehaviour
             {
                 BlockMoving(true);
                 CurrentMenu = gameObject.transform.FindChild("MainMenu").GetComponent<Menu>();
+                CurrentMenu.UpdateMenuData();
                 CurrentMenu.IsOpen = true;
             }
         }
         #endregion
-        //#region Escape Key
+        #region Escape Key
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (CurrentMenu.IsOpen)
@@ -44,25 +44,24 @@ public class MenuManager : MonoBehaviour
                 {
                     CurrentMenu.IsOpen = false;
                     CurrentMenu = gameObject.transform.FindChild("MainMenu").GetComponent<Menu>();
-                    StartCoroutine(Pause());
-                    //CurrentMenu.IsOpen = true;
+                    StartCoroutine(PauseAnimation());
 
                 }
             }
         }
-        //#endregion
+        #endregion
     }
 
+    /// <summary> получаем новое окно меню для его отображения</summary>
     public void ShowMenu(Menu menu)
     {
-
         if (CurrentMenu != null)
             CurrentMenu.IsOpen = false;
 
         if (CurrentMenu.name == "MainMenu")
         {
             CurrentMenu = menu;
-            StartCoroutine(Pause());
+            StartCoroutine(PauseAnimation());
         }
         else
         {
@@ -71,12 +70,23 @@ public class MenuManager : MonoBehaviour
         }
     }
 
+    /// <summary> блокируем управление персонажем и "замараживаем" игру</summary>
     private void BlockMoving(bool block)
     {
-        _controller.KeyboardControl = !block;
+        if (block)
+        {
+            _controller.KeyboardControl = false;
+            //Time.timeScale = 0.0f;
+        }
+        else
+        {
+            _controller.KeyboardControl = true;
+            //Time.timeScale = 1.0f;
+        }
     }
 
-    IEnumerator Pause()
+    /// задержка между сменами окон
+    IEnumerator PauseAnimation()
     {
         yield return new WaitForSeconds(1);
         CurrentMenu.IsOpen = true;
