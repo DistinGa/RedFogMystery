@@ -862,8 +862,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4c9e44be1ea07428bc78f12b85305e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest: {fileID: 374972153}
-  NewStepValue: 1
 --- !u!61 &270439759
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9748,8 +9746,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4c9e44be1ea07428bc78f12b85305e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest: {fileID: 1614922126}
-  NewStepValue: 1
 --- !u!61 &1714388147
 BoxCollider2D:
   m_ObjectHideFlags: 0

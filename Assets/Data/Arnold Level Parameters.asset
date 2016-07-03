@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89db095dab376024390208af9cbf7e2e, type: 3}
+  m_Name: Arnold Level Parameters
+  m_EditorClassIdentifier: 
+  Levels:
+  - Name: Arnold
+    Hp: 100
+    Mp: 100
+    Cr: 100
+    Atk: 100
+    Def: 100
+    Mat: 100
+    Mdf: 100
+    Agi: 100
+    expToLevelUp: 100
+  - Name: Arnold
+    Hp: 100
+    Mp: 100
+    Cr: 100
+    Atk: 100
+    Def: 100
+    Mat: 100
+    Mdf: 100
+    Agi: 100
+    expToLevelUp: 100

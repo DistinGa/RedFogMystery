@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
         if (MainCharacter == null)
             MainCharacter = FindObjectOfType<CharacterMoving>().gameObject;
 
-        if (Leader.HeroPropetries.Name == "")
+        if (Leader.lp == null)
             Leader = FindHeroByName("Gehend");
     }
 
