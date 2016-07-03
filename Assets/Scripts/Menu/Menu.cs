@@ -32,7 +32,6 @@ public class Menu : MonoBehaviour
 
     public void UpdateMenuData()
     {
-        Debug.Log("Menu-->UpdateMenuData");
         if (_updateMenuDataScript != null)
             _updateMenuDataScript.SendMessage("UpdateMenu");
     }

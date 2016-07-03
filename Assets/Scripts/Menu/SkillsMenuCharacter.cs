@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class MainMenuCharacter : MonoBehaviour
+public class SkillsMenuCharacter : MonoBehaviour
 {
     public Image portret;
     public Text characterName;
@@ -13,7 +13,6 @@ public class MainMenuCharacter : MonoBehaviour
     public Scrollbar healthBar;
     public Text mana;
     public Scrollbar manaBar;
-
 
     public void UpdateCharacter(Hero hero)
     {

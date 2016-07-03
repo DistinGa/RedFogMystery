@@ -66,6 +66,7 @@ public class MenuManager : MonoBehaviour
         else
         {
             CurrentMenu = menu;
+            CurrentMenu.UpdateMenuData();
             CurrentMenu.IsOpen = true;
         }
     }
@@ -89,6 +90,7 @@ public class MenuManager : MonoBehaviour
     IEnumerator PauseAnimation()
     {
         yield return new WaitForSeconds(1);
+        CurrentMenu.UpdateMenuData();
         CurrentMenu.IsOpen = true;
     }
 }
