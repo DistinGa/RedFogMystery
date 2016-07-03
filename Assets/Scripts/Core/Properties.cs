@@ -5,7 +5,6 @@ using System.Collections;
 public class Properties
 {
     public string Name = "";
-    public Sprite Portrait = null;
     public float Hp = 0;
     public float Mp = 0;
     public float Cr = 0;
@@ -15,8 +14,23 @@ public class Properties
     public float Mdf = 0;
     public float Agi = 0;
 
-    //Добавление воздействия от другого предмета
-    public Properties Add(Properties ps)
+    public Properties() { }
+
+    public Properties(Properties pr)
+    {
+    Name = pr.Name;
+    Hp = pr.Hp;
+    Mp = pr.Mp;
+    Cr = pr.Cr;
+    Atk = pr.Atk;
+    Def = pr.Def;
+    Mat = pr.Mat;
+    Mdf = pr.Mdf;
+    Agi = pr.Agi;
+}
+
+//Добавление воздействия от другого предмета
+public Properties Add(Properties ps)
     {
         Hp += ps.Hp;
         Mp += ps.Mp;
@@ -42,6 +56,7 @@ public enum ItemType
 [System.Serializable]
 public class ItemPropetries : Properties
 {
+    public Sprite Portrait = null;
     public ItemType Type;
     public string Description = "Description";
 }
