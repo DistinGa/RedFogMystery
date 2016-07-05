@@ -19,18 +19,19 @@ public class MainMenuCharacter : MonoBehaviour
     {
         if (hero != null)
         {
+            HeroProperties hp = hero.HeroPropetries;
             //portret = 
-            characterName.text = hero.HeroPropetries.Name;
+            characterName.text = hp.Name;
             level.text = hero.level.ToString();
 
-            corruption.text = hero.HeroPropetries.curCr + "/" + hero.HeroPropetries.Cr;
-            corruptionBar.size = (float)hero.HeroPropetries.curCr / (float)hero.HeroPropetries.Cr;
+            corruption.text = hp.curCr + "/" + hp.Cr;
+            corruptionBar.size = (float)hp.curCr / (float)hp.Cr;
 
-            health.text = hero.HeroPropetries.curHp + "/" + hero.HeroPropetries.Hp;
-            healthBar.size = (float)hero.HeroPropetries.curHp / (float)hero.HeroPropetries.Hp;
+            health.text = hp.curHp + "/" + hp.Hp;
+            healthBar.size = (float)hp.curHp / (float)hp.Hp;
 
-            mana.text = hero.HeroPropetries.curMp + "/" + hero.HeroPropetries.Mp;
-            manaBar.size = (float)hero.HeroPropetries.curMp / (float)hero.HeroPropetries.Mp;
+            mana.text = hp.curMp + "/" + hp.Mp;
+            manaBar.size = (float)hp.curMp / (float)hp.Mp;
         }
     }
 
