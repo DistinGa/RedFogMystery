@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-
 public class GameManager : MonoBehaviour
 {
     public static GameManager GM;
@@ -13,6 +12,21 @@ public class GameManager : MonoBehaviour
     public GameObject VagonPrefab;      //префаб "вагона"
     public Hero[] Heroes = new Hero[4];
     public Hero _Leader = null;
+
+    [Space(10)]
+    //Списки всех предметов доступных в игре хранятся в объектах ScriptableObject по типам предметов.
+    //В списках наличествующего инвентаря хранятся индексы строк в общих списках.
+    //!!!public для тестов. Потом убрать
+    public List<int> consumables;
+    public List<int> materials;
+    public List<int> keys;
+    public List<int> equipments;
+    //!!!public для тестов. Потом убрать
+
+    public SOConsumables AllConsumables;
+    public SOMaterials AllMaterials;
+    public SOKeys AllKeys;
+    public SOEquipments AllEquipments;
 
     public void Awake()
     {
@@ -30,6 +44,16 @@ public class GameManager : MonoBehaviour
 
     public void Start()
     {
+        if (AllConsumables == null)
+            Debug.LogError("GameManager: Не назначен список Consumables", AllConsumables);
+        if (AllMaterials == null)
+            Debug.LogError("GameManager: Не назначен список Materials", AllMaterials);
+        if (AllKeys == null)
+            Debug.LogError("GameManager: Не назначен список Keys", AllKeys);
+        if (AllEquipments == null)
+            Debug.LogError("GameManager: Не назначен список Equipments", AllEquipments);
+
+
         if (MainCharacter == null)
             MainCharacter = FindObjectOfType<CharacterMoving>().gameObject;
 
@@ -159,5 +183,25 @@ public class GameManager : MonoBehaviour
     public void Save()
     {
 
+    }
+
+    public ConsumablePropetries[] Consumables
+    {
+        get { return AllConsumables.Get(consumables); }
+    }
+
+    public MaterialPropetries[] Materials
+    {
+        get { return AllMaterials.Get(materials); }
+    }
+
+    public KeyPropetries[] Keys
+    {
+        get { return AllKeys.Get(materials); }
+    }
+
+    public EquipmentPropetries[] Equipments
+    {
+        get { return AllEquipments.Get(materials); }
     }
 }

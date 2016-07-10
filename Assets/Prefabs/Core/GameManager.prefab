@@ -46,7 +46,6 @@ MonoBehaviour:
   VagonPrefab: {fileID: 154218, guid: 38a27ff34382fe744adb04ac37917511, type: 2}
   Heroes:
   - isActive: 1
-    Portrait: {fileID: 0}
     AnimatorController: {fileID: 22100000, guid: 0003ae2741fe06345b9b648de85c4854,
       type: 2}
     lp: {fileID: 11400000, guid: ffe7ac1b992865a4492ab042e576ad4a, type: 2}
@@ -56,7 +55,6 @@ MonoBehaviour:
     curMp: 0
     curCr: 0
   - isActive: 0
-    Portrait: {fileID: 0}
     AnimatorController: {fileID: 22100000, guid: 6e646a948157abf439cd450f5446bb2c,
       type: 2}
     lp: {fileID: 11400000, guid: a64c8394ce5e1a145a261543c655e7bd, type: 2}
@@ -66,7 +64,6 @@ MonoBehaviour:
     curMp: 0
     curCr: 0
   - isActive: 0
-    Portrait: {fileID: 0}
     AnimatorController: {fileID: 22100000, guid: 0f079355296682d43a7ec99c227c72d9,
       type: 2}
     lp: {fileID: 11400000, guid: d67b0642e8cb445418394f3bd6d4faf9, type: 2}
@@ -76,7 +73,6 @@ MonoBehaviour:
     curMp: 0
     curCr: 0
   - isActive: 0
-    Portrait: {fileID: 0}
     AnimatorController: {fileID: 0}
     lp: {fileID: 11400000, guid: 0e299c5e384fc8a40b2814fffaba4e67, type: 2}
     level: 0
@@ -86,7 +82,6 @@ MonoBehaviour:
     curCr: 0
   _Leader:
     isActive: 0
-    Portrait: {fileID: 0}
     AnimatorController: {fileID: 0}
     lp: {fileID: 0}
     level: 0
@@ -94,6 +89,14 @@ MonoBehaviour:
     curHp: 0
     curMp: 0
     curCr: 0
+  consumables: 00000000
+  materials: 
+  keys: 
+  equipments: 00000000000000000000000000000000
+  AllConsumables: {fileID: 11400000, guid: bad1912ae8f494c4b840e7d9007450be, type: 2}
+  AllMaterials: {fileID: 11400000, guid: 23fb39a2e5cc11b4aa7eb10eebc79254, type: 2}
+  AllKeys: {fileID: 11400000, guid: 55a2c716df57a02459b2504904a28782, type: 2}
+  AllEquipments: {fileID: 11400000, guid: 0dcf1dfe463b96646a43255c18a21425, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

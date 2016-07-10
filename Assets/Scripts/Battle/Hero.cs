@@ -5,7 +5,6 @@ using System.Collections.Generic;
 
 [Serializable] public class HeroProperties : Properties
 {
-    public Sprite Portrait = null;
     public RuntimeAnimatorController AnimatorController = null;
     public int level;       //уровень
     public int expToLevelUp;//опыт до следуюющего уровня
@@ -24,7 +23,6 @@ using System.Collections.Generic;
 public class Hero
 {
     public bool isActive;   //персонаж в игре (присоединился к партии)
-    public Sprite Portrait = null;
     public RuntimeAnimatorController AnimatorController = null;
     public LevelParameters lp;  //ScriptableObject с параметрами по уровням
 
@@ -34,11 +32,55 @@ public class Hero
     public float curMp = 0; //текущие очки маны
     public float curCr = 0; //текущие очки коррупции
 
+    //Экипировка
+    int weapon;
+    int armor;
+    int helmet;
+    int[] accessory = new int[2];
+
+    public EquipmentPropetries Weapon
+    {
+        set { weapon = value.index; }
+        get { return GameManager.GM.AllEquipments.Get(weapon); }
+    }
+
+    public EquipmentPropetries Armor
+    {
+        set { armor = value.index; }
+        get { return GameManager.GM.AllEquipments.Get(armor); }
+    }
+
+    public EquipmentPropetries Helmet
+    {
+        set { helmet = value.index; }
+        get { return GameManager.GM.AllEquipments.Get(helmet); }
+    }
+
+    public EquipmentPropetries Accessory1
+    {
+        set { accessory[0] = value.index; }
+        get { return GameManager.GM.AllEquipments.Get(accessory[0]); }
+    }
+
+    public EquipmentPropetries Accessory2
+    {
+        set { accessory[1] = value.index; }
+        get { return GameManager.GM.AllEquipments.Get(accessory[1]); }
+    }
+
     public HeroProperties HeroPropetries
     {
         get {
             HeroProperties HerProp = new HeroProperties(lp.Levels[level - 1]);
-            HerProp.Portrait = Portrait;
+            //Добавление воздействия от предметов
+            foreach (var item in accessory)
+            {
+                HerProp.Add(GameManager.GM.AllEquipments.Get(item));
+            }
+            HerProp.Add(Helmet);
+            HerProp.Add(Armor);
+            HerProp.Add(Weapon);
+
             HerProp.AnimatorController = AnimatorController;
             HerProp.level = level;
             HerProp.expToLevelUp = expToLevelUp;
@@ -47,11 +89,11 @@ public class Hero
             HerProp.curCr = curCr;
 
             return HerProp;
-            //return new HeroProperties();
         }
     }
 
-    public void GetExp(int exp)
+    //Обработка получения опыта
+    public void AddExp(int exp)
     {
         expToLevelUp -= exp;
         if (expToLevelUp <= 0)
@@ -66,7 +108,7 @@ public class Hero
                 //Добавление остатка опыта
                 if (tmpExp > 0)
                 {
-                    GetExp(tmpExp);
+                    AddExp(tmpExp);
                 }
             }
             else
