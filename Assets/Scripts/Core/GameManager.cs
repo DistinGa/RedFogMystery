@@ -197,11 +197,11 @@ public class GameManager : MonoBehaviour
 
     public KeyPropetries[] Keys
     {
-        get { return AllKeys.Get(materials); }
+        get { return AllKeys.Get(keys); }
     }
 
     public EquipmentPropetries[] Equipments
     {
-        get { return AllEquipments.Get(materials); }
+        get { return AllEquipments.Get(equipments); }
     }
 }
