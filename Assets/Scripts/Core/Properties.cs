@@ -66,25 +66,25 @@ public enum EquipmentApplication
 }
 
 [System.Serializable]
-public class ConsumablePropetries : Properties
+public class ConsumableProperties : Properties
 {
     public int index;
 }
 
 [System.Serializable]
-public class MaterialPropetries : Properties
+public class MaterialProperties : Properties
 {
     public int index;
 }
 
 [System.Serializable]
-public class KeyPropetries : Properties
+public class KeyProperties : Properties
 {
     public int index;
 }
 
 [System.Serializable]
-public class EquipmentPropetries : Properties
+public class EquipmentProperties : Properties
 {
     public int index;
     public EquipmentType equipType;
@@ -95,3 +95,4 @@ public class EquipmentPropetries : Properties
     [Tooltip("Имя героя, кому доступен предмет (устанавливается при Personal)")]
     public string HeroName; //Имя героя, кому доступен предмет (устанавливается при Personal)
 }
+

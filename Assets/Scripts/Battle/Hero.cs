@@ -38,31 +38,31 @@ public class Hero
     int helmet;
     int[] accessory = new int[2];
 
-    public EquipmentPropetries Weapon
+    public EquipmentProperties Weapon
     {
         set { weapon = value.index; }
         get { return GameManager.GM.AllEquipments.Get(weapon); }
     }
 
-    public EquipmentPropetries Armor
+    public EquipmentProperties Armor
     {
         set { armor = value.index; }
         get { return GameManager.GM.AllEquipments.Get(armor); }
     }
 
-    public EquipmentPropetries Helmet
+    public EquipmentProperties Helmet
     {
         set { helmet = value.index; }
         get { return GameManager.GM.AllEquipments.Get(helmet); }
     }
 
-    public EquipmentPropetries Accessory1
+    public EquipmentProperties Accessory1
     {
         set { accessory[0] = value.index; }
         get { return GameManager.GM.AllEquipments.Get(accessory[0]); }
     }
 
-    public EquipmentPropetries Accessory2
+    public EquipmentProperties Accessory2
     {
         set { accessory[1] = value.index; }
         get { return GameManager.GM.AllEquipments.Get(accessory[1]); }

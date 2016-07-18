@@ -2,21 +2,32 @@
 using System.Collections.Generic;
 
 [CreateAssetMenu(fileName = "AllConsumables", menuName = "Scriptable Objects/Consumables", order = 0)]
-public class SOConsumables : ScriptableObject
+public class SOConsumables : ScriptableObject, IInventorySO
 {
-    public ConsumablePropetries[] Consumables;
+    public ConsumableProperties[] Consumables;
 
-    public ConsumablePropetries Get(int index)
+    //Возвращает предмет по индексу
+    public Properties Get(int index)
     {
         return Consumables[index];
     }
 
-    public ConsumablePropetries[] Get(List<int> indexes)
+    //public ConsumableProperties Get(int index)
+    //{
+    //    return Consumables[index];
+    //}
+
+    //public IInventoryProperties Get(int index)
+    //{
+    //    return Consumables[index];
+    //}
+
+    public ConsumableProperties[] Get(List<int> indexes)
     {
-        ConsumablePropetries[] ret = new ConsumablePropetries[indexes.Count];
+        ConsumableProperties[] ret = new ConsumableProperties[indexes.Count];
         for(int i = 0; i < indexes.Count; i++)
         {
-            ret[i] = Get(indexes[i]);
+            ret[i] = (ConsumableProperties)Get(indexes[i]);
         }
 
         return ret;
