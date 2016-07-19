@@ -186,10 +186,10 @@ public class GameManager : MonoBehaviour
 
     }
 
-    //public ConsumableProperties[] Consumables
-    //{
-    //    get { return AllConsumables.Get(consumables); }
-    //}
+    public List<InventoryItem<ConsumableProperties>> Consumables
+    {
+        get { return consumables; }
+    }
 
     public MaterialProperties[] Materials
     {
@@ -209,7 +209,9 @@ public class GameManager : MonoBehaviour
     public void AddInventory(Properties inv, int cnt = 1)
     {
         if (inv is ConsumableProperties)
+        {
             consumables.Add(new InventoryItem<ConsumableProperties>(AllConsumables, (inv as ConsumableProperties).index, cnt));
+        }
         if (inv is MaterialProperties)
             materials.Add((inv as MaterialProperties).index);
         if (inv is EquipmentProperties)
@@ -220,7 +222,7 @@ public class GameManager : MonoBehaviour
 }
 
 [System.Serializable]
-public class InventoryItem<T> where T : Properties
+public class InventoryItem<T> where T : class//where T : Properties
 {
     int index;
     IInventorySO ItemsBase;
@@ -233,11 +235,11 @@ public class InventoryItem<T> where T : Properties
         Count = cnt;
     }
 
-    public Properties Item
+    public T Item
     {
         get
         {
-            return (ItemsBase.Get(index));
+            return (ItemsBase.Get(index)) as T;
         }
     }
 }

@@ -106,10 +106,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: {fileID: 5858450}
-  ConsumableBoxContent: 
-  MaterialBoxContent: 
-  EquipmentBoxContent: 
-  KeyBoxContent: 
+  ConsumableBoxContent: []
+  MaterialBoxContent: []
+  EquipmentBoxContent: []
+  KeyBoxContent: []
 --- !u!212 &21277224
 SpriteRenderer:
   m_ObjectHideFlags: 1

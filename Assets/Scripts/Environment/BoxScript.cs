@@ -8,13 +8,13 @@ public class BoxScript : MonoBehaviour
 
     [Space(10)]
     [SerializeField]
-    int[] ConsumableBoxContent;
+    BoxItem[] ConsumableBoxContent;
     [SerializeField]
-    int[] MaterialBoxContent;
+    BoxItem[] MaterialBoxContent;
     [SerializeField]
-    int[] EquipmentBoxContent;
+    BoxItem[] EquipmentBoxContent;
     [SerializeField]
-    int[] KeyBoxContent;
+    BoxItem[] KeyBoxContent;
 
     // Use this for initialization
     void Start()
@@ -29,24 +29,31 @@ public class BoxScript : MonoBehaviour
         GameManager GM = GameManager.GM;
         if (collision.gameObject == GM.MainCharacter)
         {
-            foreach (int item in ConsumableBoxContent)
+            foreach (BoxItem item in ConsumableBoxContent)
             {
-                GM.AddInventory(GM.AllConsumables.Get(item));
+                GM.AddInventory(GM.AllConsumables.Get(item.ItemIndex), item.Count);
             }
-            foreach (int item in MaterialBoxContent)
+            foreach (BoxItem item in MaterialBoxContent)
             {
-                GM.AddInventory(GM.AllMaterials.Get(item));
+                GM.AddInventory(GM.AllMaterials.Get(item.ItemIndex), item.Count);
             }
-            foreach (int item in EquipmentBoxContent)
+            foreach (BoxItem item in EquipmentBoxContent)
             {
-                GM.AddInventory(GM.AllEquipments.Get(item));
+                GM.AddInventory(GM.AllEquipments.Get(item.ItemIndex), item.Count);
             }
-            foreach (int item in KeyBoxContent)
+            foreach (BoxItem item in KeyBoxContent)
             {
-                GM.AddInventory(GM.AllKeys.Get(item));
+                GM.AddInventory(GM.AllKeys.Get(item.ItemIndex), item.Count);
             }
         }
 
         trigger.enabled = false;
+    }
+
+    [System.Serializable]
+    class BoxItem
+    {
+        public int ItemIndex;
+        public int Count;
     }
 }
