@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public enum InventoryCategory
 {
@@ -13,8 +14,10 @@ public enum InventoryCategory
 public class InventoryMenuUpdater : MonoBehaviour
 {
     public GameObject[] UI_Characters;
+    public GameObject[] UI_TogglesGroup;
     public GameObject UI_ItemGrid;
     public GameObject UI_ItemPrefab;
+    public Text UI_Description;
 
     [HideInInspector]
     public List<GameObject> UI_Inventory;
@@ -34,7 +37,7 @@ public class InventoryMenuUpdater : MonoBehaviour
     public void UpdateMenu()
     {
         List<Hero> party = GameManager.GM.PartyContent();
-        List<int> currentItems = GameManager.GM.consumables;
+        List<InventoryItem<ConsumableProperties>> currentItems = GameManager.GM.Consumables;
 
         // Characters Info Update
         if (party.Count > 0)
@@ -69,45 +72,19 @@ public class InventoryMenuUpdater : MonoBehaviour
 
             for (int i = 0; i < UI_Inventory.Count; i++)
             {
+                Debug.Log(currentItems[i].Item.Name);
+                //ConsumableProperties cp = GameManager.GM.AllConsumables.Consumables[currentItems[i]];
+                //UI_Inventory[i].GetComponent<InventoryMenuItemInfo>().ChangeInfo(cp.Name, 1, true);
                 if (i == markPosition)
                 {
-                    ConsumableProperties cp = GameManager.GM.AllConsumables.Consumables[currentItems[i]];
-                    UI_Inventory[i].GetComponent<InventoryMenuItemInfo>().ChangeInfo(cp.Name, 1, true);
+                    UI_Inventory[i].GetComponent<InventoryMenuItemInfo>().ChangeInfo(
+                        currentItems[i].Item.Name, currentItems[i].Count, true);
+                    UI_Description.text = currentItems[i].Item.Description.ToString();
                 }
                 else
-                {
-                    ConsumableProperties cp = GameManager.GM.AllConsumables.Consumables[currentItems[i]];
-                    UI_Inventory[i].GetComponent<InventoryMenuItemInfo>().ChangeInfo(cp.Name, 1);
-                }
+                    UI_Inventory[i].GetComponent<InventoryMenuItemInfo>().ChangeInfo(
+                        currentItems[i].Item.Name, currentItems[i].Count);
             }
         }
-
-
-
-        //// Inventory List Update
-        //if (currentItems.Count > 0)
-        //{
-        //    for (int i = 0; i < UI_Inventory.Count; i++)
-        //    {
-        //        if (i < currentItems.Count)
-        //        {
-        //            if (i == markPosition)
-        //            {
-        //                ConsumableProperties cp = GameManager.GM.AllConsumables.Consumables[currentItems[i]];
-        //                UI_Inventory[i].GetComponent<InventoryMenuItemInfo>().ChangeInfo(cp.Name, 1, true);
-        //            }
-        //            else
-        //            {
-        //                ConsumableProperties cp = GameManager.GM.AllConsumables.Consumables[currentItems[i]];
-        //                UI_Inventory[i].GetComponent<InventoryMenuItemInfo>().ChangeInfo(cp.Name, 1);
-        //            }
-        //        }
-        //        else
-        //        {
-        //            UI_Inventory[i].GetComponent<InventoryMenuItemInfo>().Empty();
-        //        }
-        //    }
-
-        //}
     }
 }

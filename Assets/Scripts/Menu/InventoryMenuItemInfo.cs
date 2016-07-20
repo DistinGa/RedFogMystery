@@ -11,16 +11,10 @@ public class InventoryMenuItemInfo : MonoBehaviour
 
     public void ChangeInfo(string _name, int _amount, bool _mark = false)
     {
-        // учесть максимальную длину !?
+        // учесть максимальную длину строк!?
         itemName.text = _name;
         amount.text = _amount.ToString();
         mark.enabled = _mark;
-    }
-    public void Empty()
-    {
-        itemName.text = " ";
-        amount.text = " ";
-        mark.enabled = false;
     }
     public void TurnOnMark(bool turn)
     {

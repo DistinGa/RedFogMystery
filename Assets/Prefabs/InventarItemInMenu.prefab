@@ -10,6 +10,7 @@ GameObject:
   - 224: {fileID: 22426398}
   - 222: {fileID: 22212846}
   - 114: {fileID: 11462504}
+  - 114: {fileID: 11431286}
   m_Layer: 5
   m_Name: Quantity
   m_TagString: Untagged
@@ -27,6 +28,7 @@ GameObject:
   - 224: {fileID: 22404952}
   - 222: {fileID: 22285248}
   - 114: {fileID: 11466594}
+  - 114: {fileID: 11439580}
   m_Layer: 5
   m_Name: Mark
   m_TagString: Untagged
@@ -44,6 +46,7 @@ GameObject:
   - 224: {fileID: 22427196}
   - 222: {fileID: 22282426}
   - 114: {fileID: 11412426}
+  - 114: {fileID: 11437906}
   m_Layer: 5
   m_Name: ItemName
   m_TagString: Untagged
@@ -64,6 +67,7 @@ GameObject:
   - 114: {fileID: 11496648}
   - 114: {fileID: 11476694}
   - 114: {fileID: 11417996}
+  - 114: {fileID: 11494360}
   m_Layer: 5
   m_Name: InventarItemInMenu
   m_TagString: Untagged
@@ -145,6 +149,60 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11431286
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: 60
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+--- !u!114 &11437906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: 1
+  m_FlexibleHeight: -1
+--- !u!114 &11439580
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: 40
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
 --- !u!114 &11462504
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -223,6 +281,26 @@ MonoBehaviour:
   m_PreferredHeight: 40
   m_FlexibleWidth: 1
   m_FlexibleHeight: -1
+--- !u!114 &11494360
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -405508275, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 1
 --- !u!114 &11496648
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -323,7 +401,7 @@ RectTransform:
   m_Father: {fileID: 22400994}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -340,10 +418,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22400994}
   m_RootOrder: 2
-  m_AnchorMin: {x: 0.85300004, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000091552734}
-  m_SizeDelta: {x: 0, y: 0.000045776367}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22427196
 RectTransform:
@@ -358,10 +436,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22400994}
   m_RootOrder: 1
-  m_AnchorMin: {x: 0.1, y: 0}
-  m_AnchorMax: {x: 0.85300004, y: 1}
-  m_AnchoredPosition: {x: 5, y: 0}
-  m_SizeDelta: {x: -10, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &100100000
 Prefab:
