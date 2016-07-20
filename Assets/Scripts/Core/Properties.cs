@@ -95,3 +95,4 @@ public class EquipmentProperties : Properties
     [Tooltip("Имя героя, кому доступен предмет (устанавливается при Personal)")]
     public string HeroName; //Имя героя, кому доступен предмет (устанавливается при Personal)
 }
+

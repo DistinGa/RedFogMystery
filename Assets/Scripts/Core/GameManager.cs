@@ -17,7 +17,8 @@ public class GameManager : MonoBehaviour
     //Списки всех предметов доступных в игре хранятся в объектах ScriptableObject по типам предметов.
     //В списках наличествующего инвентаря хранятся индексы строк в общих списках.
     //!!!public для тестов. Потом убрать
-    public List<int> consumables;
+    [SerializeField]
+    public List<InventoryItem<ConsumableProperties>> consumables = new List<InventoryItem<ConsumableProperties>>();
     public List<int> materials;
     public List<int> keys;
     public List<int> equipments;
@@ -185,9 +186,9 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public ConsumableProperties[] Consumables
+    public List<InventoryItem<ConsumableProperties>> Consumables
     {
-        get { return AllConsumables.Get(consumables); }
+        get { return consumables; }
     }
 
     public MaterialProperties[] Materials
@@ -197,11 +198,48 @@ public class GameManager : MonoBehaviour
 
     public KeyProperties[] Keys
     {
-        get { return AllKeys.Get(materials); }
+        get { return AllKeys.Get(keys); }
     }
 
     public EquipmentProperties[] Equipments
     {
-        get { return AllEquipments.Get(materials); }
+        get { return AllEquipments.Get(equipments); }
+    }
+
+    public void AddInventory(Properties inv, int cnt = 1)
+    {
+        if (inv is ConsumableProperties)
+        {
+            consumables.Add(new InventoryItem<ConsumableProperties>(AllConsumables, (inv as ConsumableProperties).index, cnt));
+        }
+        if (inv is MaterialProperties)
+            materials.Add((inv as MaterialProperties).index);
+        if (inv is EquipmentProperties)
+            equipments.Add((inv as EquipmentProperties).index);
+        if (inv is KeyProperties)
+            keys.Add((inv as KeyProperties).index);
+    }
+}
+
+[System.Serializable]
+public class InventoryItem<T> where T : class//where T : Properties
+{
+    int index;
+    IInventorySO ItemsBase;
+    public int Count;
+
+    public InventoryItem(IInventorySO SO, int i, int cnt)
+    {
+        ItemsBase = SO;
+        index = i;
+        Count = cnt;
+    }
+
+    public T Item
+    {
+        get
+        {
+            return (ItemsBase.Get(index)) as T;
+        }
     }
 }
