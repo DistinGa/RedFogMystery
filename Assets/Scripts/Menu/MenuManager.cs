@@ -17,6 +17,12 @@ public class MenuManager : MonoBehaviour
         //if (Input.GetAxisRaw("Tab") == 1)
         if (Input.GetKeyDown(KeyCode.Tab))
         {
+            //if (GameManager.GM.PartyContent().Count == 1)
+            //{
+            //    GameManager.GM.ConnectToParty("Hertruda");
+            //    //GameManager.GM.ConnectToParty("Arnold");
+            //    //GameManager.GM.ConnectToParty("Sebastian");
+            //}
             if (CurrentMenu.IsOpen)
             {
                 Time.timeScale = 1;

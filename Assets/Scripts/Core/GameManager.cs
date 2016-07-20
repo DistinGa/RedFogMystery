@@ -185,22 +185,22 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public ConsumablePropetries[] Consumables
+    public ConsumableProperties[] Consumables
     {
         get { return AllConsumables.Get(consumables); }
     }
 
-    public MaterialPropetries[] Materials
+    public MaterialProperties[] Materials
     {
         get { return AllMaterials.Get(materials); }
     }
 
-    public KeyPropetries[] Keys
+    public KeyProperties[] Keys
     {
         get { return AllKeys.Get(materials); }
     }
 
-    public EquipmentPropetries[] Equipments
+    public EquipmentProperties[] Equipments
     {
         get { return AllEquipments.Get(materials); }
     }

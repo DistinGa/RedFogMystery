@@ -2,18 +2,14 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class MainMenuCharacter : MonoBehaviour
+public class InventoryMenuCharacter : MonoBehaviour
 {
     public Image portret;
     public Text characterName;
-    public Text level;
-    public Text corruption;
-    public Scrollbar corruptionBar;
+    public Image healthBar;
     public Text health;
-    public Scrollbar healthBar;
+    public Image manaBar;
     public Text mana;
-    public Scrollbar manaBar;
-
 
     public void UpdateCharacter(Hero hero)
     {
@@ -22,16 +18,12 @@ public class MainMenuCharacter : MonoBehaviour
             HeroProperties hp = hero.HeroPropetries;
             //portret = 
             characterName.text = hp.Name;
-            level.text = hero.level.ToString();
-
-            corruption.text = hp.curCr + "/" + hp.Cr;
-            corruptionBar.size = (float)hp.curCr / (float)hp.Cr;
 
             health.text = hp.curHp + "/" + hp.Hp;
-            healthBar.size = (float)hp.curHp / (float)hp.Hp;
+            healthBar.fillAmount = (float)hp.curHp / (float)hp.Hp;
 
             mana.text = hp.curMp + "/" + hp.Mp;
-            manaBar.size = (float)hp.curMp / (float)hp.Mp;
+            manaBar.fillAmount = (float)hp.curMp / (float)hp.Mp;
         }
     }
 }

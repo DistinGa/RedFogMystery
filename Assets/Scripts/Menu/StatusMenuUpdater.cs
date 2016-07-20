@@ -4,6 +4,7 @@ using System.Collections;
 public class StatusMenuUpdater : MonoBehaviour
 {
     public GameObject UI_CharacterInfo;
+    public GameObject UI_CharacterParams;
 
     [HideInInspector]
     public Hero CurHero;
@@ -19,5 +20,6 @@ public class StatusMenuUpdater : MonoBehaviour
     void UpdateMenu()
     {
         UI_CharacterInfo.GetComponent<StatusMenuCharacter>().UpdateCharacter(CurHero);
+        UI_CharacterParams.GetComponent<StatusMenuParams>().UpdateCharacter(CurHero);
     }
 }

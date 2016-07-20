@@ -15,9 +15,9 @@ MonoBehaviour:
   - Portrait: {fileID: 0}
     Name: Magic water
     Description: "\u0412\u043E\u0441\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u0442
-      10 HP"
-    Hp: 10
-    Mp: 0
+      10 MP"
+    Hp: 0
+    Mp: 10
     Cr: 0
     Atk: 0
     Def: 0
@@ -26,10 +26,10 @@ MonoBehaviour:
     Agi: 0
     index: 0
   - Portrait: {fileID: 0}
-    Name: Magical water
+    Name: Potion
     Description: "\u0412\u043E\u0441\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u0442
-      10 MP"
-    Hp: 10
+      50 HP"
+    Hp: 50
     Mp: 0
     Cr: 0
     Atk: 0
