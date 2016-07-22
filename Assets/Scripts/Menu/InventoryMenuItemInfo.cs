@@ -9,7 +9,7 @@ public class InventoryMenuItemInfo : MonoBehaviour
     public Text amount;
     public Image mark;
 
-    public void ChangeInfo(string _name, int _amount, bool _mark = false)
+    public void ChangeInfo(string _name, int _amount, bool _mark)
     {
         // учесть максимальную длину строк!?
         itemName.text = _name;

@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public enum InventoryCategory
 {
-    Items,
-    Equipment,
+    Consumables,
+    Equipments,
     Materials,
     Keys
 }
@@ -22,15 +22,16 @@ public class InventoryMenuUpdater : MonoBehaviour
     [HideInInspector]
     public List<GameObject> UI_Inventory;
 
-    public InventoryCategory currentCategory;
+    public InventoryCategory currentItemCategory;
 
     private int markPosition;
+    private int markCounter;
 
     public void Start()
     {
         if (UI_Inventory == null)
             UI_Inventory = new List<GameObject>();
-        currentCategory = InventoryCategory.Items;
+        currentItemCategory = InventoryCategory.Consumables;
         markPosition = 0;
     }
 
@@ -38,6 +39,7 @@ public class InventoryMenuUpdater : MonoBehaviour
     {
         List<Hero> party = GameManager.GM.PartyContent();
         List<InventoryItem<ConsumableProperties>> currentItems = GameManager.GM.Consumables;
+        markCounter = 0;
 
         // Characters Info Update
         if (party.Count > 0)
@@ -53,38 +55,45 @@ public class InventoryMenuUpdater : MonoBehaviour
                     UI_Characters[i].SetActive(false);
             }
         }
-
         // Inventory List Update
-        if (currentItems.Count > 0)
+        ClearInventoryPrefabs();
+        GameObject itemPref;
+        foreach (var item in currentItems)
         {
-            // ? стрёмный кусок гавнокода
-            for (int i = UI_Inventory.Count - 1; i >= 0; i--)
-                Destroy(UI_Inventory[i]);
+            itemPref = Instantiate(UI_ItemPrefab);
+            itemPref.transform.SetParent(UI_ItemGrid.transform);
+            itemPref.transform.localScale = new Vector2(1, 1);
 
-            UI_Inventory.Clear();
-
-            for (int i = 0; i < currentItems.Count; i++)
-            {
-                GameObject itemPref = Instantiate(UI_ItemPrefab);
-                itemPref.transform.SetParent(UI_ItemGrid.transform);
-                UI_Inventory.Add(itemPref);
-            }
-
-            for (int i = 0; i < UI_Inventory.Count; i++)
-            {
-                Debug.Log(currentItems[i].Item.Name);
-                //ConsumableProperties cp = GameManager.GM.AllConsumables.Consumables[currentItems[i]];
-                //UI_Inventory[i].GetComponent<InventoryMenuItemInfo>().ChangeInfo(cp.Name, 1, true);
-                if (i == markPosition)
-                {
-                    UI_Inventory[i].GetComponent<InventoryMenuItemInfo>().ChangeInfo(
-                        currentItems[i].Item.Name, currentItems[i].Count, true);
-                    UI_Description.text = currentItems[i].Item.Description.ToString();
-                }
-                else
-                    UI_Inventory[i].GetComponent<InventoryMenuItemInfo>().ChangeInfo(
-                        currentItems[i].Item.Name, currentItems[i].Count);
-            }
+            itemPref.GetComponent<InventoryMenuItemInfo>().ChangeInfo(item.Item.Name, item.Count, markCounter == markPosition ? true : false);
+            if (markCounter == markPosition)
+                UI_Description.text = item.Item.Description;
+            markCounter++;
         }
+    }
+
+    // удаление всех префабов предметов
+    public void ClearInventoryPrefabs()
+    {
+        foreach (Transform child in UI_ItemGrid.transform)
+        {
+            Destroy(child.gameObject);
+        }
+    }
+
+    public void ChangeItemTypeConsumables()
+    {
+            currentItemCategory = InventoryCategory.Consumables;
+    }
+    public void ChangeItemTypeEquipments()
+    {
+            currentItemCategory = InventoryCategory.Equipments;
+    }
+    public void ChangeItemTypeMaterials()
+    {
+        currentItemCategory = InventoryCategory.Materials;
+    }
+    public void ChangeItemTypeKeys()
+    {
+        currentItemCategory = InventoryCategory.Keys;
     }
 }
