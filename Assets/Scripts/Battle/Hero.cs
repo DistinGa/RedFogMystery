@@ -41,31 +41,31 @@ public class Hero
     public EquipmentProperties Weapon
     {
         set { weapon = value.index; }
-        get { return GameManager.GM.AllEquipments.Get(weapon); }
+        get { return (EquipmentProperties)GameManager.GM.AllEquipments.Get(weapon); }
     }
 
     public EquipmentProperties Armor
     {
         set { armor = value.index; }
-        get { return GameManager.GM.AllEquipments.Get(armor); }
+        get { return (EquipmentProperties)GameManager.GM.AllEquipments.Get(armor); }
     }
 
     public EquipmentProperties Helmet
     {
         set { helmet = value.index; }
-        get { return GameManager.GM.AllEquipments.Get(helmet); }
+        get { return (EquipmentProperties)GameManager.GM.AllEquipments.Get(helmet); }
     }
 
     public EquipmentProperties Accessory1
     {
         set { accessory[0] = value.index; }
-        get { return GameManager.GM.AllEquipments.Get(accessory[0]); }
+        get { return (EquipmentProperties)GameManager.GM.AllEquipments.Get(accessory[0]); }
     }
 
     public EquipmentProperties Accessory2
     {
         set { accessory[1] = value.index; }
-        get { return GameManager.GM.AllEquipments.Get(accessory[1]); }
+        get { return (EquipmentProperties)GameManager.GM.AllEquipments.Get(accessory[1]); }
     }
 
     public HeroProperties HeroPropetries

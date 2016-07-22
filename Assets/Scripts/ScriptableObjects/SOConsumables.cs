@@ -12,24 +12,14 @@ public class SOConsumables : ScriptableObject, IInventorySO
         return Consumables[index];
     }
 
-    //public ConsumableProperties Get(int index)
+    //public ConsumableProperties[] Get(List<int> indexes)
     //{
-    //    return Consumables[index];
+    //    ConsumableProperties[] ret = new ConsumableProperties[indexes.Count];
+    //    for(int i = 0; i < indexes.Count; i++)
+    //    {
+    //        ret[i] = (ConsumableProperties)Get(indexes[i]);
+    //    }
+
+    //    return ret;
     //}
-
-    //public IInventoryProperties Get(int index)
-    //{
-    //    return Consumables[index];
-    //}
-
-    public ConsumableProperties[] Get(List<int> indexes)
-    {
-        ConsumableProperties[] ret = new ConsumableProperties[indexes.Count];
-        for(int i = 0; i < indexes.Count; i++)
-        {
-            ret[i] = (ConsumableProperties)Get(indexes[i]);
-        }
-
-        return ret;
-    }
 }

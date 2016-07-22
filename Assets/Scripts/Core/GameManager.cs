@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager GM;
     float gameTime = 0;
-    public int Gold;
+    double gold;
 
     public GameObject MainCharacter;    //ГГ
     public List<GameObject> Vagons;     //список GO для отображения "паровозика"
@@ -19,9 +19,9 @@ public class GameManager : MonoBehaviour
     //!!!public для тестов. Потом убрать
     [SerializeField]
     public List<InventoryItem<ConsumableProperties>> consumables = new List<InventoryItem<ConsumableProperties>>();
-    public List<int> materials;
-    public List<int> keys;
-    public List<int> equipments;
+    public List<InventoryItem<MaterialProperties>> materials = new List<InventoryItem<MaterialProperties>>();
+    public List<InventoryItem<KeyProperties>> keys = new List<InventoryItem<KeyProperties>>();
+    public List<InventoryItem<EquipmentProperties>> equipments = new List<InventoryItem<EquipmentProperties>>();
     //!!!public для тестов. Потом убрать
 
     public SOConsumables AllConsumables;
@@ -191,19 +191,29 @@ public class GameManager : MonoBehaviour
         get { return consumables; }
     }
 
-    public MaterialProperties[] Materials
+    public List<InventoryItem<MaterialProperties>> Materials
     {
-        get { return AllMaterials.Get(materials); }
+        get { return materials; }
     }
 
-    public KeyProperties[] Keys
+    public List<InventoryItem<KeyProperties>> Keys
     {
-        get { return AllKeys.Get(keys); }
+        get { return keys; }
     }
 
-    public EquipmentProperties[] Equipments
+    public List<InventoryItem<EquipmentProperties>> Equipments
     {
-        get { return AllEquipments.Get(equipments); }
+        get { return equipments; }
+    }
+
+    public double Gold
+    {
+        get { return gold; }
+    }
+
+    public void AddGold(double Amount)
+    {
+        gold += Amount;
     }
 
     public void AddInventory(Properties inv, int cnt = 1)
@@ -213,11 +223,11 @@ public class GameManager : MonoBehaviour
             consumables.Add(new InventoryItem<ConsumableProperties>(AllConsumables, (inv as ConsumableProperties).index, cnt));
         }
         if (inv is MaterialProperties)
-            materials.Add((inv as MaterialProperties).index);
+            materials.Add(new InventoryItem<MaterialProperties>(AllMaterials, (inv as MaterialProperties).index, cnt));
         if (inv is EquipmentProperties)
-            equipments.Add((inv as EquipmentProperties).index);
+            equipments.Add(new InventoryItem<EquipmentProperties>(AllEquipments, (inv as EquipmentProperties).index, cnt));
         if (inv is KeyProperties)
-            keys.Add((inv as KeyProperties).index);
+            keys.Add(new InventoryItem<KeyProperties>(AllKeys, (inv as KeyProperties).index, cnt));
     }
 }
 

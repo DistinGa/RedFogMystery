@@ -15,12 +15,8 @@ public class BoxScript : MonoBehaviour
     BoxItem[] EquipmentBoxContent;
     [SerializeField]
     BoxItem[] KeyBoxContent;
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
+    [SerializeField]
+    double GoldAmount;
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -45,6 +41,8 @@ public class BoxScript : MonoBehaviour
             {
                 GM.AddInventory(GM.AllKeys.Get(item.ItemIndex), item.Count);
             }
+
+            GM.AddGold(GoldAmount);
         }
 
         trigger.enabled = false;
