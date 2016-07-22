@@ -47,6 +47,21 @@ public class Properties
 
         return this;
     }
+
+    //Вычитание воздействия от другого предмета
+    public Properties Subtract(Properties ps)
+    {
+        Hp -= ps.Hp;
+        Mp -= ps.Mp;
+        Cr -= ps.Cr;
+        Atk -= ps.Atk;
+        Def -= ps.Def;
+        Mat -= ps.Mat;
+        Mdf -= ps.Mdf;
+        Agi -= ps.Agi;
+
+        return this;
+    }
 }
 
 public enum EquipmentType

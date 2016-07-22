@@ -92,6 +92,18 @@ public class Hero
         }
     }
 
+    //Возвращает свойства игрока, которые будут после ээкипировки указанного предмета
+    public HeroProperties PredictProperties(EquipmentProperties NewEq, EquipmentProperties OldEq = null)
+    {
+        HeroProperties HerProp = HeroPropetries;
+        if(OldEq != null)
+            HerProp.Subtract(OldEq);
+
+        HerProp.Add(NewEq);
+
+        return HerProp;
+    }
+
     //Обработка получения опыта
     public void AddExp(int exp)
     {
