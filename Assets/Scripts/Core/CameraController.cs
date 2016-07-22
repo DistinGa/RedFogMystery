@@ -106,7 +106,7 @@ public class CameraController : MonoBehaviour
         UpLeft = (Vector2)map.transform.position + new Vector2(-Spr.pivot.x, Spr.rect.height - Spr.pivot.y) * UnitsPerPixel;
 
         ConstY = (2 * Camera.orthographicSize >= fieldHeight);
-        ConstX = (2 * Camera.orthographicSize * Camera.aspect >= fieldHeight);
+        ConstX = (2 * Camera.orthographicSize * Camera.aspect >= fieldWidth);
 
         //Если размер камеры больше размера карты, устанавливаем камеру в центр карты. Если камера меньше устанавливаем её на цель.
         Vector3 NewCamPosition = new Vector3(Target.position.x, Target.position.y, transform.position.z);
