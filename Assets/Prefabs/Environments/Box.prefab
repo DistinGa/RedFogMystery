@@ -28,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 170292}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 753, y: -282, z: 0}
+  m_LocalPosition: {x: 929.1104, y: -797.9048, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -106,10 +106,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: {fileID: 5858450}
-  ConsumableBoxContent: []
+  ConsumableBoxContent:
+  - ItemIndex: 1
+    Count: 23
+  - ItemIndex: 0
+    Count: 55
   MaterialBoxContent: []
-  EquipmentBoxContent: []
+  EquipmentBoxContent:
+  - ItemIndex: 0
+    Count: 1
+  - ItemIndex: 1
+    Count: 2
+  - ItemIndex: 2
+    Count: 3
+  - ItemIndex: 3
+    Count: 4
+  - ItemIndex: 4
+    Count: 5
+  - ItemIndex: 5
+    Count: 6
+  - ItemIndex: 6
+    Count: 7
+  - ItemIndex: 7
+    Count: 8
   KeyBoxContent: []
+  GoldAmount: 0
 --- !u!212 &21277224
 SpriteRenderer:
   m_ObjectHideFlags: 1
