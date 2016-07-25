@@ -14,23 +14,17 @@ public enum InventoryCategory
 public class InventoryMenuUpdater : MonoBehaviour
 {
     public GameObject[] UI_Characters;
-    public GameObject[] UI_TogglesGroup;
     public GameObject UI_ItemGrid;
     public GameObject UI_ItemPrefab;
     public Text UI_Description;
 
-    [HideInInspector]
-    public List<GameObject> UI_Inventory;
-
     public InventoryCategory currentItemCategory;
 
     private int markPosition;
-    private int markCounter;
+    private int Counter;
 
     public void Start()
     {
-        if (UI_Inventory == null)
-            UI_Inventory = new List<GameObject>();
         currentItemCategory = InventoryCategory.Consumables;
         markPosition = 0;
     }
@@ -39,7 +33,6 @@ public class InventoryMenuUpdater : MonoBehaviour
     {
         UI_Description.text = " "; // очистка описания в случае пустого инвентаря
         List<Hero> party = GameManager.GM.PartyContent();
-        //List<InventoryItem<ConsumableProperties>> currentItems = GameManager.GM.Consumables;
 
         // Characters Info Update
         if (party.Count > 0)
@@ -76,7 +69,6 @@ public class InventoryMenuUpdater : MonoBehaviour
             default:
                 break;
         }
-
     }
 
     // удаление всех префабов предметов
@@ -90,99 +82,126 @@ public class InventoryMenuUpdater : MonoBehaviour
 
     void ConsumableInventoryUpdate()
     {
-        markCounter = 0;
-
-        List<InventoryItem<ConsumableProperties>> consumablesItems = GameManager.GM.Consumables;
+        Counter = 0;
 
         GameObject itemPref;
-        foreach (var item in consumablesItems)
+        foreach (var item in GameManager.GM.Consumables)
         {
             itemPref = Instantiate(UI_ItemPrefab);
             itemPref.transform.SetParent(UI_ItemGrid.transform);
             itemPref.transform.localScale = new Vector2(1, 1);
 
-            itemPref.GetComponent<InventoryMenuItemInfo>().ChangeInfo(item.Item.Name, item.Count, markCounter == markPosition ? true : false);
-            if (markCounter == markPosition)
+            itemPref.GetComponent<InventoryMenuItemInfo>().ChangeInfo(
+                item.Item.Name, item.Count, Counter == markPosition ? true : false, Counter);
+            if (Counter == markPosition)
                 UI_Description.text = item.Item.Description;
-            markCounter++;
+            Counter++;
         }
     }
     void EquipmentInventoryUpdate()
     {
-        markCounter = 0;
-
-        List<InventoryItem<EquipmentProperties>> equipmentsItems = GameManager.GM.Equipments;
+        Counter = 0;
 
         GameObject itemPref;
-        foreach (var item in equipmentsItems)
+        foreach (var item in GameManager.GM.Equipments)
         {
             itemPref = Instantiate(UI_ItemPrefab);
             itemPref.transform.SetParent(UI_ItemGrid.transform);
             itemPref.transform.localScale = new Vector2(1, 1);
 
-            itemPref.GetComponent<InventoryMenuItemInfo>().ChangeInfo(item.Item.Name, item.Count, markCounter == markPosition ? true : false);
-            if (markCounter == markPosition)
+            itemPref.GetComponent<InventoryMenuItemInfo>().ChangeInfo(
+                item.Item.Name, item.Count, Counter == markPosition ? true : false, Counter);
+            if (Counter == markPosition)
                 UI_Description.text = item.Item.Description;
-            markCounter++;
+            Counter++;
         }
     }
     void MaterialInventoryUpdate()
     {
-        markCounter = 0;
-
-        List<InventoryItem<MaterialProperties>> materialsItems = GameManager.GM.Materials;
+        Counter = 0;
 
         GameObject itemPref;
-        foreach (var item in materialsItems)
+        foreach (var item in GameManager.GM.Materials)
         {
             itemPref = Instantiate(UI_ItemPrefab);
             itemPref.transform.SetParent(UI_ItemGrid.transform);
             itemPref.transform.localScale = new Vector2(1, 1);
 
-            itemPref.GetComponent<InventoryMenuItemInfo>().ChangeInfo(item.Item.Name, item.Count, markCounter == markPosition ? true : false);
-            if (markCounter == markPosition)
+            itemPref.GetComponent<InventoryMenuItemInfo>().ChangeInfo(
+                item.Item.Name, item.Count, Counter == markPosition ? true : false, Counter);
+            if (Counter == markPosition)
                 UI_Description.text = item.Item.Description;
-            markCounter++;
+            Counter++;
         }
     }
     void KeyInventoryUpdate()
     {
-        markCounter = 0;
-
-        List<InventoryItem<KeyProperties>> keysItems = GameManager.GM.Keys;
+        Counter = 0;
 
         GameObject itemPref;
-        foreach (var item in keysItems)
+        foreach (var item in GameManager.GM.Keys)
         {
             itemPref = Instantiate(UI_ItemPrefab);
             itemPref.transform.SetParent(UI_ItemGrid.transform);
             itemPref.transform.localScale = new Vector2(1, 1);
 
-            itemPref.GetComponent<InventoryMenuItemInfo>().ChangeInfo(item.Item.Name, item.Count, markCounter == markPosition ? true : false);
-            if (markCounter == markPosition)
+            itemPref.GetComponent<InventoryMenuItemInfo>().ChangeInfo(
+                item.Item.Name, item.Count, Counter == markPosition ? true : false, Counter);
+            if (Counter == markPosition)
                 UI_Description.text = item.Item.Description;
-            markCounter++;
+            Counter++;
         }
     }
 
     public void ChangeItemTypeConsumables()
     {
         currentItemCategory = InventoryCategory.Consumables;
+        markPosition = 0;
         UpdateMenu();
     }
     public void ChangeItemTypeEquipments()
     {
         currentItemCategory = InventoryCategory.Equipments;
+        markPosition = 0;
         UpdateMenu();
     }
     public void ChangeItemTypeMaterials()
     {
         currentItemCategory = InventoryCategory.Materials;
+        markPosition = 0;
         UpdateMenu();
     }
     public void ChangeItemTypeKeys()
     {
         currentItemCategory = InventoryCategory.Keys;
+        markPosition = 0;
         UpdateMenu();
+    }
+
+    public void ChangeMarkPosition(InventoryMenuItemInfo prefabScript)
+    {
+        if (markPosition == prefabScript.prefabIndex && currentItemCategory == InventoryCategory.Consumables)
+        {
+            UseItem(prefabScript.itemName.text);
+        }
+        else
+        {
+            markPosition = prefabScript.prefabIndex;
+        }
+        UpdateMenu();
+
+    }
+
+    public void UseItem(string itemName)
+    {
+        foreach (var item in GameManager.GM.Consumables)
+        {
+            if (itemName == item.Item.Name)
+            {
+                item.Count--;
+                GameManager.GM.PartyContent()[0].curHp += item.Item.Hp;
+                GameManager.GM.PartyContent()[0].curMp += item.Item.Mp;
+            }
+        }
     }
 }
