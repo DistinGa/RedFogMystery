@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    Vector3 initialPosition;    //где будет размещён ГГ после загрузки сцены
+
     public static GameManager GM;
     float gameTime = 0;
     double gold;
@@ -31,8 +34,6 @@ public class GameManager : MonoBehaviour
 
     public void Awake()
     {
-        DontDestroyOnLoad(gameObject);
-
         //singletone
         if (GM == null)
             GM = this;
@@ -41,6 +42,10 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
+        DontDestroyOnLoad(gameObject);
+
+        //InitializeGM();
     }
 
     public void Start()
@@ -53,13 +58,19 @@ public class GameManager : MonoBehaviour
             Debug.LogError("GameManager: Не назначен список Keys", AllKeys);
         if (AllEquipments == null)
             Debug.LogError("GameManager: Не назначен список Equipments", AllEquipments);
+    }
 
-
+    void InitializeGM()
+    {
         if (MainCharacter == null)
             MainCharacter = FindObjectOfType<CharacterMoving>().gameObject;
 
         if (Leader.lp == null)
             Leader = FindHeroByName("Gehend");
+
+        if (initialPosition != Vector3.zero)
+            MainCharacter.transform.position = initialPosition;
+
     }
 
     public Hero Leader
@@ -171,7 +182,7 @@ public class GameManager : MonoBehaviour
         MainCharacter.GetComponent<CharacterMoving>().SetWind(sw);
         foreach (var item in Vagons)
         {
-            if(item != null)
+            if (item != null)
                 item.SendMessage("SetWind", sw);
         }
     }
@@ -228,6 +239,17 @@ public class GameManager : MonoBehaviour
             equipments.Add(new InventoryItem<EquipmentProperties>(AllEquipments, (inv as EquipmentProperties).index, cnt));
         if (inv is KeyProperties)
             keys.Add(new InventoryItem<KeyProperties>(AllKeys, (inv as KeyProperties).index, cnt));
+    }
+
+    public void ChangeScene(string sceneName, Vector3 initPos)
+    {
+        initialPosition = initPos;
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public void OnLevelWasLoaded(int level)
+    {
+        InitializeGM();
     }
 }
 
