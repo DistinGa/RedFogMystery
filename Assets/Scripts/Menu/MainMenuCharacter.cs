@@ -14,7 +14,6 @@ public class MainMenuCharacter : MonoBehaviour
     public Text mana;
     public Scrollbar manaBar;
 
-
     public void UpdateCharacter(Hero hero)
     {
         if (hero != null)

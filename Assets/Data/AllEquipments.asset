@@ -13,17 +13,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Equipments:
   - Portrait: {fileID: 0}
-    Name: Katana
-    Description: "\u041A\u0440\u0443\u0442\u043E\u0439 \u044F\u043F\u043E\u043D\u0441\u043A\u0438\u0439
-      \u043C\u0435\u0447"
+    Name: None
+    Description: None
     Hp: 0
     Mp: 0
     Cr: 0
-    Atk: 1000
+    Atk: 0
     Def: 0
     Mat: 0
     Mdf: 0
-    Agi: 25
+    Agi: 0
     index: 0
     equipType: 0
     equipApplication: 0
@@ -142,6 +141,23 @@ MonoBehaviour:
     Mdf: 0
     Agi: -10
     index: 7
+    equipType: 0
+    equipApplication: 0
+    forLevel: 0
+    HeroName: 
+  - Portrait: {fileID: 0}
+    Name: Katana
+    Description: "\u041A\u0440\u0443\u0442\u043E\u0439 \u044F\u043F\u043E\u043D\u0441\u043A\u0438\u0439
+      \u043C\u0435\u0447"
+    Hp: 0
+    Mp: 0
+    Cr: 0
+    Atk: 1000
+    Def: 0
+    Mat: 0
+    Mdf: 0
+    Agi: 25
+    index: 8
     equipType: 0
     equipApplication: 0
     forLevel: 0
