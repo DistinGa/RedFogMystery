@@ -67,8 +67,8 @@ public class Properties
 public enum EquipmentType
 {
     Weapon,
-    Armor,
     Helmet,
+    Armor,
     Accessory
 }
 

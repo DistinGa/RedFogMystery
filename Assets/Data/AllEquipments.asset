@@ -57,7 +57,7 @@ MonoBehaviour:
     Mdf: 0
     Agi: 0
     index: 2
-    equipType: 1
+    equipType: 2
     equipApplication: 0
     forLevel: 0
     HeroName: 
@@ -73,7 +73,7 @@ MonoBehaviour:
     Mdf: 0
     Agi: 0
     index: 3
-    equipType: 1
+    equipType: 2
     equipApplication: 0
     forLevel: 0
     HeroName: 
@@ -89,7 +89,7 @@ MonoBehaviour:
     Mdf: 0
     Agi: 0
     index: 4
-    equipType: 2
+    equipType: 1
     equipApplication: 0
     forLevel: 0
     HeroName: 
@@ -106,7 +106,7 @@ MonoBehaviour:
     Mdf: 0
     Agi: 0
     index: 5
-    equipType: 2
+    equipType: 1
     equipApplication: 0
     forLevel: 0
     HeroName: 

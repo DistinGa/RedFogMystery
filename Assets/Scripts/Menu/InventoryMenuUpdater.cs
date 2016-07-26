@@ -66,8 +66,6 @@ public class InventoryMenuUpdater : MonoBehaviour
             case InventoryCategory.Keys:
                 KeyInventoryUpdate();
                 break;
-            default:
-                break;
         }
     }
 
@@ -88,6 +86,7 @@ public class InventoryMenuUpdater : MonoBehaviour
         foreach (var item in GameManager.GM.Consumables)
         {
             itemPref = Instantiate(UI_ItemPrefab);
+            itemPref.SetActive(true);
             itemPref.transform.SetParent(UI_ItemGrid.transform);
             itemPref.transform.localScale = new Vector2(1, 1);
 
