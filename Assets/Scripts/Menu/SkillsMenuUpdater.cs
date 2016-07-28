@@ -10,13 +10,13 @@ public class SkillsMenuUpdater : MonoBehaviour
     [HideInInspector]
     public Hero CurHero;
 
-    private bool isMagic;    //текущее состояние списка (магия/способности)
+    //private bool isMagic;    //текущее состояние списка (магия/способности)
 
 
     public void Start()
     {
         CurHero = GameManager.GM.PartyContent()[0];
-        isMagic = true;
+        //isMagic = true;
     }
 
     public void UpdateMenu()
