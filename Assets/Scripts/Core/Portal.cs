@@ -35,11 +35,6 @@ public class Portal : MonoBehaviour
       doorAnimator.SetTrigger("Open"); 
   }
 
-  private void OnTriggerExit2D(Collider2D other)
-  {
-
-  }
-
   private void ChangePosition()
   {
     characterMoving.transform.position = otherPortal.TargetPoint.transform.position;
