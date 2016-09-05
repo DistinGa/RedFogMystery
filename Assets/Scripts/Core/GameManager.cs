@@ -251,6 +251,19 @@ public class GameManager : MonoBehaviour
     {
         InitializeGM();
     }
+
+    public void OverheadText(Transform target, string text, float delay = 5000f)
+    {
+        //OverheadTextScript script = target.Find("OverheadText").GetComponent<OverheadTextScript>();
+        OverheadTextScript script = target.GetComponent<OverheadTextScript>();
+        if (script == null)
+        {
+            Debug.LogError("Отсутствует объект для отображения всплывающего текста.", target);
+            return;
+        }
+
+        script.ShowOverheadText(text, delay);
+    }
 }
 
 [System.Serializable]
