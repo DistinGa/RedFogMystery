@@ -156,12 +156,35 @@ public class EquipmentMenuUpdater : MonoBehaviour
     }
     public void RemoveAll()
     {
+        // вернуть снятый инвентарь в рюкзак
+        GameManager gm = GameManager.GM;
         EquipmentProperties ep = GameManager.GM.AllEquipments.Equipments[0];
-        currentHero.Weapon = ep;
-        currentHero.Helmet = ep;
-        currentHero.Armor = ep;
-        currentHero.Accessory1 = ep;
-        currentHero.Accessory2 = ep;
+        if (currentHero.Weapon.index != 0)
+        {
+            gm.AddInventory(currentHero.Weapon);
+            currentHero.Weapon = ep;
+        }
+        if (currentHero.Helmet.index != 0)
+        {
+            gm.AddInventory(currentHero.Helmet);
+            currentHero.Helmet = ep;
+        }
+        if (currentHero.Armor.index != 0)
+        {
+            gm.AddInventory(currentHero.Armor);
+            currentHero.Armor = ep;
+        }
+        if (currentHero.Accessory1.index != 0)
+        {
+            gm.AddInventory(currentHero.Accessory1);
+            currentHero.Accessory1 = ep;
+        }
+        if (currentHero.Accessory2.index != 0)
+        {
+            gm.AddInventory(currentHero.Accessory2);
+            currentHero.Accessory2 = ep;
+        }
+
         UpdateMenu();
         markPosition = 0;
         Counter = 0;

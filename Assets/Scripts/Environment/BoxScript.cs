@@ -51,7 +51,7 @@ public class BoxScript : MonoBehaviour
     [System.Serializable]
     class BoxItem
     {
-        public int ItemIndex;
-        public int Count;
+        public int ItemIndex = 0;
+        public int Count = 0;
     }
 }
