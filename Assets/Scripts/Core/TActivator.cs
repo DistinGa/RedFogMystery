@@ -3,12 +3,24 @@
 public class TActivator : MonoBehaviour
 {
     [SerializeField]
-    MonoBehaviour Script;
+    CSEvent Script;
+    [SerializeField]
+    bool oneShot;   //Если true, объект активатора отключается после использования.
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.name == "MainHero") //проверка на персонажа
-            Script.SendMessage("OnEventAction");
+        {
+            if (Script == null)
+            {
+                Debug.LogError("Не назначен скрипт CSEvent", this);
+                return;
+            }
+
+            Script.OnEventAction();
+            if (oneShot)
+                gameObject.SetActive(false);
+        }
     }
 
     public void Start()

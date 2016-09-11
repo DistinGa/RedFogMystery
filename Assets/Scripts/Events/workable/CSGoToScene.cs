@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class GoToScene : MonoBehaviour
+public class CSGoToScene : CSEvent
 {
     [SerializeField]
     [Tooltip("Имя сцены которую следует загрузить")]
@@ -12,7 +12,7 @@ public class GoToScene : MonoBehaviour
     [Tooltip("Интервал в секундах до загрузки новой сцены")]
     private float interval = 0;
 
-    public void OnEventAction()
+    public override void OnEventAction()
     {
         Invoke("LoadNewScene", interval);
     }
