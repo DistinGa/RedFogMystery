@@ -189,12 +189,12 @@ public class GameManager : MonoBehaviour
 
     public void Load()
     {
-
+        SaveManager.Load("Current");
     }
 
     public void Save()
     {
-
+        SaveManager.Save("Current");
     }
 
     public List<InventoryItem<ConsumableProperties>> Consumables
@@ -227,18 +227,42 @@ public class GameManager : MonoBehaviour
         gold += Amount;
     }
 
+    //Добавление предмета в инвентарь. 
+    //Если в инвентаре уже есть подобные предметы, увеличивается счётчик, если нет - добавляется элемент в список.
     public void AddInventory(Properties inv, int cnt = 1)
     {
         if (inv is ConsumableProperties)
         {
-            consumables.Add(new InventoryItem<ConsumableProperties>(AllConsumables, (inv as ConsumableProperties).index, cnt));
+            InventoryItem<ConsumableProperties> item = consumables.Find(x => x.Item == inv);
+            if (item != null)
+                item.Count += cnt;
+            else
+                consumables.Add(new InventoryItem<ConsumableProperties>(AllConsumables, (inv as ConsumableProperties).index, cnt));
         }
         if (inv is MaterialProperties)
-            materials.Add(new InventoryItem<MaterialProperties>(AllMaterials, (inv as MaterialProperties).index, cnt));
+        {
+            InventoryItem<MaterialProperties> item = materials.Find(x => x.Item == inv);
+            if (item != null)
+                item.Count += cnt;
+            else
+                materials.Add(new InventoryItem<MaterialProperties>(AllMaterials, (inv as MaterialProperties).index, cnt));
+        }
         if (inv is EquipmentProperties)
-            equipments.Add(new InventoryItem<EquipmentProperties>(AllEquipments, (inv as EquipmentProperties).index, cnt));
+        {
+            InventoryItem<EquipmentProperties> item = equipments.Find(x => x.Item == inv);
+            if (item != null)
+                item.Count += cnt;
+            else
+                equipments.Add(new InventoryItem<EquipmentProperties>(AllEquipments, (inv as EquipmentProperties).index, cnt));
+        }
         if (inv is KeyProperties)
-            keys.Add(new InventoryItem<KeyProperties>(AllKeys, (inv as KeyProperties).index, cnt));
+        {
+            InventoryItem<KeyProperties> item = keys.Find(x => x.Item == inv);
+            if (item != null)
+                item.Count += cnt;
+            else
+                keys.Add(new InventoryItem<KeyProperties>(AllKeys, (inv as KeyProperties).index, cnt));
+        }
     }
 
     public void ChangeScene(string sceneName, Vector3 initPos)
