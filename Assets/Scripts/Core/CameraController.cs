@@ -18,6 +18,7 @@ public class CameraController : MonoBehaviour
     private Vector2 UpLeft;
 
     bool ConstX, ConstY;    //Камера вмещает карту целиком и не двигается по Х и/или У.
+    Vector3 prevTargetPos;    //Предыдущее положение цели камеры
 
     private void Start ()
     {
@@ -39,6 +40,8 @@ public class CameraController : MonoBehaviour
         PanelBeforeCamera = GameObject.Find("PanelBeforeCamera");
         PanelBeforeCamera.SetActive(false);
         //DV}
+
+        prevTargetPos = Target.position;
     }
 
     void LateUpdate()
@@ -47,14 +50,16 @@ public class CameraController : MonoBehaviour
         if (ConstX && ConstY) return;
 
         float newX = transform.position.x, newY = transform.position.y, newZ = transform.position.z;
+        //Усреднение движения камеры
+        Vector3 destination = (Target.position + prevTargetPos) * 0.5f;
 
         //Если Ширина камеры больше ширины карты, камеру по горизонтали не двигаем.
         if (!ConstX)
         {
-            if (Target.position.x - transform.position.x > traction)
-                newX = Target.position.x - traction;
-            if (Target.position.x - transform.position.x < -traction)
-                newX = Target.position.x + traction;
+            if (destination.x - transform.position.x > traction)
+                newX = destination.x - traction;
+            if (destination.x - transform.position.x < -traction)
+                newX = destination.x + traction;
 
             //Проверка границ карты по Х
             if (newX + cameraWidth > UpLeft.x + fieldWidth)
@@ -66,10 +71,10 @@ public class CameraController : MonoBehaviour
         //Если Высота камеры больше высоты карты, камеру по вертикали не двигаем
         if (!ConstY)
         {
-            if (Target.position.y - transform.position.y > traction)
-                newY = Target.position.y - traction;
-            if (Target.position.y - transform.position.y < -traction)
-                newY = Target.position.y + traction;
+            if (destination.y - transform.position.y > traction)
+                newY = destination.y - traction;
+            if (destination.y - transform.position.y < -traction)
+                newY = destination.y + traction;
 
             //Проверка границ карты по Y
             if (newY + cameraHeight > UpLeft.y)
@@ -79,6 +84,8 @@ public class CameraController : MonoBehaviour
         }
 
         transform.position = Vector3.Lerp(transform.position, new Vector3(newX, newY, newZ), SlideFactor);
+
+        prevTargetPos = Target.position;
     }
 
 
