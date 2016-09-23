@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BoxScript : MonoBehaviour
+public class BoxScript : MonoBehaviour, ISave
 {
+    [SerializeField]
+    int objectID;
     [SerializeField]
     Collider2D trigger;
 
@@ -17,6 +19,19 @@ public class BoxScript : MonoBehaviour
     BoxItem[] KeyBoxContent;
     [SerializeField]
     double GoldAmount;
+
+    public void Awake()
+    {
+        if (objectID == 0)
+            Debug.LogError("Объекту не назначен идентификатор.", gameObject);
+
+        SaveManager.Subscribe(this);
+    }
+
+    public void OnDestroy()
+    {
+        SaveManager.Unsubscribe(this);
+    }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -46,6 +61,37 @@ public class BoxScript : MonoBehaviour
         }
 
         trigger.enabled = false;
+    }
+
+    public SavedData GetDataToSave()
+    {
+        return new SavedData(GetObjID(), JsonUtility.ToJson(new SerializableData(trigger.enabled)));
+    }
+
+    public void SetSavedData(string strJSON)
+    {
+        SerializableData gotData = JsonUtility.FromJson<SerializableData>(strJSON);
+
+        gameObject.SetActive(gotData.isActive);
+    }
+
+    public int GetObjID()
+    {
+        if (objectID == 0)
+            Debug.LogError("Объекту не назначен идентификатор.", gameObject);
+
+        return objectID;
+    }
+
+    [System.Serializable]
+    class SerializableData
+    {
+        public bool isActive;
+
+        public SerializableData(bool b)
+        {
+            isActive = b;
+        }
     }
 
     [System.Serializable]

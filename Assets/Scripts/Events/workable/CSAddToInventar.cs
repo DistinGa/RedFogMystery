@@ -1,34 +1,34 @@
 ﻿using UnityEngine;
 
-public class AddToInventar: CSEvent
+public class CSAddToInventar: CSEvent
 {
     [SerializeField]
-    BoxItem[] ConsumableBoxContent;
+    BoxItem[] ConsumableContent;
     [SerializeField]
-    BoxItem[] MaterialBoxContent;
+    BoxItem[] MaterialContent;
     [SerializeField]
-    BoxItem[] EquipmentBoxContent;
+    BoxItem[] EquipmentContent;
     [SerializeField]
-    BoxItem[] KeyBoxContent;
+    BoxItem[] KeyContent;
     [SerializeField]
     double GoldAmount;
 
     public override void OnEventAction()
     {
         GameManager GM = GameManager.GM;
-            foreach (BoxItem item in ConsumableBoxContent)
+            foreach (BoxItem item in ConsumableContent)
             {
                 GM.AddInventory(GM.AllConsumables.Get(item.ItemIndex), item.Count);
             }
-            foreach (BoxItem item in MaterialBoxContent)
+            foreach (BoxItem item in MaterialContent)
             {
                 GM.AddInventory(GM.AllMaterials.Get(item.ItemIndex), item.Count);
             }
-            foreach (BoxItem item in EquipmentBoxContent)
+            foreach (BoxItem item in EquipmentContent)
             {
                 GM.AddInventory(GM.AllEquipments.Get(item.ItemIndex), item.Count);
             }
-            foreach (BoxItem item in KeyBoxContent)
+            foreach (BoxItem item in KeyContent)
             {
                 GM.AddInventory(GM.AllKeys.Get(item.ItemIndex), item.Count);
             }

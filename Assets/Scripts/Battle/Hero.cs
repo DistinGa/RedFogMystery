@@ -3,7 +3,8 @@ using System;
 using System.Collections.Generic;
 
 
-[Serializable] public class HeroProperties : Properties
+[Serializable]
+public class HeroProperties : Properties
 {
     public RuntimeAnimatorController AnimatorController = null;
     public int level;       //уровень
@@ -126,6 +127,57 @@ public class Hero
             else
                 return;
         }
+    }
+
+    //Структура параметров героя для сохранения
+    public struct HeroParamsToSave
+    {
+        public bool isActive;
+        public int level;
+        public int expToLevelUp;
+        public float curHp;
+        public float curMp;
+        public float curCr;
+        public int weapon;
+        public int armor;
+        public int helmet;
+        public int accessory1;
+        public int accessory2;
+
+        public HeroParamsToSave(Hero hero)
+        {
+            isActive = hero.isActive;
+            level = hero.level;
+            expToLevelUp = hero.expToLevelUp;
+            curHp = hero.curHp;
+            curMp = hero.curMp;
+            curCr = hero.curCr;
+            weapon = hero.Weapon.index;
+            armor = hero.Armor.index;
+            helmet = hero.Helmet.index;
+            accessory1 = hero.Accessory1.index;
+            accessory2 = hero.Accessory2.index;
+        }
+    }
+
+    public HeroParamsToSave GetDataToSave()
+    {
+        return (new HeroParamsToSave(this));
+    }
+
+    public void SetSavedData(HeroParamsToSave hps)
+    {
+        isActive = hps.isActive;
+        level = hps.level;
+        expToLevelUp = hps.expToLevelUp;
+        curHp = hps.curHp;
+        curMp = hps.curMp;
+        curCr = hps.curCr;
+        weapon = hps.weapon;
+        armor = hps.armor;
+        helmet = hps.helmet;
+        accessory[0] = hps.accessory1;
+        accessory[1] = hps.accessory2;
     }
 }
 

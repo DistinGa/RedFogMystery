@@ -19,13 +19,11 @@ public class GameManager : MonoBehaviour
     [Space(10)]
     //Списки всех предметов доступных в игре хранятся в объектах ScriptableObject по типам предметов.
     //В списках наличествующего инвентаря хранятся индексы строк в общих списках.
-    //!!!public для тестов. Потом убрать
     [SerializeField]
-    public List<InventoryItem<ConsumableProperties>> consumables = new List<InventoryItem<ConsumableProperties>>();
-    public List<InventoryItem<MaterialProperties>> materials = new List<InventoryItem<MaterialProperties>>();
-    public List<InventoryItem<KeyProperties>> keys = new List<InventoryItem<KeyProperties>>();
-    public List<InventoryItem<EquipmentProperties>> equipments = new List<InventoryItem<EquipmentProperties>>();
-    //!!!public для тестов. Потом убрать
+    List<InventoryItem<ConsumableProperties>> consumables = new List<InventoryItem<ConsumableProperties>>();
+    List<InventoryItem<MaterialProperties>> materials = new List<InventoryItem<MaterialProperties>>();
+    List<InventoryItem<KeyProperties>> keys = new List<InventoryItem<KeyProperties>>();
+    List<InventoryItem<EquipmentProperties>> equipments = new List<InventoryItem<EquipmentProperties>>();
 
     public SOConsumables AllConsumables;
     public SOMaterials AllMaterials;
@@ -39,7 +37,7 @@ public class GameManager : MonoBehaviour
             GM = this;
         else
         {
-            Destroy(gameObject);
+            DestroyImmediate(gameObject);
             return;
         }
 
@@ -189,7 +187,9 @@ public class GameManager : MonoBehaviour
 
     public void Load()
     {
-        SaveManager.Load("Current");
+        StartCoroutine(SaveManager.Load("Current"));
+        //!Временная мера. Убрать.
+        Time.timeScale = 1;
     }
 
     public void Save()
@@ -288,6 +288,95 @@ public class GameManager : MonoBehaviour
 
         script.ShowOverheadText(text, delay);
     }
+
+    public SavedGMdata GetGMdata()
+    {
+        SavedGMdata sGMd = new SavedGMdata();
+        sGMd.sceneName = SceneManager.GetActiveScene().name;
+        sGMd.initialPosition = JsonUtility.ToJson(GM.MainCharacter.transform.position);
+        //sGMd.initialDirection = ;
+        sGMd.gameTime = gameTime;
+        sGMd.gold = gold;
+        sGMd.leaderName = _Leader.HeroPropetries.Name;
+        //Заполнение данных партии
+        sGMd.heroParams = new string[Heroes.Length];
+        for (int i = 0; i < Heroes.Length; i++)
+        {
+            sGMd.heroParams[i] = JsonUtility.ToJson(Heroes[i].GetDataToSave());
+        }
+        //Инвентарь
+        sGMd.consumables = new string[Consumables.Count];
+        for (int i = 0; i < Consumables.Count; i++)
+        {
+            sGMd.consumables[i] = JsonUtility.ToJson(new Vector2(Consumables[i].Item.index, Consumables[i].Count));
+        }
+
+        sGMd.equipments = new string[Equipments.Count];
+        for (int i = 0; i < Equipments.Count; i++)
+        {
+            sGMd.equipments[i] = JsonUtility.ToJson(new Vector2(Equipments[i].Item.index, Equipments[i].Count));
+        }
+
+        sGMd.materials = new string[Materials.Count];
+        for (int i = 0; i < Equipments.Count; i++)
+        {
+            sGMd.materials[i] = JsonUtility.ToJson(new Vector2(Materials[i].Item.index, Materials[i].Count));
+        }
+
+        sGMd.keys = new string[Keys.Count];
+        for (int i = 0; i < Equipments.Count; i++)
+        {
+            sGMd.keys[i] = JsonUtility.ToJson(new Vector2(Keys[i].Item.index, Keys[i].Count));
+        }
+
+        return sGMd;
+}
+
+public void SetGMdata(SavedGMdata sGMd)
+    {
+        //ChangeScene(sGMd.sceneName, JsonUtility.FromJson<Vector3>(sGMd.initialPosition));
+        //SceneManager.LoadScene(sGMd.sceneName);
+        MainCharacter.transform.position = JsonUtility.FromJson<Vector3>(sGMd.initialPosition);
+        gameTime = sGMd.gameTime;
+        gold = sGMd.gold;
+        Leader = FindHeroByName(sGMd.leaderName);
+        //Восстановление данных партии
+        for (int i = 0; i < sGMd.heroParams.Length; i++)
+        {
+            Hero.HeroParamsToSave hps = JsonUtility.FromJson<Hero.HeroParamsToSave>(sGMd.heroParams[i]);
+            if(hps.isActive)
+                ConnectToParty(Heroes[i]);
+            Heroes[i].SetSavedData(hps);
+        }
+        //Инвентарь
+        Consumables.Clear();
+        foreach (var item in sGMd.consumables)
+        {
+            Vector2 inv = JsonUtility.FromJson<Vector2>(item);
+            AddInventory(GM.AllConsumables.Get((int)inv.x), (int)inv.y);
+        }
+
+        Equipments.Clear();
+        foreach (var item in sGMd.equipments)
+        {
+            Vector2 inv = JsonUtility.FromJson<Vector2>(item);
+            AddInventory(GM.AllEquipments.Get((int)inv.x), (int)inv.y);
+        }
+
+        Materials.Clear();
+        foreach (var item in sGMd.materials)
+        {
+            Vector2 inv = JsonUtility.FromJson<Vector2>(item);
+            AddInventory(GM.AllMaterials.Get((int)inv.x), (int)inv.y);
+        }
+
+        Keys.Clear();
+        foreach (var item in sGMd.keys)
+        {
+            Vector2 inv = JsonUtility.FromJson<Vector2>(item);
+            AddInventory(GM.AllKeys.Get((int)inv.x), (int)inv.y);
+        }
+    }
 }
 
 [System.Serializable]
@@ -311,4 +400,34 @@ public class InventoryItem<T> where T : class//where T : Properties
             return (ItemsBase.Get(index)) as T;
         }
     }
+}
+
+[System.Serializable]
+public class SavedGMdata
+{
+    public string sceneName;
+    public string initialPosition;
+    //public Direction initialDirection;
+    public float gameTime;
+    public double gold;
+    public string leaderName;
+    public string[] heroParams;
+    public string[] consumables;
+    public string[] equipments;
+    public string[] materials;
+    public string[] keys;
+
+    //public bool isActive;   //персонаж в игре (присоединился к партии)
+    //public int level;       //уровень
+    //public int expToLevelUp;//опыт до следуюющего уровня
+    //public float curHp = 0; //текущие очки здоровья
+    //public float curMp = 0; //текущие очки маны
+    //public float curCr = 0; //текущие очки коррупции
+    ////Экипировка
+    //public int weapon;
+    //public int armor;
+    //public int helmet;
+    //public int[] accessory = new int[2];
+
+
 }
