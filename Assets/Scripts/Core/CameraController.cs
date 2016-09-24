@@ -1,7 +1,10 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class CameraController : MonoBehaviour, ISave
 {
+    [SerializeField]
+    int objectID = 10000;
     public Transform Target = null;
     public float EffectTime = 1;
     public GameObject Map;
@@ -19,6 +22,14 @@ public class CameraController : MonoBehaviour
 
     bool ConstX, ConstY;    //Камера вмещает карту целиком и не двигается по Х и/или У.
     Vector3 prevTargetPos;    //Предыдущее положение цели камеры
+
+    public void Awake()
+    {
+        if (objectID == 0)
+            Debug.LogError("Объекту не назначен идентификатор.", gameObject);
+
+        SaveManager.Subscribe(this);
+    }
 
     private void Start ()
     {
@@ -125,5 +136,30 @@ public class CameraController : MonoBehaviour
         transform.position = NewCamPosition;
 
         GameManager.GM.SetPartyWind(map.tag == "Wind");
+    }
+
+    public void OnDestroy()
+    {
+        SaveManager.Unsubscribe(this);
+    }
+
+    public SavedData GetDataToSave()
+    {
+        return new SavedData(GetObjID(), Map.name);
+    }
+
+    public void SetSavedData(string str)
+    {
+        Map = GameObject.Find(str);
+        if (Map == null)
+            Debug.LogError("В сцене не найдена требуемая локация: " + str, gameObject);
+    }
+
+    public int GetObjID()
+    {
+        if (objectID == 0)
+            Debug.LogError("Объекту не назначен идентификатор.", gameObject);
+
+        return objectID;
     }
 }

@@ -32,8 +32,6 @@ public static class SaveManager
             stream.Close();
         }
 
-        //Сохранение состояний квестов
-
         //Сохранение данных отдельных объектов
         List<SavedData> savedDataList = new List<SavedData>();
         foreach (ISave listItem in objectsToSave)
@@ -55,7 +53,7 @@ public static class SaveManager
 
     //Загрузка игры
     //Сделано в корутине, чтобы была возможность дождаться полной загрузки сцены перед восстановлением сохранённых значений.
-    public static IEnumerator Load(string socketname)
+    public static IEnumerator Load(string socketname, string sceneName)
     {
         string initPath = Application.streamingAssetsPath + "/Saves/" + socketname + "/";
         string filePath;
@@ -73,14 +71,20 @@ public static class SaveManager
             GameManager.GM.SetGMdata(sd);
         }
 
-        LoadTriggers(initPath);
+        if(GameManager.GM.QuestProgress == null)
+        //Если нет сохранения для квестов, заполним прогресс по квестам из начальных данных
+        {
+            GameManager.GM.InitQuestProgress();
+        }
+
+        LoadTriggers(initPath + sceneName);
     }
 
     //Загрузка данных отдельных объектов
     public static void LoadTriggers(string initPath)
     {
         BinaryFormatter bf = new BinaryFormatter();
-        string filePath = initPath + SceneManager.GetActiveScene().name + ".sav";
+        string filePath = initPath + ".sav";
         if (File.Exists(filePath))
         {
             FileStream stream = File.Open(filePath, FileMode.Open);

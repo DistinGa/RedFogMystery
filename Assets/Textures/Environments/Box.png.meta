@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 56ca6c117b21ec547ad765960567a713
-timeCreated: 1468871435
+timeCreated: 1474648022
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -61,18 +61,18 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.35}
+      pivot: {x: 0.5, y: 0.375}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -8, y: 27.6}
-        - {x: -25, y: 19.6}
-        - {x: -25, y: -1.3999996}
-        - {x: -17, y: -7.3999996}
-        - {x: -5, y: -7.3999996}
-        - {x: 16, y: -4.3999996}
-        - {x: 19, y: 1.6000004}
-        - {x: 19, y: 15.6}
-        - {x: 9, y: 27.6}
+      - - {x: -8, y: 26}
+        - {x: -25, y: 18}
+        - {x: -25, y: -3}
+        - {x: -17, y: -9}
+        - {x: -5, y: -9}
+        - {x: 16, y: -6}
+        - {x: 19, y: 0}
+        - {x: 19, y: 14}
+        - {x: 9, y: 26}
     - name: Box_1
       rect:
         serializedVersion: 2
@@ -81,18 +81,18 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.35}
+      pivot: {x: 0.5, y: 0.375}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -11, y: 29.6}
-        - {x: -13, y: 28.6}
-        - {x: -25, y: 18.6}
-        - {x: -25, y: -6.3999996}
-        - {x: -22, y: -7.3999996}
-        - {x: 19, y: -7.3999996}
-        - {x: 21, y: -4.3999996}
-        - {x: 21, y: 15.6}
-        - {x: 11, y: 29.6}
+      - - {x: -11, y: 28}
+        - {x: -13, y: 27}
+        - {x: -25, y: 17}
+        - {x: -25, y: -8}
+        - {x: -22, y: -9}
+        - {x: 19, y: -9}
+        - {x: 21, y: -6}
+        - {x: 21, y: 14}
+        - {x: 11, y: 28}
     - name: Box_2
       rect:
         serializedVersion: 2
@@ -101,17 +101,17 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.35}
+      pivot: {x: 0.5, y: 0.375}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -32, y: 35.6}
-        - {x: -32, y: 6.6000004}
-        - {x: -26, y: -1.3999996}
-        - {x: -18, y: -7.3999996}
-        - {x: -6, y: -7.3999996}
-        - {x: 19, y: -1.3999996}
-        - {x: 19, y: 32.6}
-        - {x: 4, y: 35.6}
+      - - {x: -32, y: 34}
+        - {x: -32, y: 5}
+        - {x: -26, y: -3}
+        - {x: -18, y: -9}
+        - {x: -6, y: -9}
+        - {x: 19, y: -3}
+        - {x: 19, y: 31}
+        - {x: 4, y: 34}
     outline: []
   spritePackingTag: 
   userData: 

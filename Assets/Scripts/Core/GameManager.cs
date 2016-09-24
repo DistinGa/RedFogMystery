@@ -29,6 +29,9 @@ public class GameManager : MonoBehaviour
     public SOMaterials AllMaterials;
     public SOKeys AllKeys;
     public SOEquipments AllEquipments;
+    public QuestList QuestList;
+
+    public Dictionary<string, int> QuestProgress;
 
     public void Awake()
     {
@@ -56,6 +59,12 @@ public class GameManager : MonoBehaviour
             Debug.LogError("GameManager: Не назначен список Keys", AllKeys);
         if (AllEquipments == null)
             Debug.LogError("GameManager: Не назначен список Equipments", AllEquipments);
+
+        if (QuestProgress == null)
+        //3аполним прогресс по квестам из начальных данных
+        {
+            InitQuestProgress();
+        }
     }
 
     void InitializeGM()
@@ -187,7 +196,7 @@ public class GameManager : MonoBehaviour
 
     public void Load()
     {
-        StartCoroutine(SaveManager.Load("Current"));
+        StartCoroutine(SaveManager.Load("Current", SceneManager.GetActiveScene().name));
         //!Временная мера. Убрать.
         Time.timeScale = 1;
     }
@@ -308,6 +317,8 @@ public class GameManager : MonoBehaviour
         sGMd.consumables = new string[Consumables.Count];
         for (int i = 0; i < Consumables.Count; i++)
         {
+            //Чтобы не создавать для сохранения предметов инвентаря (Item, Count) дополнительной структуры или класса, 
+            //воспользуемся для хранения этих двух значений типом Vector2.
             sGMd.consumables[i] = JsonUtility.ToJson(new Vector2(Consumables[i].Item.index, Consumables[i].Count));
         }
 
@@ -329,10 +340,21 @@ public class GameManager : MonoBehaviour
             sGMd.keys[i] = JsonUtility.ToJson(new Vector2(Keys[i].Item.index, Keys[i].Count));
         }
 
-        return sGMd;
-}
+        sGMd.questProgress = QuestProgress;
 
-public void SetGMdata(SavedGMdata sGMd)
+        return sGMd;
+    }
+
+    public void InitQuestProgress()
+    {
+        QuestProgress = new Dictionary<string, int>();
+        foreach (var questState in QuestList.dataArray)
+        {
+            QuestProgress.Add(questState.Questid, questState.Result);
+        }
+    }
+
+    public void SetGMdata(SavedGMdata sGMd)
     {
         //ChangeScene(sGMd.sceneName, JsonUtility.FromJson<Vector3>(sGMd.initialPosition));
         //SceneManager.LoadScene(sGMd.sceneName);
@@ -376,6 +398,9 @@ public void SetGMdata(SavedGMdata sGMd)
             Vector2 inv = JsonUtility.FromJson<Vector2>(item);
             AddInventory(GM.AllKeys.Get((int)inv.x), (int)inv.y);
         }
+
+        QuestProgress = sGMd.questProgress;
+
     }
 }
 
@@ -416,6 +441,7 @@ public class SavedGMdata
     public string[] equipments;
     public string[] materials;
     public string[] keys;
+    public Dictionary<string, int> questProgress;
 
     //public bool isActive;   //персонаж в игре (присоединился к партии)
     //public int level;       //уровень
