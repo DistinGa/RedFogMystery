@@ -29,9 +29,10 @@ public class GameManager : MonoBehaviour
     public SOMaterials AllMaterials;
     public SOKeys AllKeys;
     public SOEquipments AllEquipments;
-    public QuestList QuestList;
+    public QuestList QuestList; //ScripableObject со списком всех квестов. Нужен для начального заполнения.
 
     public Dictionary<string, int> QuestProgress;
+    public DialogMenuScript DialogPanel;
 
     public void Awake()
     {
@@ -73,7 +74,7 @@ public class GameManager : MonoBehaviour
             MainCharacter = FindObjectOfType<CharacterMoving>().gameObject;
 
         if (Leader.lp == null)
-            Leader = FindHeroByName("Gehend");
+            Leader = FindHeroByName("MainHero");
 
         if (initialPosition != Vector3.zero)
             MainCharacter.transform.position = initialPosition;
@@ -153,13 +154,16 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public Hero FindHeroByName(string heroName)
+    //Поиск героя по имени.
+    //UseIndexName - указывает, какое имя использовать для поиска
+    //IndexName - это условные имена членов партии (MainHero, Healer, Tank, Mage)
+    public Hero FindHeroByName(string heroName, bool UseIndexName = true)
     {
         Hero h = null;
 
         foreach (var item in Heroes)
         {
-            if (item.HeroPropetries.Name == heroName)
+            if ((UseIndexName? item.HeroPropetries.IndexName: item.HeroPropetries.Name) == heroName)
             {
                 h = item;
                 break;
@@ -306,7 +310,7 @@ public class GameManager : MonoBehaviour
         //sGMd.initialDirection = ;
         sGMd.gameTime = gameTime;
         sGMd.gold = gold;
-        sGMd.leaderName = _Leader.HeroPropetries.Name;
+        sGMd.leaderName = _Leader.HeroPropetries.IndexName;
         //Заполнение данных партии
         sGMd.heroParams = new string[Heroes.Length];
         for (int i = 0; i < Heroes.Length; i++)
@@ -401,6 +405,29 @@ public class GameManager : MonoBehaviour
 
         QuestProgress = sGMd.questProgress;
 
+    }
+
+    //Возвращает состояние квеста. Если передан несуществующий индекс, возвращает -1.
+    public int GetQuestProgress(string qID)
+    {
+        if (QuestProgress.ContainsKey(qID))
+            return QuestProgress[qID];
+        else
+            return -1;
+    }
+
+    //Устанавливает состояние квеста. Если нет квеста с указаннымм индексом, создаёт.
+    public void SetQuestProgress(string qID, int qProgress)
+    {
+        if (QuestProgress.ContainsKey(qID))
+            QuestProgress[qID] = qProgress;
+        else
+            QuestProgress.Add(qID, qProgress);
+    }
+
+    public void StartDialog(List<DialogMember> dlgMembers, ScriptableObject dlgDescription, string[] startRepID, CSEvent[] actions)
+    {
+        DialogPanel.Initialization(dlgMembers, dlgDescription, startRepID, actions);
     }
 }
 

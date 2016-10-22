@@ -6,6 +6,8 @@ using System.Collections.Generic;
 [Serializable]
 public class HeroProperties : Properties
 {
+    public string IndexName;
+    public string Color;    //цвет текста сообщений
     public RuntimeAnimatorController AnimatorController = null;
     public int level;       //уровень
     public int expToLevelUp;//опыт до следуюющего уровня
@@ -23,6 +25,8 @@ public class HeroProperties : Properties
 [Serializable]
 public class Hero
 {
+    public string IndexName;
+    public string Color;    //цвет текста сообщений
     public bool isActive;   //персонаж в игре (присоединился к партии)
     public RuntimeAnimatorController AnimatorController = null;
     public LevelParameters lp;  //ScriptableObject с параметрами по уровням
@@ -73,6 +77,8 @@ public class Hero
     {
         get {
             HeroProperties HerProp = new HeroProperties(lp.Levels[level - 1]);
+            HerProp.IndexName = IndexName;
+            HerProp.Color = Color;
             //Добавление воздействия от предметов
             foreach (var item in accessory)
             {
