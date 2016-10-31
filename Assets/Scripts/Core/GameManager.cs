@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager GM;
     float gameTime = 0;
     double gold;
+    Dictionary<string, int> questProgress;
 
     public GameObject MainCharacter;    //ГГ
     public List<GameObject> Vagons;     //список GO для отображения "паровозика"
@@ -31,7 +32,6 @@ public class GameManager : MonoBehaviour
     public SOEquipments AllEquipments;
     public QuestList QuestList; //ScripableObject со списком всех квестов. Нужен для начального заполнения.
 
-    public Dictionary<string, int> QuestProgress;
     public DialogMenuScript DialogPanel;
 
     public void Awake()
@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
         if (AllEquipments == null)
             Debug.LogError("GameManager: Не назначен список Equipments", AllEquipments);
 
-        if (QuestProgress == null)
+        if (questProgress == null)
         //3аполним прогресс по квестам из начальных данных
         {
             InitQuestProgress();
@@ -344,17 +344,17 @@ public class GameManager : MonoBehaviour
             sGMd.keys[i] = JsonUtility.ToJson(new Vector2(Keys[i].Item.index, Keys[i].Count));
         }
 
-        sGMd.questProgress = QuestProgress;
+        sGMd.questProgress = questProgress;
 
         return sGMd;
     }
 
     public void InitQuestProgress()
     {
-        QuestProgress = new Dictionary<string, int>();
+        questProgress = new Dictionary<string, int>();
         foreach (var questState in QuestList.dataArray)
         {
-            QuestProgress.Add(questState.Questid, questState.Result);
+            questProgress.Add(questState.Questid, questState.Result);
         }
     }
 
@@ -403,15 +403,21 @@ public class GameManager : MonoBehaviour
             AddInventory(GM.AllKeys.Get((int)inv.x), (int)inv.y);
         }
 
-        QuestProgress = sGMd.questProgress;
+        questProgress = sGMd.questProgress;
 
+    }
+
+    //Есть ли заполненный QuestProgress
+    public bool HasQuestProgress()
+    {
+        return (questProgress != null && questProgress.Count > 0);
     }
 
     //Возвращает состояние квеста. Если передан несуществующий индекс, возвращает -1.
     public int GetQuestProgress(string qID)
     {
-        if (QuestProgress.ContainsKey(qID))
-            return QuestProgress[qID];
+        if (questProgress.ContainsKey(qID))
+            return questProgress[qID];
         else
             return -1;
     }
@@ -419,10 +425,27 @@ public class GameManager : MonoBehaviour
     //Устанавливает состояние квеста. Если нет квеста с указаннымм индексом, создаёт.
     public void SetQuestProgress(string qID, int qProgress)
     {
-        if (QuestProgress.ContainsKey(qID))
-            QuestProgress[qID] = qProgress;
+        if (questProgress.ContainsKey(qID))
+            questProgress[qID] = qProgress;
         else
-            QuestProgress.Add(qID, qProgress);
+            questProgress.Add(qID, qProgress);
+    }
+
+    //Очищает данные, которые были необходимы только для диалога.
+    public void ClearDialogQuestData()
+    {
+        List<string> keys = new List<string>();
+
+        foreach (var item in questProgress)
+        {
+            if(item.Key.Length >= 3 && item.Key.Substring(0, 3) == "dlg")
+                keys.Add(item.Key);
+        }
+
+        foreach (string key in keys)
+        {
+            questProgress.Remove(key);
+        }
     }
 
     public void StartDialog(List<DialogMember> dlgMembers, ScriptableObject dlgDescription, string[] startRepID, CSEvent[] actions)

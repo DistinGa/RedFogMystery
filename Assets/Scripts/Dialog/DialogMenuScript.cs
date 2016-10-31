@@ -20,7 +20,7 @@ public class DialogMenuScript : MonoBehaviour
     public Transform LeftSpeakerPanel;
     public Transform RightSpeakerPanel;
     public RectTransform DialogContent;
-    public RectTransform SecretAnswerPanel;
+    public InputField SecretAnswerPanel;
     public Image MiniGameIndicator;
     public RectTransform PartyPanel;
 
@@ -37,6 +37,7 @@ public class DialogMenuScript : MonoBehaviour
     string curSpeakerName;  //Имя говорящего текущую реплику персонажа
 
     int charisma;
+    float timeAfterClick;   //время после нажатия кнопки (отслеживание клика для продолжения вывода реплик)
 
     void Start()
     {
@@ -56,6 +57,14 @@ public class DialogMenuScript : MonoBehaviour
         {
             item.OnEventAction();
         }
+
+        GameManager.GM.ClearDialogQuestData();
+    }
+
+    public void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+            timeAfterClick = Time.unscaledTime;
     }
 
     public void Initialization(List<DialogMember> dlgMembers, ScriptableObject dlgDescription, string[] startRepID, CSEvent[] dlgActions)
@@ -68,6 +77,7 @@ public class DialogMenuScript : MonoBehaviour
         MiniGameIndicator.fillAmount = 0;
         members = dlgMembers;
         allActions = dlgActions;
+        SecretAnswerPanel.text = "";
 
         //Заполнение общих списков реплик и ответов.
         AllAnswers.Clear();
@@ -99,7 +109,7 @@ public class DialogMenuScript : MonoBehaviour
                     charismaAdd = item.Addcharisma,
                     actionID = item.Actionid,
                     questIDPost = item.Questidpost,
-                    questResultPost =item.Questresultpost
+                    questResultPost = item.Questresultpost
                 };
 
                 if (newAnswer.secret)
@@ -178,7 +188,7 @@ public class DialogMenuScript : MonoBehaviour
     public IEnumerator PrintReplicas(string[] reps)
     {
         //Отключение кнопок ответов на время вывода
-        SecretAnswerPanel.GetComponent<InputField>().interactable = false;
+        SecretAnswerPanel.interactable = false;
         foreach (RectTransform item in AnswerButtons)
         {
             item.Find("Text").gameObject.SetActive(false);
@@ -191,6 +201,9 @@ public class DialogMenuScript : MonoBehaviour
         for (int i = 0; i < reps.Length; i++)
         {
             rep = reps[i];
+            if (rep == "")    //почему-то иногда QuickSheet пустую ячейку считывает, как массив с одним пустым значением. Для обхода эти строки.
+                continue;
+
             if (CheckCondition(AllReplicas[rep]))
             {
                 DialogMember dlgMmbr = members[AllReplicas[rep].charID];
@@ -199,17 +212,17 @@ public class DialogMenuScript : MonoBehaviour
                 //Пауза перед выводом следующей реплики. Следующая реплика выводится по нажатию пробела.
                 if (f1)
                 {
-                    yield return new WaitUntil(() => Input.GetKeyUp(KeyCode.Space));
                     yield return new WaitForEndOfFrame();   //чтобы GetKeyUp не срабатывал несколько раз подряд
+                    yield return new WaitUntil(() => (Input.GetKeyUp(KeyCode.Space) || ((Time.unscaledTime - timeAfterClick) < 0.3f && Input.GetMouseButtonUp(0))));
                 }
                 f1 = true;
 
                 //Если говорит не активный член партии, обновляем правый портрет.
-                if (dlgMmbr.Name != curPartyMember) 
+                if (dlgMmbr.Name != curPartyMember)
                     SetSpeakerPanel(RightSpeakerPanel, dlgMmbr.Portrait, dlgMmbr.Name);
 
                 //Если говорит другой персонаж, выводим его имя.
-                if (curSpeakerName != dlgMmbr.Name) 
+                if (curSpeakerName != dlgMmbr.Name)
                 {
                     dlgText.text += "\n\n<b><color=" + dlgMmbr.nameColor + ">" + dlgMmbr.Name + "</color></b>";
                     curSpeakerName = dlgMmbr.Name;
@@ -229,7 +242,7 @@ public class DialogMenuScript : MonoBehaviour
             txt.gameObject.SetActive(true);
             ab.GetComponent<Button>().interactable = true;
         }
-        SecretAnswerPanel.GetComponent<InputField>().interactable = true;
+        SecretAnswerPanel.interactable = true;
 
     }
 
@@ -242,15 +255,16 @@ public class DialogMenuScript : MonoBehaviour
         if (dlgObj.LeaderCondition != "")
         {
             string conditionName = GM.FindHeroByName(curPartyMember, false).IndexName;
-            //Если перед именем персонажа для условия "!", обрабатываем условия, как "НЕ".
-            if(dlgObj.LeaderCondition.Substring(0, 1)=="!"? dlgObj.LeaderCondition == "!"+ conditionName : dlgObj.LeaderCondition != conditionName)
+            //Если перед именем персонажа для условия "!", обрабатываем условие, как "НЕ".
+            if (dlgObj.LeaderCondition.Substring(0, 1) == "!" ? dlgObj.LeaderCondition == "!" + conditionName : dlgObj.LeaderCondition != conditionName)
                 res = false;
         }
         //проверка харизмы
         if (dlgObj.CharismaCondition > 0 && charisma < dlgObj.CharismaCondition)
             res = false;
         //проверка прогресса квеста
-        if (dlgObj.QuestIDCondition != "" && GM.GetQuestProgress(dlgObj.QuestIDCondition) != dlgObj.QuestResultCondition)
+        //Если перед QuestIDCondition стоит "!", обрабатываем условие, как "НЕ".
+        if (dlgObj.QuestIDCondition != "" && (dlgObj.QuestIDCondition.Substring(0, 1) == "!" ? GM.GetQuestProgress(dlgObj.QuestIDCondition.Substring(1)) == dlgObj.QuestResultCondition : GM.GetQuestProgress(dlgObj.QuestIDCondition) != dlgObj.QuestResultCondition))
             res = false;
 
         return res;
@@ -264,12 +278,6 @@ public class DialogMenuScript : MonoBehaviour
 
     void ProcessAnswer(Answer selAnswer)
     {
-        if (selAnswer.charismaAdd > 0)
-        {
-            charisma += selAnswer.charismaAdd;
-            MiniGameIndicator.fillAmount = charisma / 100f;
-        }
-
         //Вывод ответа
         Hero hero = GameManager.GM.FindHeroByName(curPartyMember, false);
         Text dlgText = DialogContent.GetComponent<Text>();
@@ -283,7 +291,6 @@ public class DialogMenuScript : MonoBehaviour
         {
             curAnswers.Clear();
         }
-
         //обработка списка текущих ответов
         for (int i = curAnswers.Count - 1; i > 0; i--)
         {
@@ -305,38 +312,44 @@ public class DialogMenuScript : MonoBehaviour
                 default:
                     break;
             }
+
+            //добавление новых ответов
+            int lastAnswer = curAnswers.Count;
+
+            foreach (string ansID in selAnswer.answers)
+            {
+                if (ansID == "")    //почему-то иногда QuickSheet пустую ячейку считывает, как массив с одним пустым значением. Для обхода эти строки.
+                    continue;
+
+                if (lastAnswer < ansMaxCount)
+                {
+                    if (CheckCondition(AllAnswers[ansID]) && !curAnswers.Exists(x => (x.ID == ansID)))
+                        curAnswers.Add(AllAnswers[ansID]);
+                }
+
+                lastAnswer++;
+            }
         }
 
-        //добавление новых ответов
-        int lastAnswer = curAnswers.Count;
-
-        foreach (string ansID in selAnswer.answers)
+        //Заполнение списка действий
+        if (selAnswer.actionID != 0)
         {
-            if (ansID == "")    //почему-то иногда QuickSheet пустую ячейку считывает, как массив с одним пустым значением. Для обхода эти строки.
-                continue;
+            if (selAnswer.actionID > 0 && selAnswer.actionID <= allActions.Length)
+                selectedActions.Add(allActions[selAnswer.actionID - 1]);
+        }
 
-            if (lastAnswer < ansMaxCount)
-            {
-                if (CheckCondition(AllAnswers[ansID]) && !curAnswers.Exists(x => (x.ID == ansID)))
-                    curAnswers.Add(AllAnswers[ansID]);
-            }
+        //Вывод реплик
+        StartCoroutine(PrintReplicas(selAnswer.replics));
 
-            lastAnswer++;
+        if (selAnswer.charismaAdd > 0)
+        {
+            charisma += selAnswer.charismaAdd;
+            MiniGameIndicator.fillAmount = charisma / 100f;
         }
 
         //Установка результатов квестов
         if (selAnswer.questIDPost != "")
             GameManager.GM.SetQuestProgress(selAnswer.questIDPost, selAnswer.questResultPost);
-
-        //Заполнение списка действий
-        if (selAnswer.actionID != 0)
-        {
-            if(selAnswer.actionID > 0 && selAnswer.actionID <= allActions.Length)
-                selectedActions.Add(allActions[selAnswer.actionID-1]);
-        }
-
-        //Вывод реплик
-        StartCoroutine(PrintReplicas(selAnswer.replics));
     }
 
     public void SetSpeakerPanel(Transform SpeakerPanel, Sprite Portrait, string Name)
@@ -344,7 +357,7 @@ public class DialogMenuScript : MonoBehaviour
         SpeakerPanel.Find("Portrait").GetComponent<Image>().sprite = Portrait;
         SpeakerPanel.Find("NamePanel/SpeakerName").GetComponent<Text>().text = Name;
         //Если обновляем левую панель, то установим и нового спикера от партии
-        if(SpeakerPanel == LeftSpeakerPanel)
+        if (SpeakerPanel == LeftSpeakerPanel)
             curPartyMember = Name;
     }
 
@@ -356,8 +369,8 @@ public class DialogMenuScript : MonoBehaviour
     //Проверка секретного ответа
     public void GiveSecretAnswer(string str)
     {
-        if (secretAnswers.Exists(x => x.text == str))
-            ProcessAnswer(secretAnswers.Find(x => x.text == str));
+        if (secretAnswers.Exists(x => x.text.ToLower() == str.ToLower()))
+            ProcessAnswer(secretAnswers.Find(x => x.text.ToLower() == str.ToLower()));
     }
 }
 

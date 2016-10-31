@@ -71,7 +71,7 @@ public static class SaveManager
             GameManager.GM.SetGMdata(sd);
         }
 
-        if(GameManager.GM.QuestProgress == null)
+        if(!GameManager.GM.HasQuestProgress())
         //Если нет сохранения для квестов, заполним прогресс по квестам из начальных данных
         {
             GameManager.GM.InitQuestProgress();
