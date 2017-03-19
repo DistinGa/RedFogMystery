@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: 2fbf63f6144a3c04ebc1dd4069ca4a1b
+timeCreated: 1480702426
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: mercenary1_0
+    21300002: mercenary1_1
+    21300004: mercenary1_2
+    21300006: mercenary1_3
+    21300008: mercenary1_4
+    21300010: mercenary1_5
+    21300012: mercenary1_6
+    21300014: mercenary1_7
+    21300016: mercenary1_8
+    21300018: mercenary1_9
+    21300020: mercenary1_10
+    21300022: mercenary1_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 256
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: mercenary1_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 146
+        width: 31
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 44}
+        - {x: -16, y: 0}
+        - {x: 9, y: 0}
+        - {x: 16, y: 12}
+        - {x: 16, y: 42}
+        - {x: 9, y: 44}
+    - name: mercenary1_1
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 147
+        width: 33
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 44}
+        - {x: -16.5, y: 0}
+        - {x: 11.5, y: 0}
+        - {x: 16.5, y: 17}
+        - {x: 16.5, y: 38}
+        - {x: 10.5, y: 44}
+    - name: mercenary1_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 146
+        width: 30
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: mercenary1_3
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 98
+        width: 25
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: mercenary1_4
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 99
+        width: 26
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: mercenary1_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 98
+        width: 29
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: mercenary1_6
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 50
+        width: 23
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: mercenary1_7
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 51
+        width: 27
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: mercenary1_8
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 50
+        width: 27
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: mercenary1_9
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2
+        width: 31
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: mercenary1_10
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 3
+        width: 30
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: mercenary1_11
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 2
+        width: 29
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

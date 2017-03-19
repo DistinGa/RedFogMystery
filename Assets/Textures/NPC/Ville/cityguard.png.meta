@@ -1,0 +1,250 @@
+fileFormatVersion: 2
+guid: b9f6c4128ecdbfb4a97c8f484c965494
+timeCreated: 1480896788
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cityguard_0
+    21300002: cityguard_1
+    21300004: cityguard_2
+    21300006: cityguard_3
+    21300008: cityguard_4
+    21300010: cityguard_5
+    21300012: cityguard_6
+    21300014: cityguard_7
+    21300016: cityguard_8
+    21300018: cityguard_9
+    21300020: cityguard_10
+    21300022: cityguard_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 256
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: cityguard_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 146
+        width: 31
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cityguard_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 147
+        width: 28
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cityguard_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 146
+        width: 26
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cityguard_3
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 98
+        width: 34
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 44}
+        - {x: -17, y: 33}
+        - {x: -17, y: 0}
+        - {x: 17, y: 0}
+        - {x: 17, y: 38}
+        - {x: 10, y: 44}
+    - name: cityguard_4
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 99
+        width: 34
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 44}
+        - {x: -11, y: 42}
+        - {x: -17, y: 20}
+        - {x: -17, y: 8}
+        - {x: -10, y: 0}
+        - {x: 16, y: 0}
+        - {x: 17, y: 1}
+        - {x: 17, y: 36}
+        - {x: 16, y: 44}
+    - name: cityguard_5
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 98
+        width: 40
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 44}
+        - {x: -11, y: 43}
+        - {x: -20, y: 20}
+        - {x: -20, y: 7}
+        - {x: -11, y: 0}
+        - {x: 20, y: 0}
+        - {x: 20, y: 35}
+        - {x: 15, y: 44}
+    - name: cityguard_6
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 50
+        width: 40
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 44}
+        - {x: -17, y: 42}
+        - {x: -20, y: 24}
+        - {x: -20, y: 8}
+        - {x: -14, y: 3}
+        - {x: -11, y: 0}
+        - {x: 14, y: 0}
+        - {x: 20, y: 7}
+        - {x: 20, y: 40}
+        - {x: 19, y: 44}
+    - name: cityguard_7
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 51
+        width: 34
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 44}
+        - {x: -13, y: 44}
+        - {x: -17, y: 32}
+        - {x: -17, y: 1}
+        - {x: -15, y: 0}
+        - {x: 12, y: 0}
+        - {x: 17, y: 5}
+        - {x: 17, y: 31}
+    - name: cityguard_8
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 50
+        width: 34
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 31}
+        - {x: 5, y: 44}
+        - {x: -17, y: 44}
+        - {x: -17, y: 0}
+        - {x: 7, y: 0}
+        - {x: 17, y: 8}
+        - {x: 17, y: 16}
+        - {x: 10, y: 18}
+    - name: cityguard_9
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2
+        width: 30
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cityguard_10
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 3
+        width: 31
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cityguard_11
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 2
+        width: 30
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

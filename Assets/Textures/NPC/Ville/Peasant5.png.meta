@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 9d5282913d2c3164dbe508ecdb9396ca
+timeCreated: 1480713320
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Peasant5_0
+    21300002: Peasant5_1
+    21300004: Peasant5_2
+    21300006: Peasant5_3
+    21300008: Peasant5_4
+    21300010: Peasant5_5
+    21300012: Peasant5_6
+    21300014: Peasant5_7
+    21300016: Peasant5_8
+    21300018: Peasant5_9
+    21300020: Peasant5_10
+    21300022: Peasant5_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 256
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Peasant5_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 148
+        width: 24
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Peasant5_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 149
+        width: 25
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Peasant5_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 148
+        width: 24
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Peasant5_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 100
+        width: 21
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Peasant5_4
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 101
+        width: 21
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Peasant5_5
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 100
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Peasant5_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 52
+        width: 22
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Peasant5_7
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 53
+        width: 21
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Peasant5_8
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 52
+        width: 21
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Peasant5_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 4
+        width: 24
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Peasant5_10
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 5
+        width: 25
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Peasant5_11
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 4
+        width: 24
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

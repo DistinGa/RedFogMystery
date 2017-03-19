@@ -1,0 +1,298 @@
+fileFormatVersion: 2
+guid: 5b1f2c9755dd8a6449bcdac3f3007987
+timeCreated: 1480697201
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Bandit)1_0
+    21300002: Bandit)1_1
+    21300004: Bandit)1_2
+    21300006: Bandit)1_3
+    21300008: Bandit)1_4
+    21300010: Bandit)1_5
+    21300012: Bandit)1_6
+    21300014: Bandit)1_7
+    21300016: Bandit)1_8
+    21300018: Bandit)1_9
+    21300020: Bandit)1_10
+    21300022: Bandit)1_11
+    21300024: Bandit)1_12
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 256
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Bandit)1_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 146
+        width: 23
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Bandit)1_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 147
+        width: 25
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Bandit)1_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 146
+        width: 23
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Bandit)1_3
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 98
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Bandit)1_4
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 99
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Bandit)1_5
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 98
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Bandit)1_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 50
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Bandit)1_7
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 51
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Bandit)1_8
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 50
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Bandit)1_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2
+        width: 24
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Bandit)1_10
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 3
+        width: 25
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Bandit)1_11
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 2
+        width: 24
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Bandit)1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 96
+        height: 187
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 47}
+        - {x: -42, y: 47}
+        - {x: -46, y: 42}
+        - {x: -46, y: 6}
+        - {x: -42, y: 0}
+        - {x: -27, y: 0}
+        - {x: -18, y: 4}
+        - {x: -18, y: 39}
+      - - {x: 40, y: 47}
+        - {x: 22, y: 47}
+        - {x: 19, y: 39}
+        - {x: 19, y: 8}
+        - {x: 21, y: 0}
+        - {x: 44, y: 0}
+        - {x: 47, y: 12}
+        - {x: 47, y: 41}
+      - - {x: 8, y: 48}
+        - {x: -10, y: 48}
+        - {x: -14, y: 42}
+        - {x: -14, y: 1}
+        - {x: 13, y: 1}
+        - {x: 15, y: 5}
+        - {x: 15, y: 38}
+        - {x: 14, y: 42}
+      - - {x: -45, y: 95}
+        - {x: -45, y: 49}
+        - {x: -43, y: 48}
+        - {x: -20, y: 48}
+        - {x: -19, y: 52}
+        - {x: -19, y: 95}
+      - - {x: 23, y: 95}
+        - {x: 19, y: 93}
+        - {x: 19, y: 54}
+        - {x: 20, y: 51}
+        - {x: 23, y: 48}
+        - {x: 45, y: 48}
+        - {x: 45, y: 89}
+        - {x: 41, y: 95}
+      - - {x: -13, y: 96}
+        - {x: -13, y: 50}
+        - {x: -9, y: 49}
+        - {x: 13, y: 49}
+        - {x: 13, y: 94}
+        - {x: 8, y: 96}
+      - - {x: -43, y: 143}
+        - {x: -45, y: 142}
+        - {x: -45, y: 100}
+        - {x: -44, y: 96}
+        - {x: -19, y: 96}
+        - {x: -19, y: 139}
+        - {x: -20, y: 143}
+      - - {x: 25, y: 143}
+        - {x: 19, y: 140}
+        - {x: 19, y: 102}
+        - {x: 20, y: 96}
+        - {x: 44, y: 96}
+        - {x: 45, y: 100}
+        - {x: 45, y: 141}
+        - {x: 44, y: 143}
+      - - {x: 12, y: 144}
+        - {x: -7, y: 144}
+        - {x: -13, y: 141}
+        - {x: -13, y: 100}
+        - {x: -7, y: 97}
+        - {x: 8, y: 97}
+        - {x: 13, y: 100}
+        - {x: 13, y: 143}
+      - - {x: -43, y: 187}
+        - {x: -45, y: 185}
+        - {x: -46, y: 173}
+        - {x: -46, y: 144}
+        - {x: -20, y: 144}
+        - {x: -19, y: 145}
+        - {x: -19, y: 187}
+      - - {x: 20, y: 187}
+        - {x: 20, y: 153}
+        - {x: 22, y: 144}
+        - {x: 40, y: 144}
+        - {x: 47, y: 146}
+        - {x: 47, y: 177}
+        - {x: 44, y: 187}
+      - - {x: -14, y: 187}
+        - {x: -14, y: 145}
+        - {x: 15, y: 145}
+        - {x: 15, y: 187}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
