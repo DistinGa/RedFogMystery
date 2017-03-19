@@ -1,0 +1,117 @@
+fileFormatVersion: 2
+guid: 9787397f9725b3a4ca2d063c5d5c74e2
+timeCreated: 1481420223
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: fire_light1_0
+    21300002: fire_light1_1
+    21300004: fire_light1_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 128
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: fire_light1_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.833334, y: 22.166666}
+        - {x: -19.833334, y: 14.166666}
+        - {x: -19.833334, y: -12.833334}
+        - {x: -11.833334, y: -20.833334}
+        - {x: 20.166666, y: -20.833334}
+        - {x: 21.166666, y: -16.833334}
+        - {x: 21.166666, y: 18.166666}
+        - {x: 15.166666, y: 22.166666}
+    - name: fire_light1_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 22.166666}
+        - {x: -20, y: 20.166666}
+        - {x: -20, y: -15.833334}
+        - {x: -18, y: -20.833334}
+        - {x: 16, y: -20.833334}
+        - {x: 20, y: -17.833334}
+        - {x: 20, y: 20.166666}
+        - {x: 19, y: 22.166666}
+    - name: fire_light1_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.833328, y: 22.166666}
+        - {x: -19.833328, y: 18.166666}
+        - {x: -19.833328, y: -10.833334}
+        - {x: -10.833328, y: -20.833334}
+        - {x: 12.166672, y: -20.833334}
+        - {x: 21.166672, y: -12.833334}
+        - {x: 21.166672, y: 16.166666}
+        - {x: 13.166672, y: 22.166666}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

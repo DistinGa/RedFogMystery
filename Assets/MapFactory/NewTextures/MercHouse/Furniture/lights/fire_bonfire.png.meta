@@ -1,0 +1,117 @@
+fileFormatVersion: 2
+guid: 6a5cc089a77072d4aa6ee644f110beaa
+timeCreated: 1481422975
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: fire_bonfire_0
+    21300002: fire_bonfire_1
+    21300004: fire_bonfire_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 128
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: fire_bonfire_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 60
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.833334, y: 42.833336}
+        - {x: -19.833334, y: 34.833336}
+        - {x: -19.833334, y: 7.8333344}
+        - {x: -11.833334, y: -0.16666538}
+        - {x: 20.166666, y: -0.16666538}
+        - {x: 21.166666, y: 3.8333347}
+        - {x: 21.166666, y: 38.833336}
+        - {x: 15.166666, y: 42.833336}
+    - name: fire_bonfire_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1
+        width: 60
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 42.833336}
+        - {x: -20, y: 40.833336}
+        - {x: -20, y: 4.8333344}
+        - {x: -18, y: -0.16666538}
+        - {x: 16, y: -0.16666538}
+        - {x: 20, y: 2.8333347}
+        - {x: 20, y: 40.833336}
+        - {x: 19, y: 42.833336}
+    - name: fire_bonfire_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1
+        width: 60
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.833328, y: 42.833336}
+        - {x: -19.833328, y: 38.833336}
+        - {x: -19.833328, y: 9.833335}
+        - {x: -10.833328, y: -0.16666538}
+        - {x: 12.166672, y: -0.16666538}
+        - {x: 21.166672, y: 7.8333344}
+        - {x: 21.166672, y: 36.833336}
+        - {x: 13.166672, y: 42.833336}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
