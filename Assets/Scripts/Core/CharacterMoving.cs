@@ -10,7 +10,7 @@ public class CharacterMoving : MonoBehaviour
   private float currentSpeed = 0;
   public Animator thisAnimator = null;
   [HideInInspector] public bool Block = true;
-  /*[HideInInspector]*/ public bool KeyboardControl = true;
+  [HideInInspector] public bool KeyboardControl = true;
   [HideInInspector] public Direction AutoMoveDirection = Direction.None;
   private float TimeToHandle;
   private bool left = false;

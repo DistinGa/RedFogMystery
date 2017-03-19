@@ -4,4 +4,5 @@
 public abstract class CSEvent: MonoBehaviour
 {
     public abstract void OnEventAction();
+    public System.Action NextStep;
 }
