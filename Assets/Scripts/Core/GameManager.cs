@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager GM;
     float gameTime = 0;
     double gold;
-    Dictionary<string, int> questProgress;
+    public Dictionary<string, int> questProgress;
 
     public GameObject MainCharacter;    //ГГ
     public List<GameObject> Vagons;     //список GO для отображения "паровозика"
@@ -60,12 +60,6 @@ public class GameManager : MonoBehaviour
             Debug.LogError("GameManager: Не назначен список Keys", AllKeys);
         if (AllEquipments == null)
             Debug.LogError("GameManager: Не назначен список Equipments", AllEquipments);
-
-        if (questProgress == null)
-        //3аполним прогресс по квестам из начальных данных
-        {
-            InitQuestProgress();
-        }
     }
 
     void InitializeGM()
@@ -79,6 +73,11 @@ public class GameManager : MonoBehaviour
         if (initialPosition != Vector3.zero)
             MainCharacter.transform.position = initialPosition;
 
+        if (questProgress == null)
+        //3аполним прогресс по квестам из начальных данных
+        {
+            InitQuestProgress();
+        }
     }
 
     public Hero Leader
@@ -356,6 +355,17 @@ public class GameManager : MonoBehaviour
         {
             questProgress.Add(questState.Questid, questState.Result);
         }
+    }
+
+    public string QuestDescription(string QuestID)
+    {
+        foreach (var item in QuestList.dataArray)
+        {
+            if (item.Questid == QuestID)
+                return item.Description;
+        }
+
+        return "---";
     }
 
     public void SetGMdata(SavedGMdata sGMd)
