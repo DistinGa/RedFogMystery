@@ -6,6 +6,9 @@ public class TActivator : MonoBehaviour
     CSEvent Script;
     [SerializeField]
     bool oneShot;   //Если true, объект активатора отключается после использования.
+    [SerializeField]
+    bool useButton; //Действие выполняется по нажатию кнопки "Use"
+    bool checkButton = false;   //признак того, что триггер сработал и нужно теперь проверять нажатие кнопки
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -17,10 +20,17 @@ public class TActivator : MonoBehaviour
                 return;
             }
 
-            Script.OnEventAction();
-            if (oneShot)
-                gameObject.SetActive(false);
+            if (useButton)
+                checkButton = true;
+            else
+                doAction();
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if(useButton)
+            checkButton = false;
     }
 
     public void Start()
@@ -29,5 +39,23 @@ public class TActivator : MonoBehaviour
         SpriteRenderer spr = GetComponent<SpriteRenderer>();
         if (spr != null)
             spr.enabled = false;
+    }
+
+    void Update()
+    {
+        if (checkButton)
+        {
+            if (Input.GetAxisRaw("Submit") > 0)
+            {
+                doAction();
+            }
+        }
+    }
+
+    void doAction()
+    {
+        Script.OnEventAction();
+        if (oneShot)
+            gameObject.SetActive(false);
     }
 }
