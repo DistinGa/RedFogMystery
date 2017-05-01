@@ -1,9 +1,16 @@
 fileFormatVersion: 2
 guid: eef864712646fcb479df91fdcb4a6832
-timeCreated: 1472166300
+timeCreated: 1490979342
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: woodPlanks4_0
+    21300002: woodPlanks4_1
+    21300004: woodPlanks4_2
+    21300006: woodPlanks4_3
+    21300008: woodPlanks4_4
+    21300010: woodPlanks4_5
+    21300012: woodPlanks4_6
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -27,7 +34,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -2
-  maxTextureSize: 64
+  maxTextureSize: 256
   textureSettings:
     filterMode: 0
     aniso: 16
@@ -38,7 +45,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +56,84 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: woodPlanks4_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: woodPlanks4_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 14
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: woodPlanks4_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 6
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: woodPlanks4_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 15
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: woodPlanks4_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 3
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: woodPlanks4_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 18
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: woodPlanks4_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 
