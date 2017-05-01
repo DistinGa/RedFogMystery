@@ -29,8 +29,11 @@ public class TActivator : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if(useButton)
-            checkButton = false;
+        if (other.gameObject.name == "MainHero") //проверка на персонажа
+        {
+            if (useButton)
+                checkButton = false;
+        }
     }
 
     public void Start()
