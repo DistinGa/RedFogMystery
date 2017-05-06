@@ -3,6 +3,7 @@ using System.Collections;
 using System;
 using System.Linq;
 
+[AddComponentMenu("Cut Scenes/Последовательность действий")]
 public class CSSequenceManager : CSEvent
 {
     int step;

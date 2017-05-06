@@ -4,6 +4,7 @@ using System;
 using System.Reflection;
 
 
+[AddComponentMenu("Cut Scenes/Условие")]
 public class CSCheckCondition : CSEvent {
     public GameObject GameObject;
     public UnityEngine.Component Comp;

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[AddComponentMenu("Cut Scenes/Текст над головой")]
 public class CSOverheadText : CSEvent
 {
     public OverheadTextScript targetObject;

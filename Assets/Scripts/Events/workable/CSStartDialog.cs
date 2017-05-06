@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
+[AddComponentMenu("Cut Scenes/Старт диалога")]
 public class CSStartDialog : CSEvent
 {
     public List<DialogMember> dlgMembers;

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+[AddComponentMenu("Cut Scenes/Сменить локацию")]
 public class CSGoToScene : CSEvent
 {
     [SerializeField]

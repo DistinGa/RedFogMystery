@@ -2,6 +2,7 @@
 using System.Collections;
 using System;
 
+[AddComponentMenu("Cut Scenes/Пауза")]
 public class CSPause : CSEvent
 {
     public float period;

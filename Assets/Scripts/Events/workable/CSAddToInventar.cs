@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+[AddComponentMenu("Cut Scenes/Добавление в инвентарь")]
 public class CSAddToInventar: CSEvent
 {
     [SerializeField]

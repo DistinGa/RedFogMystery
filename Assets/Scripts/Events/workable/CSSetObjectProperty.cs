@@ -4,6 +4,7 @@ using System;
 using System.Reflection;
 
 
+[AddComponentMenu("Cut Scenes/Свойство объекта")]
 public class CSSetObjectProperty : CSEvent {
     public GameObject GameObject;
     public UnityEngine.Component Comp;

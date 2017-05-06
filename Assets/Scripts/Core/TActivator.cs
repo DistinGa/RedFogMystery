@@ -3,36 +3,43 @@
 public class TActivator : MonoBehaviour
 {
     [SerializeField]
-    CSEvent Script;
+    CSEvent UseActionScript;
+    [SerializeField]
+    CSEvent Script, ExitScript;
     [SerializeField]
     bool oneShot;   //Если true, объект активатора отключается после использования.
-    [SerializeField]
-    bool useButton; //Действие выполняется по нажатию кнопки "Use"
-    bool checkButton = false;   //признак того, что триггер сработал и нужно теперь проверять нажатие кнопки
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if(UseActionScript != null)
+            UseActionScript.enabled = true;
+
         if (other.gameObject.name == "MainHero") //проверка на персонажа
         {
             if (Script == null)
             {
-                Debug.LogError("Не назначен скрипт CSEvent", this);
+                //Debug.LogError("Не назначен скрипт CSEvent", this);
                 return;
             }
 
-            if (useButton)
-                checkButton = true;
-            else
-                doAction();
+            Script.OnEventAction();
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
+        if (UseActionScript != null)
+            UseActionScript.enabled = false;
+
         if (other.gameObject.name == "MainHero") //проверка на персонажа
         {
-            if (useButton)
-                checkButton = false;
+            if (ExitScript == null)
+                return;
+
+            ExitScript.OnEventAction();
+
+            if (oneShot)
+                gameObject.SetActive(false);
         }
     }
 
@@ -42,23 +49,5 @@ public class TActivator : MonoBehaviour
         SpriteRenderer spr = GetComponent<SpriteRenderer>();
         if (spr != null)
             spr.enabled = false;
-    }
-
-    void Update()
-    {
-        if (checkButton)
-        {
-            if (Input.GetAxisRaw("Submit") > 0)
-            {
-                doAction();
-            }
-        }
-    }
-
-    void doAction()
-    {
-        Script.OnEventAction();
-        if (oneShot)
-            gameObject.SetActive(false);
     }
 }

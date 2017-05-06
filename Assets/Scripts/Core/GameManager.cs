@@ -423,13 +423,16 @@ public class GameManager : MonoBehaviour
         return (questProgress != null && questProgress.Count > 0);
     }
 
-    //Возвращает состояние квеста. Если передан несуществующий индекс, возвращает -1.
+    //Возвращает состояние квеста. Если передан несуществующий индекс, возвращает 0.
+    //0 - квест не взят
+    //>0 - квест на какой-то стадии выполнения
+    //<0 - квест выполнен с каким-то результатом
     public int GetQuestProgress(string qID)
     {
         if (questProgress.ContainsKey(qID))
             return questProgress[qID];
         else
-            return -1;
+            return 0;
     }
 
     //Устанавливает состояние квеста. Если нет квеста с указаннымм индексом, создаёт.

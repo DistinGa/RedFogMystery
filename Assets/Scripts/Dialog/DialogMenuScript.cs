@@ -191,7 +191,8 @@ public class DialogMenuScript : MonoBehaviour
         SecretAnswerPanel.interactable = false;
         foreach (RectTransform item in AnswerButtons)
         {
-            item.Find("Text").gameObject.SetActive(false);
+            //item.Find("Text").gameObject.SetActive(false);
+            item.gameObject.SetActive(false);
             item.GetComponent<Button>().interactable = false;
         }
 
@@ -213,7 +214,7 @@ public class DialogMenuScript : MonoBehaviour
                 if (f1)
                 {
                     yield return new WaitForEndOfFrame();   //чтобы GetKeyUp не срабатывал несколько раз подряд
-                    yield return new WaitUntil(() => (Input.GetKeyUp(KeyCode.Space) || ((Time.unscaledTime - timeAfterClick) < 0.3f && Input.GetMouseButtonUp(0))));
+                    yield return new WaitUntil(() => (Input.GetKeyUp(KeyCode.Space) || ((Time.unscaledTime - timeAfterClick) < 0.3f && Input.GetMouseButtonUp(0))));    //Проверяем и мышь. Если до отпускания кнопки прошло мало времени, значит это не скроллинг, показываем следующую реплику.
                 }
                 f1 = true;
 
@@ -239,7 +240,8 @@ public class DialogMenuScript : MonoBehaviour
             ab = AnswerButtons[i];
             txt = ab.Find("Text") as RectTransform;
             txt.GetComponent<Text>().text = curAnswers[i].text;
-            txt.gameObject.SetActive(true);
+            //txt.gameObject.SetActive(true);
+            ab.gameObject.SetActive(true);
             ab.GetComponent<Button>().interactable = true;
         }
         SecretAnswerPanel.interactable = true;

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+[AddComponentMenu("Cut Scenes/Присоединить к партии")]
 public class CSConnectToParty : CSEvent
 {
   [SerializeField] private string heroName;

@@ -5,6 +5,7 @@ using System;
 using System.Reflection;
 
 
+[AddComponentMenu("Cut Scenes/Выполнить процедуру")]
 public class CSStartMethod : CSEvent {
     public UnityEvent Method;
 
