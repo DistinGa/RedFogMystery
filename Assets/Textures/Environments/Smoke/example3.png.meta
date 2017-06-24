@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: b85569446b298e646b88c2ff5c9f8e12
+timeCreated: 1498260160
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: example3_0
+    21300002: example3_1
+    21300004: example3_2
+    21300006: example3_3
+    21300008: example3_4
+    21300010: example3_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: example3_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 34
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 50}
+        - {x: -14, y: 49}
+        - {x: -17, y: 46}
+        - {x: -17, y: 0}
+        - {x: 13, y: 0}
+        - {x: 17, y: 2}
+        - {x: 17, y: 37}
+        - {x: 3, y: 50}
+    - name: example3_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 0
+        width: 28
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: example3_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 29
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: example3_3
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 0
+        width: 37
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 48}
+        - {x: -18.5, y: 21}
+        - {x: -17.5, y: 18}
+        - {x: -10.5, y: 1}
+        - {x: -7.5, y: 0}
+        - {x: 12.5, y: 0}
+        - {x: 18.5, y: 14}
+        - {x: 18.5, y: 43}
+        - {x: 15.5, y: 48}
+    - name: example3_4
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 0
+        width: 34
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 49}
+        - {x: -15, y: 49}
+        - {x: -17, y: 45}
+        - {x: -17, y: 0}
+        - {x: 9, y: 0}
+        - {x: 14, y: 6}
+        - {x: 17, y: 17}
+        - {x: 17, y: 39}
+    - name: example3_5
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0
+        width: 31
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
