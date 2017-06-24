@@ -9,6 +9,7 @@ public class CameraController : MonoBehaviour, ISave
     public float EffectTime = 1;
     public GameObject Map;
     public ParticleSystem RainPS;
+    public ParticleSystem FogPS;
     public float CameraZoom = 1;    //увеличение камеры
     public float traction = 0.0f;   //расстояние (в юнитах), через которое камера начинает двигаться за целью
     public float SlideFactor = 0.5f;//параметр функции lerp для скольжения камеры
@@ -105,7 +106,7 @@ public class CameraController : MonoBehaviour, ISave
         prevTargetPos = Target.position;
     }
 
-    public bool IsRaining
+    public bool RainIs
     {
         set
         {
@@ -116,6 +117,19 @@ public class CameraController : MonoBehaviour, ISave
         }
 
         get { return RainPS.isPlaying; }
+    }
+
+    public bool FogIs
+    {
+        set
+        {
+            if (value)
+                FogPS.Play();
+            else
+                FogPS.Stop();
+        }
+
+        get { return FogPS.isPlaying; }
     }
 
     public void StartEffect(Color Color = new Color(), float EfTime = 0)
