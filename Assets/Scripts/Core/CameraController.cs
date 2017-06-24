@@ -8,6 +8,8 @@ public class CameraController : MonoBehaviour, ISave
     public Transform Target = null;
     public float EffectTime = 1;
     public GameObject Map;
+    public ParticleSystem RainPS;
+    public ParticleSystem FogPS;
     public float CameraZoom = 1;    //увеличение камеры
     public float traction = 0.0f;   //расстояние (в юнитах), через которое камера начинает двигаться за целью
     public float SlideFactor = 0.5f;//параметр функции lerp для скольжения камеры
@@ -34,14 +36,17 @@ public class CameraController : MonoBehaviour, ISave
     private void Start ()
     {
         Application.targetFrameRate = 30;
-        //DV{
-        //transform.parent = Target;
         Camera = GetComponent<Camera>();
 
         Camera.orthographicSize = Screen.height * 0.5f * UnitsPerPixel / CameraZoom;
         cameraHeight = Camera.orthographicSize;
         cameraWidth = Screen.width * 0.5f * UnitsPerPixel / CameraZoom;
         Camera.aspect = cameraWidth / cameraHeight;
+
+        RainPS.transform.position = Camera.transform.position + new Vector3(0.6f * cameraWidth, 1.3f * cameraHeight, 10);
+        RainPS.startLifetime /= CameraZoom;
+        var sh = RainPS.shape;
+        sh.radius = 1.3f * cameraWidth;
 
         TuneMap(Map);
 
@@ -50,7 +55,6 @@ public class CameraController : MonoBehaviour, ISave
         Animator.SetFloat("Speed", 0.5f/EffectTime);
         PanelBeforeCamera = GameObject.Find("PanelBeforeCamera");
         PanelBeforeCamera.SetActive(false);
-        //DV}
 
         prevTargetPos = Target.position;
     }
@@ -94,14 +98,42 @@ public class CameraController : MonoBehaviour, ISave
                 newY = UpLeft.y - fieldHeight + cameraHeight;
         }
 
-        transform.position = Vector3.Lerp(transform.position, new Vector3(newX, newY, newZ), SlideFactor);
+        if(SlideFactor == 1)
+            transform.position = new Vector3(newX, newY, newZ);
+        else
+            transform.position = Vector3.Lerp(transform.position, new Vector3(newX, newY, newZ), SlideFactor);
 
         prevTargetPos = Target.position;
     }
 
+    public bool RainIs
+    {
+        set
+        {
+            if (value)
+                RainPS.Play();
+            else
+                RainPS.Stop();
+        }
 
-  public void StartEffect(Color Color = new Color(), float EfTime = 0)
-  {
+        get { return RainPS.isPlaying; }
+    }
+
+    public bool FogIs
+    {
+        set
+        {
+            if (value)
+                FogPS.Play();
+            else
+                FogPS.Stop();
+        }
+
+        get { return FogPS.isPlaying; }
+    }
+
+    public void StartEffect(Color Color = new Color(), float EfTime = 0)
+    {
         if (EfTime == 0)
             EfTime = EffectTime;
 
@@ -109,7 +141,7 @@ public class CameraController : MonoBehaviour, ISave
         PanelBeforeCamera.GetComponent<UnityEngine.UI.Image>().color = Color;
 
         Animator.SetTrigger("Play");
-  }
+    }
 
     public void TuneMap(GameObject map)//Boris Map -> map
     {
