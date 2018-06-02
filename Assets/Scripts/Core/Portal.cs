@@ -26,10 +26,10 @@ public class Portal : MonoBehaviour
         return;
 
     characterMoving.KeyboardControl = false;      
-    cameraController.StartEffect();
-    Invoke("ChangePosition", 0.5f * cameraController.EffectTime);
+    //cameraController.StartEffect();
+    //Invoke("ChangePosition", 0.5f * cameraController.EffectTime);
     //DV{
-    Invoke("SetMove", cameraController.EffectTime);
+    //Invoke("SetMove", cameraController.EffectTime);
     //DV}
       if (doorAnimator != null)
       doorAnimator.SetTrigger("Open"); 

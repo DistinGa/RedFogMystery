@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 using System.Reflection;
-
+using DG.Tweening;
 
 [AddComponentMenu("Cut Scenes/Свойство объекта")]
 public class CSSetObjectProperty : CSEvent {
@@ -31,6 +31,10 @@ public class CSSetObjectProperty : CSEvent {
     public Color colorValue;
     [HideInInspector]
     public UnityEngine.Object unityValue;
+    //анимация
+    public bool Animate;
+    public float Duration;
+    public Ease AnimaType;
 
     public override void OnEventAction()
     {
@@ -43,10 +47,45 @@ public class CSSetObjectProperty : CSEvent {
         //    Debug.LogError("На объекте не найдено поле <" + PropertyName + ">", Comp);
 
         PropertyInfo PropInfo = Comp.GetType().GetProperty(PropertyName);
-        PropInfo.SetValue(Comp, getActualValue(PropInfo), null);
+        if (Animate)
+        {
+            Tweener myTween = null;
+
+            if (PropInfo.PropertyType == typeof(bool))
+                PropInfo.SetValue(Comp, getActualValue(PropInfo), null);
+            else if (PropInfo.PropertyType == typeof(int))
+                myTween = DOTween.To(() => (int)getter(), x => PropInfo.SetValue(Comp, x, null), intValue, Duration);
+            else if (PropInfo.PropertyType == typeof(float))
+                myTween = DOTween.To(() => (float)getter(), x => PropInfo.SetValue(Comp, x, null), floatValue, Duration);
+            else if (PropInfo.PropertyType == typeof(string))
+                PropInfo.SetValue(Comp, getActualValue(PropInfo), null);
+            else if (PropInfo.PropertyType == typeof(Vector2))
+                myTween = DOTween.To(() => (Vector2)getter(), x => PropInfo.SetValue(Comp, x, null), vector2Value, Duration);
+            else if (PropInfo.PropertyType == typeof(Vector3))
+                myTween = DOTween.To(() => (Vector3)getter(), x => PropInfo.SetValue(Comp, x, null), vector3Value, Duration);
+            else if (PropInfo.PropertyType == typeof(Vector4))
+                myTween = DOTween.To(() => (Vector4)getter(), x => PropInfo.SetValue(Comp, x, null), vector4Value, Duration);
+            //else if (PropInfo.PropertyType == typeof(Quaternion))
+            //    DOTween.To(() => (Quaternion)getter(), x => PropInfo.SetValue(Comp, x, null), Quaternion.Euler(vector3Value.x, vector3Value.y, vector3Value.z), Duration);
+            else if (PropInfo.PropertyType == typeof(Color))
+                myTween = DOTween.To(() => (Color)getter(), x => PropInfo.SetValue(Comp, x, null), colorValue, Duration);
+            else if (PropInfo.PropertyType == typeof(UnityEngine.Object))
+                PropInfo.SetValue(Comp, getActualValue(PropInfo), null);
+
+            myTween.SetLoops(2, LoopType.Yoyo).SetEase(AnimaType);
+        }
+        else
+            PropInfo.SetValue(Comp, getActualValue(PropInfo), null);
 
         if (NextStep != null)
             NextStep();
+
+    }
+
+    private object getter()
+    {
+        PropertyInfo PropInfo = Comp.GetType().GetProperty(PropertyName);
+        return PropInfo.GetValue(Comp, null);
     }
 
     private object getActualValue(PropertyInfo fInfo)

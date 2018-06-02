@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using System;
+using DG.Tweening;
 
 [CustomEditor(typeof(CSSetObjectProperty))]
 public class CSSetObjectProperty_Editor : Editor
@@ -115,6 +116,17 @@ public class CSSetObjectProperty_Editor : Editor
 
         }
 
+        //Свойства анимации
+        trg.Animate = EditorGUILayout.Toggle("Анимация", trg.Animate);
+
+        if (trg.Animate)
+        {
+            trg.Duration = EditorGUILayout.FloatField(trg.Duration);
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("AnimaType"));
+
+            serializedObject.ApplyModifiedProperties();
+            serializedObject.UpdateIfDirtyOrScript();
+        }
     }
 
     void OnEnable()

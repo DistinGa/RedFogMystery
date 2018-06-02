@@ -11,18 +11,13 @@ public class TActivator : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(UseActionScript != null)
-            UseActionScript.enabled = true;
-
         if (other.gameObject.name == "MainHero") //проверка на персонажа
         {
-            if (Script == null)
-            {
-                //Debug.LogError("Не назначен скрипт CSEvent", this);
-                return;
-            }
+            if(UseActionScript != null)
+                UseActionScript.enabled = true;
 
-            Script.OnEventAction();
+            if (Script != null)
+                Script.OnEventAction();
         }
     }
 
@@ -33,14 +28,12 @@ public class TActivator : MonoBehaviour
 
         if (other.gameObject.name == "MainHero") //проверка на персонажа
         {
-            if (ExitScript == null)
-                return;
+            if (ExitScript != null)
+                ExitScript.OnEventAction();
 
-            ExitScript.OnEventAction();
-
-            if (oneShot)
+             if (oneShot)
                 gameObject.SetActive(false);
-        }
+       }
     }
 
     public void Start()

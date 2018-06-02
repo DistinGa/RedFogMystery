@@ -7,11 +7,14 @@ public class CSConnectToParty : CSEvent
 
   public override void OnEventAction()
   {
-    if (heroName != "")
-    {
-      GameManager.GM.ConnectToParty(heroName);
+        if (heroName != "")
+        {
+            GameManager.GM.ConnectToParty(heroName);
+            if (NextStep != null)
+                NextStep();
+
+        }
+        else
+            Debug.LogWarning("Не указано имя героя!");
     }
-    else
-      Debug.LogWarning("Не указано имя героя!");
-  }
 }

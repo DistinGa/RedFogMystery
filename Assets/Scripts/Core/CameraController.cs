@@ -6,7 +6,6 @@ public class CameraController : MonoBehaviour, ISave
     [SerializeField]
     int objectID = 10000;
     public Transform Target = null;
-    public float EffectTime = 1;
     public GameObject Map;
     public ParticleSystem RainPS;
     public ParticleSystem FogPS;
@@ -16,7 +15,6 @@ public class CameraController : MonoBehaviour, ISave
 
     Camera Camera;
     GameObject PanelBeforeCamera;
-    Animator Animator;
     float fieldWidth, fieldHeight;      //размеры карты
     float cameraWidth, cameraHeight;    //половинные размеры камеры
     float UnitsPerPixel = 1f;
@@ -49,12 +47,6 @@ public class CameraController : MonoBehaviour, ISave
         sh.radius = 1.3f * cameraWidth;
 
         TuneMap(Map);
-
-        //Animator = GetComponentInChildren<Animator>();
-        Animator = transform.Find("ShadowEffect").GetComponent<Animator>();
-        Animator.SetFloat("Speed", 0.5f/EffectTime);
-        PanelBeforeCamera = GameObject.Find("PanelBeforeCamera");
-        PanelBeforeCamera.SetActive(false);
 
         prevTargetPos = Target.position;
     }
@@ -130,17 +122,6 @@ public class CameraController : MonoBehaviour, ISave
         }
 
         get { return FogPS.isPlaying; }
-    }
-
-    public void StartEffect(Color Color = new Color(), float EfTime = 0)
-    {
-        if (EfTime == 0)
-            EfTime = EffectTime;
-
-        Animator.SetFloat("Speed", 1f / EfTime);
-        PanelBeforeCamera.GetComponent<UnityEngine.UI.Image>().color = Color;
-
-        Animator.SetTrigger("Play");
     }
 
     public void TuneMap(GameObject map)//Boris Map -> map

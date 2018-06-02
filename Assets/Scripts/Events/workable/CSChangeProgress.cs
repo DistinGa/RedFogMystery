@@ -10,5 +10,7 @@ public class tmp_ChangeProgress : CSEvent {
     public override void OnEventAction()
     {
         GameManager.GM.SetQuestProgress(QuestID, QuestValue);
+        if (NextStep != null)
+            NextStep();
     }
 }
